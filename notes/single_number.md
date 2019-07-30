@@ -24,3 +24,27 @@ Output: 1
 Input: [4,1,2,1,2]
 Output: 4
 ```
+
+## Solution
+
+```py
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        >>> s = Solution()
+        >>> s.singleNumber([2, 2, 1])
+        1
+        >>> s = Solution()
+        >>> s.singleNumber([4, 1, 2, 1, 2])
+        4
+        """
+        n = 0
+        s = set()
+        for num in nums:
+            if num in s:
+                n -= num
+            else:
+                n += num
+                s.add(num)
+        return n
+```
