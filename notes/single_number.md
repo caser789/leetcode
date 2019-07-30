@@ -1,7 +1,8 @@
 ---
+tags: [set]
 title: Single Number
 created: '2019-07-30T15:07:46.850Z'
-modified: '2019-07-30T15:07:57.752Z'
+modified: '2019-07-30T15:17:35.589Z'
 ---
 
 # Single Number
