@@ -34,3 +34,29 @@ Output: true
 ```
 
 > You may assume both s and t have the same length.
+
+## Solution
+
+
+```py
+class Solution(object):
+    def isIsomorphic(self, s, t):
+        """
+        >>> s = Solution()
+        >>> s.isIsomorphic("egg", "add")
+        True
+        >>> s.isIsomorphic("foo", "bar")
+        False
+        """
+        n = len(s)
+        s1 = {}
+        s2 = {}
+        for i in range(n):
+            s1.setdefault(s[i], 0)
+            s2.setdefault(t[i], 0)
+            if s1[s[i]] != s2[t[i]]:
+                return False
+            s1[s[i]] += 1
+            s2[t[i]] += 1
+        return True
+```
