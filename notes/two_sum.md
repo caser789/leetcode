@@ -18,3 +18,20 @@ Given nums = [2, 7, 11, 15], target = 9,
 Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
+
+## Solution
+
+```py
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        >>> s = Solution()
+        >>> s.twoSum([2, 7, 11, 15], 9)
+        [0, 1]
+        """
+        s = {}
+        for i, num in enumerate(nums):
+            if target - num in s:
+                return [s[target - num], i]
+            s[num] = i
+```
