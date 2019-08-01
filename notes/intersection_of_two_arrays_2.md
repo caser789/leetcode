@@ -39,9 +39,27 @@ Output: [4,9]
 class Solution(object):
     def intersect(self, nums1, nums2):
         """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: List[int]
+        >>> nums1 = [1, 2, 2, 1]
+        >>> nums2 = [2, 2]
+        >>> Solution().intersect(nums1, nums2)
+        [2, 2]
+        >>> nums1 = [4, 9, 5]
+        >>> nums2 = [9, 4, 9, 8, 4]
+        >>> Solution().intersect(nums1, nums2)
+        [4, 9]
         """
-        
+        store = {}
+        for num in nums1:
+            store.setdefault(num, 0)
+            store[num] += 1
+
+        res = []
+        for num in nums2:
+            if num not in store:
+                continue
+            if store[num] == 0:
+                continue
+            res.append(num)
+            store[num] -= 1
+        return res
 ```
