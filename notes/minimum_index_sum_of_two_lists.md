@@ -1,7 +1,7 @@
 ---
 title: Minimum Index Sum of Two Lists
 created: '2019-07-30T15:43:48.074Z'
-modified: '2019-07-30T15:43:57.869Z'
+modified: '2019-08-01T05:40:02.368Z'
 ---
 
 # Minimum Index Sum of Two Lists
@@ -36,3 +36,77 @@ Output: ["Shogun"]
 > The length of strings in both lists will be in the range of [1, 30].
 > The index is starting from 0 to the list length minus 1.
 > No duplicates in both lists.
+
+## Solution
+
+```python
+class Solution(object):
+    def findRestaurant(self, list1, list2):
+        """
+        >>> a = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
+        >>> b = ["Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"]
+        >>> Solution().findRestaurant(a, b)
+        ['Shogun']
+        >>> a = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
+        >>> b = ["KFC", "Shogun", "Burger King"]
+        >>> Solution().findRestaurant(a, b)
+        ['Shogun']
+        """
+        s1 = {}
+        for i, n in enumerate(list1):
+            s1[n] = i
+
+        s2 = {}
+        for i, n in enumerate(list2):
+            s2[n] = i
+
+        for k, v in s2.items():
+            if k not in s1:
+                s2.pop(k)
+            else:
+                s2[k] = v + s1[k]
+
+        k = None
+        v = 2000
+        for _k, _v in s2.items():
+            if _v < v:
+                v = _v
+                k = _k
+
+        res = []
+        for _k, _v in s2.items():
+            if _v == v:
+                res.append(_k)
+        return res
+```
+
+```python
+
+class Solution(object):
+    def findRestaurant(self, list1, list2):
+        """
+        >>> a = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
+        >>> b = ["Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun"]
+        >>> Solution().findRestaurant(a, b)
+        ['Shogun']
+        >>> a = ["Shogun", "Tapioca Express", "Burger King", "KFC"]
+        >>> b = ["KFC", "Shogun", "Burger King"]
+        >>> Solution().findRestaurant(a, b)
+        ['Shogun']
+        """
+        s1 = {}
+        for i, n in enumerate(list1):
+            s1[n] = i
+
+        res = []
+        best = 2000
+        for i, n in enumerate(list2):
+            if n not in s1:
+                continue
+            if s1[n] + i < best:
+                res = [n]
+                best = s1[n] + i
+            elif s1[n] + i == best:
+                res.append(n)
+        return res
+```

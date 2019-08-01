@@ -1,7 +1,7 @@
 ---
 title: Contains Duplicate II
 created: '2019-07-30T15:50:41.583Z'
-modified: '2019-07-30T15:50:57.511Z'
+modified: '2019-08-01T05:41:31.175Z'
 ---
 
 # Contains Duplicate II
@@ -27,4 +27,17 @@ Output: true
 ```
 Input: nums = [1,2,3,1,2,3], k = 2
 Output: false
+```
+
+## Solution
+
+```python
+class Solution(object):
+    def containsNearbyDuplicate(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: bool
+        """
+        
 ```

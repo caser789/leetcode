@@ -1,7 +1,7 @@
 ---
 title: Intersection of Two Arrays II
 created: '2019-07-30T15:48:53.870Z'
-modified: '2019-07-30T15:49:13.887Z'
+modified: '2019-08-01T05:41:06.432Z'
 ---
 
 #  Intersection of Two Arrays II
@@ -32,3 +32,16 @@ Output: [4,9]
 * What if the given array is already sorted? How would you optimize your algorithm?
 * What if nums1's size is small compared to nums2's size? Which algorithm is better?
 * What if elements of nums2 are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?
+
+## Solution
+
+```python
+class Solution(object):
+    def intersect(self, nums1, nums2):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: List[int]
+        """
+        
+```
