@@ -35,9 +35,21 @@ Output: false
 class Solution(object):
     def containsNearbyDuplicate(self, nums, k):
         """
-        :type nums: List[int]
-        :type k: int
-        :rtype: bool
+        >>> Solution().containsNearbyDuplicate([1, 2, 3, 1], 3)
+        True
+        >>> Solution().containsNearbyDuplicate([1, 0, 1, 1], 1)
+        True
+        >>> Solution().containsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2)
+        False
         """
-        
+        store = {}
+        for i, num in enumerate(nums):
+            if num not in store:
+                store[num] = i
+            else:
+                if i - store[num] <= k:
+                    return True
+                store[num] = i
+        return False
+
 ```
