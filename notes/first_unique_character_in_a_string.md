@@ -26,8 +26,20 @@ return 2.
 class Solution(object):
     def firstUniqChar(self, s):
         """
-        :type s: str
-        :rtype: int
+        >>> s = "leetcode"
+        >>> Solution().firstUniqChar(s)
+        0
+        >>> s = "loveleetcode"
+        >>> Solution().firstUniqChar(s)
+        2
         """
-        
+        store = {}
+        for c in s:
+            store.setdefault(c, 0)
+            store[c] += 1
+
+        for i, c in enumerate(s):
+            if store[c] == 1:
+                return i
+        return -1
 ```
