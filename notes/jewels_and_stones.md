@@ -11,18 +11,22 @@ You're given strings J representing the types of stones that are jewels, and S r
 
 The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so "a" is considered a different type of stone from "A".
 
-Example 1:
+### Example 1:
 
+```
 Input: J = "aA", S = "aAAbbbb"
 Output: 3
-Example 2:
+```
 
+### Example 2:
+
+```
 Input: J = "z", S = "ZZ"
 Output: 0
-Note:
+```
 
-S and J will consist of letters and have length at most 50.
-The characters in J are distinct.
+> S and J will consist of letters and have length at most 50.
+> The characters in J are distinct.
 
 
 ## Solution
@@ -31,9 +35,19 @@ The characters in J are distinct.
 class Solution(object):
     def numJewelsInStones(self, J, S):
         """
-        :type J: str
-        :type S: str
-        :rtype: int
+        >>> J = "aA"
+        >>> S = "aAAbbbb"
+        >>> Solution().numJewelsInStones(J, S)
+        3
+        >>> J = "z"
+        >>> S = "ZZ"
+        >>> Solution().numJewelsInStones(J, S)
+        0
         """
-        
+        s = set(J)
+        cnt = 0
+        for c in S:
+            if c in s:
+                cnt += 1
+        return cnt
 ```
