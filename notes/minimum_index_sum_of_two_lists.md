@@ -1,7 +1,8 @@
 ---
+tags: [sum]
 title: Minimum Index Sum of Two Lists
 created: '2019-07-30T15:43:48.074Z'
-modified: '2019-08-01T05:40:02.368Z'
+modified: '2019-08-02T05:35:15.175Z'
 ---
 
 # Minimum Index Sum of Two Lists

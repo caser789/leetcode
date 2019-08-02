@@ -1,7 +1,8 @@
 ---
+tags: [hash, string]
 title: Isomorphic Strings
 created: '2019-07-30T15:41:15.682Z'
-modified: '2019-07-30T15:41:24.798Z'
+modified: '2019-08-02T05:34:44.305Z'
 ---
 
 #  Isomorphic Strings

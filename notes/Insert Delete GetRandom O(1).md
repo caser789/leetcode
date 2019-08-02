@@ -1,7 +1,8 @@
 ---
+tags: [hash, set]
 title: Insert Delete GetRandom O(1)
 created: '2019-08-01T05:47:18.857Z'
-modified: '2019-08-01T05:47:43.098Z'
+modified: '2019-08-02T05:34:15.601Z'
 ---
 
 # Insert Delete GetRandom O(1)

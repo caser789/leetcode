@@ -1,7 +1,8 @@
 ---
+tags: [hash, top-k]
 title: Top K Frequent Elements
 created: '2019-08-01T05:46:51.151Z'
-modified: '2019-08-01T05:47:09.273Z'
+modified: '2019-08-02T05:35:35.410Z'
 ---
 
 # Top K Frequent Elements

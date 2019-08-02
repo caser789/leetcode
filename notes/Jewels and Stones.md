@@ -1,7 +1,8 @@
 ---
+tags: [hash]
 title: Jewels and Stones
 created: '2019-08-01T05:45:12.027Z'
-modified: '2019-08-01T05:45:30.497Z'
+modified: '2019-08-02T05:34:49.454Z'
 ---
 
 # Jewels and Stones

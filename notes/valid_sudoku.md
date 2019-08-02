@@ -1,7 +1,8 @@
 ---
+tags: [hash, sudoku]
 title: Valid Sudoku
 created: '2019-08-01T05:42:36.559Z'
-modified: '2019-08-01T05:44:08.790Z'
+modified: '2019-08-02T05:35:49.834Z'
 ---
 
 # Valid Sudoku
@@ -17,8 +18,9 @@ A partially filled sudoku which is valid.
 
 The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
 
-Example 1:
+### Example 1:
 
+```
 Input:
 [
   ["5","3",".",".","7",".",".",".","."],
@@ -32,8 +34,11 @@ Input:
   [".",".",".",".","8",".",".","7","9"]
 ]
 Output: true
-Example 2:
+```
 
+### Example 2:
+
+```
 Input:
 [
   ["8","3",".",".","7",".",".",".","."],
@@ -47,17 +52,16 @@ Input:
   [".",".",".",".","8",".",".","7","9"]
 ]
 Output: false
-Explanation: Same as Example 1, except with the 5 in the top left corner being 
-    modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
-Note:
+```
 
-A Sudoku board (partially filled) could be valid but is not necessarily solvable.
-Only the filled cells need to be validated according to the mentioned rules.
-The given board contain only digits 1-9 and the character '.'.
-The given board size is always 9x9.
+> Explanation: Same as Example 1, except with the 5 in the top left corner being modified to 8. Since there are two 8's in the top left 3x3 sub-box, it is invalid.
+> A Sudoku board (partially filled) could be valid but is not necessarily solvable.
+> Only the filled cells need to be validated according to the mentioned rules.
+> The given board contain only digits 1-9 and the character '.'.
+> The given board size is always 9x9.
 
 
-[pic](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
+![pic](https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sudoku-by-L2G-20050714.svg/250px-Sudoku-by-L2G-20050714.svg.png)
 
 ## Solution
 
@@ -68,5 +72,27 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: bool
         """
-        
+        row_store = {}
+        col_store = {}
+        block_store = {}
+        for i, row in enumerate(board):
+            for j, col in enumerate(row):
+                if col == '.':
+                    continue
+                row_store.setdefault(i, set())
+                if col in row_store[i]:
+                    return False
+                row_store[i].add(col)
+
+                col_store.setdefault(j, set())
+                if col in col_store[j]:
+                    return False
+                col_store[j].add(col)
+
+                block = (i/3, j/3)
+                block_store.setdefault(block, set())
+                if col in block_store[block]:
+                    return False
+                block_store[block].add(col)
+        return True
 ```

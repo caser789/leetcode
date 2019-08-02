@@ -1,7 +1,8 @@
 ---
+tags: [hash, n-sum]
 title: Two Sum
 created: '2019-07-30T15:39:58.401Z'
-modified: '2019-07-30T15:40:08.187Z'
+modified: '2019-08-02T05:35:42.338Z'
 ---
 
 # Two Sum

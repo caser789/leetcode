@@ -1,7 +1,8 @@
 ---
+tags: [anagram, hash]
 title: Group Anagrams
 created: '2019-08-01T05:41:53.092Z'
-modified: '2019-08-01T05:42:16.141Z'
+modified: '2019-08-02T05:33:54.076Z'
 ---
 
 # Group Anagrams
