@@ -12,8 +12,9 @@ Given a binary tree, return all duplicate subtrees. For each kind of duplicate s
 
 Two trees are duplicate if they have the same structure with same node values.
 
-Example 1:
+### Example 1:
 
+```
         1
        / \
       2   3
@@ -29,7 +30,9 @@ The following are two duplicate subtrees:
 and
 
     4
+
 Therefore, you need to return above trees' root in the form of a list.
+```
 
 
 ## Solution
@@ -48,5 +51,29 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[TreeNode]
         """
-        
+        if not root:
+            return []
+
+        stack = []
+        stack.append(root)
+        store = {}
+        while stack:
+            n = stack.pop()
+            if n.left:
+                stack.append(n.left)
+            if n.right:
+                stack.append(n.right)
+            k = self.serialize_tree(n)
+            store.setdefault(k, [])
+            store[k].append(n)
+        res = []
+        for k, v in store.items():
+            if len(v) > 1:
+                res.append(v[0])
+        return res
+
+    def serialize_tree(self, node):
+        if not node:
+            return '#'
+        return '({}<{}>{})'.format(self.serialize_tree(node.left), node.val, self.serialize_tree(node.right))
 ```
