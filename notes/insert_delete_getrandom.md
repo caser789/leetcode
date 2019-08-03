@@ -12,8 +12,12 @@ Design a data structure that supports all following operations in average O(1) t
 insert(val): Inserts an item val to the set if not already present.
 remove(val): Removes an item val from the set if present.
 getRandom: Returns a random element from current set of elements. Each element must have the same probability of being returned.
-Example:
 
+
+### Example:
+
+
+```
 // Init an empty set.
 RandomizedSet randomSet = new RandomizedSet();
 
@@ -37,6 +41,7 @@ randomSet.insert(2);
 
 // Since 2 is the only number in the set, getRandom always return 2.
 randomSet.getRandom();
+```
 
 
 ## Solution
@@ -48,7 +53,6 @@ class RandomizedSet(object):
         """
         Initialize your data structure here.
         """
-        
 
     def insert(self, val):
         """
@@ -56,7 +60,6 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        
 
     def remove(self, val):
         """
@@ -64,14 +67,12 @@ class RandomizedSet(object):
         :type val: int
         :rtype: bool
         """
-        
 
     def getRandom(self):
         """
         Get a random element from the set.
         :rtype: int
         """
-        
 
 
 # Your RandomizedSet object will be instantiated and called as such:
