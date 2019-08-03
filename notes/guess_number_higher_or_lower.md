@@ -15,16 +15,20 @@ Every time you guess wrong, I'll tell you whether the number is higher or lower.
 
 You call a pre-defined API guess(int num) which returns 3 possible results (-1, 1, or 0):
 
--1 : My number is lower
- 1 : My number is higher
- 0 : Congrats! You got it!
-Example :
+    -1 : My number is lower
+    1 : My number is higher
+    0 : Congrats! You got it!
 
-Input: n = 10, pick = 6
-Output: 6
-
+### Example :
 
 ```
+Input: n = 10, pick = 6
+Output: 6
+```
+
+## Solution
+
+```python
 # The guess API is already defined for you.
 # @param num, your guess
 # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
@@ -36,5 +40,16 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        
+        lo = 1
+        hi = n
+        while lo <= hi:
+            mi = (lo + hi) / 2
+            v = guess(mi)
+            if v == 0:
+                return mi
+            elif v > 0:
+                lo = mi + 1
+            else:
+                hi = mi - 1
+        return hi
 ```
