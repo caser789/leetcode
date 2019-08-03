@@ -1,7 +1,8 @@
 ---
+tags: [binary search/1, math]
 title: Valid Perfect Square
 created: '2019-08-03T13:02:02.157Z'
-modified: '2019-08-03T13:02:18.333Z'
+modified: '2019-08-03T13:12:57.355Z'
 ---
 
 # Valid Perfect Square
