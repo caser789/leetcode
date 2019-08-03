@@ -1,7 +1,8 @@
 ---
+tags: [math]
 title: 'Pow(x, n)'
 created: '2019-08-03T12:49:16.150Z'
-modified: '2019-08-03T12:49:39.810Z'
+modified: '2019-08-03T13:01:57.188Z'
 ---
 
 # Pow(x, n)
