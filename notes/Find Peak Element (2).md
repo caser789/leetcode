@@ -1,7 +1,8 @@
 ---
+tags: [peak]
 title: Find Peak Element
 created: '2019-08-02T05:56:51.627Z'
-modified: '2019-08-02T05:57:08.658Z'
+modified: '2019-08-03T08:19:52.248Z'
 ---
 
 # Find Peak Element
