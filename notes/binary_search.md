@@ -1,8 +1,8 @@
 ---
-tags: [binary search]
+tags: [binary search/1]
 title: Binary Search
 created: '2019-08-02T05:39:13.642Z'
-modified: '2019-08-02T05:39:41.294Z'
+modified: '2019-08-03T04:54:57.268Z'
 ---
 
 # Binary Search
