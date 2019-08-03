@@ -15,23 +15,44 @@ Find the minimum element.
 
 You may assume no duplicate exists in the array.
 
-Example 1:
+### Example 1:
 
-Input: [3,4,5,1,2] 
+```
+Input: [3,4,5,1,2]
 Output: 1
-Example 2:
+```
 
+### Example 2:
+
+```
 Input: [4,5,6,7,0,1,2]
 Output: 0
+```
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def findMin(self, nums):
         """
-        :type nums: List[int]
-        :rtype: int
+        >>> nums = [4, 5, 6, 7, 0, 1, 2]
+        >>> Solution().findMin(nums)
+        0
+        >>> nums = [3, 4, 5, 1, 2]
+        >>> Solution().findMin(nums)
+        1
+        >>> nums = [2, 1]
+        >>> Solution().findMin(nums)
+        1
         """
-        
+        lo = 0
+        hi = len(nums)-1
+        while lo < hi:
+            mi = (lo+hi)/2
+            if nums[mi] <= nums[hi]:
+                hi = mi
+            elif nums[mi] >= nums[lo]:
+                lo = mi + 1
+
+        return nums[lo]
 ```
