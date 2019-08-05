@@ -1,8 +1,8 @@
 ---
-tags: [hash, intersection]
+tags: [hash, intersection, n-array]
 title: Intersection of Two Arrays II
 created: '2019-07-30T15:48:53.870Z'
-modified: '2019-08-02T05:34:37.656Z'
+modified: '2019-08-04T05:01:06.204Z'
 ---
 
 #  Intersection of Two Arrays II
