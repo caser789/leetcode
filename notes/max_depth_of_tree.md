@@ -1,8 +1,8 @@
 ---
-tags: [BFS, leetcode/559, queue, tree]
+tags: [BFS, DFS, leetcode/559, queue, tree]
 title: Maximum Depth of N-ary Tree
 created: '2019-08-06T14:46:41.707Z'
-modified: '2019-08-06T14:47:44.933Z'
+modified: '2019-08-06T15:20:16.984Z'
 ---
 
 # Maximum Depth of N-ary Tree
@@ -27,6 +27,8 @@ We should return its max depth, which is 3.
 > The total number of nodes is at most 5000.
 
 ## Solution
+
+### BFS Iter
 
 ```python
 """
@@ -55,4 +57,55 @@ class Solution(object):
                 for c in e.children:
                     q.append(c)
         return depth
+```
+
+### DFS Iter
+
+```python
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val, children):
+        self.val = val
+        self.children = children
+"""
+class Solution(object):
+    def maxDepth(self, root):
+        """
+        :type root: Node
+        :rtype: int
+        """
+        if not root: return 0
+
+        nodes = [root]
+        depths = [1]
+        max_depth = 1
+        while nodes:
+            n = nodes.pop()
+            depth  = depths.pop()
+
+            if not n.children:
+                max_depth = max(max_depth, depth)
+
+            for c in n.children:
+                nodes.append(c)
+                depths.append(depth+1)
+        return max_depth
+```
+
+
+### DFS Recur
+
+```python
+class Solution(object):
+    def maxDepth(self, root):
+        """
+        :type root: Node
+        :rtype: int
+        """
+        if not root:
+            return 0
+        if not root.children:
+            return 1
+        return max(self.maxDepth(c) for c in root.children) + 1
 ```
