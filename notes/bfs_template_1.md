@@ -9,7 +9,7 @@ modified: '2019-08-05T05:48:35.699Z'
 
 
 
-```
+```java
 /**
  * Return the length of the shortest path between root and target node.
  */
@@ -34,4 +34,20 @@ int BFS(Node root, Node target) {
     }
     return -1;          // there is no path from root to target
 }
+```
+
+```python
+def bfs(root, target):
+    q = Queue()
+    step = 0
+    q.enqueue(root)
+    while q:
+        step += 1
+        for i in range(len(q)):
+            n = q.dequeue()
+            if n == target:
+                return step
+            for neighbor in n.neighbours:
+                q.enqueue(neighbor)
+    return -1
 ```

@@ -7,7 +7,7 @@ modified: '2019-08-05T05:51:18.354Z'
 
 # BFS template Two
 
-```
+```java
 /**
  * Return the length of the shortest path between root and target node.
  */
@@ -31,10 +31,29 @@ int BFS(Node root, Node target) {
                     add next to queue;
                     add next to visited;
                 }
-                remove the first node from queue;   
+                remove the first node from queue;
             }
         }
     }
     return -1;          // there is no path from root to target
 }
+```
+
+```python
+def bfs(root, target):
+    q = Queue()
+    visited = set()
+    step = 0
+    q.enqueue(root)
+    visited.add(root)
+    while q:
+        step += 1
+        for i in range(len(q)):
+            e = q.dequeue()
+            if e == target:
+                return step
+            for n in e.neighbours:
+                if n not in visted:
+                    q.enqueue(n)
+    return -1
 ```
