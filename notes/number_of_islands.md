@@ -65,6 +65,4 @@ class Solution(object):
             self.bfs_mark(grid, i, j - 1)
         if j + 1 < len(grid[0]) and grid[i][j+1] == '1':
             self.bfs_mark(grid, i, j + 1)
-
-
 ```
