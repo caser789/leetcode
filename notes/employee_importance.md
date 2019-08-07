@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, BFS]
+tags: [2019/08/07, BFS, leetcode/690]
 title: Employee Importance
 created: '2019-08-07T05:38:02.816Z'
-modified: '2019-08-07T05:44:38.727Z'
+modified: '2019-08-07T14:04:25.737Z'
 ---
 
 # Employee Importance
