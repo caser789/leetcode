@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07]
+tags: [2019/08/07, BFS, leetcode/994]
 title: Rotting Oranges
 created: '2019-08-07T14:40:46.100Z'
-modified: '2019-08-07T14:41:41.589Z'
+modified: '2019-08-07T15:08:38.137Z'
 ---
 
 # Rotting Oranges
