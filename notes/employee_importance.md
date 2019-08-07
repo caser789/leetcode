@@ -47,4 +47,19 @@ class Solution(object):
         :type id: int
         :rtype: int
         """
+        store = {}
+        for employee in employees:
+            store[employee.id] = employee
+        if id not in store:
+            return 0
+        q = [id]
+        res = 0
+        while q:
+            next_q = []
+            for _id in q:
+                node = store[_id]
+                res += node.importance
+                next_q.extend(node.subordinates)
+            q = next_q
+        return res
 ```
