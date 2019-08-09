@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08, leetcode/112]
+tags: [2019/08/09, BFS, leetcode/112]
 title: Path Sum
 created: '2019-08-09T02:19:18.029Z'
-modified: '2019-08-09T02:19:48.307Z'
+modified: '2019-08-09T02:57:18.968Z'
 ---
 
 # Path Sum
