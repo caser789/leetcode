@@ -1,7 +1,8 @@
 ---
+tags: [leetcode/752]
 title: Open the Lock
 created: '2019-08-05T05:53:45.083Z'
-modified: '2019-08-05T05:54:00.268Z'
+modified: '2019-08-09T15:30:00.595Z'
 ---
 
 # Open the Lock
@@ -55,7 +56,7 @@ Output: -1
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def openLock(self, deadends, target):
         """
@@ -63,4 +64,39 @@ class Solution(object):
         :type target: str
         :rtype: int
         """
+        start = '0000'
+        q = []
+        q.append(start)
+
+        seen = set(deadends)
+        if start in seen:
+            return -1
+        seen.add(start)
+
+        cnt = 0
+        while q:
+            nxt_q = []
+            cnt += 1
+            for s in q:
+                for nei in self.neighbours(s):
+                    if nei in seen: continue
+                    if nei == target:
+                        return cnt
+                    nxt_q.append(nei)
+                    seen.add(nei)
+            q = nxt_q
+        return -1
+
+    def neighbours(self, s):
+        for i, c in enumerate(s):
+            c = int(c)
+            nxt = (c + 1) % 10
+            yield s[:i] + str(nxt) + s[i+1:]
+            prev = (c - 1) % 10
+            yield s[:i] + str(prev) + s[i+1:]
+
+
+deadends = ["0201", "0101", "0102", "1212", "2002"]
+target = "0202"
+print Solution().openLock(deadends, target)
 ```
