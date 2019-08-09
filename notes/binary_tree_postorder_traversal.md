@@ -61,3 +61,51 @@ class Solution(object):
                     node = node.right
         return res
 ```
+
+### method 2
+
+```python
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+from collections import deque
+
+class Solution(object):
+    def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        stack = []
+        node = root
+        queue = deque()
+        while node or stack:
+            if node:
+                stack.append(node)
+                queue.appendleft(node.val)
+                node = node.right
+            else:
+                node = stack.pop()
+                node = node.left
+        return list(queue)
+
+
+_1 = TreeNode(1)
+_2 = TreeNode(2)
+_3 = TreeNode(3)
+_4 = TreeNode(4)
+_5 = TreeNode(5)
+_6 = TreeNode(6)
+_7 = TreeNode(7)
+_1.left = _2
+_1.right = _3
+_2.left = _4
+_2.right = _5
+_4.left = _6
+_4.right = _7
+
+print Solution().postorderTraversal(_1)
+```

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07]
+tags: [2019/08/07, data structure/tree, method/traversal/inorder]
 title: Increasing Order Search Tree
 created: '2019-08-07T15:39:08.211Z'
-modified: '2019-08-07T15:39:26.031Z'
+modified: '2019-08-09T09:34:30.818Z'
 ---
 
 # Increasing Order Search Tree
