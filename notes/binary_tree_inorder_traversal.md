@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/tree]
+tags: [2019/08/09, data structure/tree, leetcode/94]
 title: Binary Tree Inorder Traversal
 created: '2019-08-09T09:30:54.852Z'
-modified: '2019-08-09T09:31:20.822Z'
+modified: '2019-08-09T15:05:40.292Z'
 ---
 
 #  Binary Tree Inorder Traversal
