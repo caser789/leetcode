@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08]
+tags: [2019/08/08, BFS, leetcode/100]
 title: Same Tree
 created: '2019-08-08T16:10:30.452Z'
-modified: '2019-08-08T16:10:47.706Z'
+modified: '2019-08-09T02:18:14.418Z'
 ---
 
 # Same Tree
