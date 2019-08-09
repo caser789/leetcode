@@ -1,8 +1,8 @@
 ---
-tags: [BFS, queue, template]
+tags: [data structure/queue, method/traversal/bfs, template]
 title: BFS template Two
 created: '2019-08-05T05:49:20.347Z'
-modified: '2019-08-05T05:51:18.354Z'
+modified: '2019-08-09T04:33:55.818Z'
 ---
 
 # BFS template Two

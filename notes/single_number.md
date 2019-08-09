@@ -1,8 +1,8 @@
 ---
-tags: [hash, number, set]
+tags: [data structure/set, method/search/hash, number]
 title: Single Number
 created: '2019-07-30T15:07:46.850Z'
-modified: '2019-08-02T05:35:26.633Z'
+modified: '2019-08-09T04:49:51.345Z'
 ---
 
 # Single Number

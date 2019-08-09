@@ -1,8 +1,8 @@
 ---
-tags: [design, queue]
+tags: [data structure/queue, design]
 title: Design Circular Queue
 created: '2019-08-05T05:34:29.481Z'
-modified: '2019-08-05T05:37:59.953Z'
+modified: '2019-08-09T04:34:10.754Z'
 ---
 
 # Design Circular Queue

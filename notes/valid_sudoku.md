@@ -1,8 +1,8 @@
 ---
-tags: [hash, sudoku]
+tags: [application/array/2-D, data structure/array, data structure/map, method/search/hash]
 title: Valid Sudoku
 created: '2019-08-01T05:42:36.559Z'
-modified: '2019-08-02T05:35:49.834Z'
+modified: '2019-08-09T04:55:10.753Z'
 ---
 
 # Valid Sudoku

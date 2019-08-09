@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, BFS, leetcode/112]
+tags: [2019/08/09, data structure/queue, data structure/tree, leetcode/112, method/traversal/bfs]
 title: Path Sum
 created: '2019-08-09T02:19:18.029Z'
-modified: '2019-08-09T02:57:18.968Z'
+modified: '2019-08-09T04:46:25.412Z'
 ---
 
 # Path Sum

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/06, BFS, DFS, leetcode/111]
+tags: [2019/08/06, data structure/queue, data structure/stack, data structure/tree, leetcode/111, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Minimum Depth of Binary Tree
 created: '2019-08-06T15:37:26.470Z'
-modified: '2019-08-07T14:36:46.676Z'
+modified: '2019-08-09T04:29:49.424Z'
 ---
 
 # Minimum Depth of Binary Tree

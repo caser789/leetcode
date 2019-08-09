@@ -1,8 +1,8 @@
 ---
-tags: [duplicate, hash, set]
+tags: [application/array/duplicate, data structure/set, method/search/hash]
 title: Contains Duplicate
 created: '2019-07-30T14:57:06.427Z'
-modified: '2019-08-02T05:33:17.184Z'
+modified: '2019-08-09T04:38:28.901Z'
 ---
 
 # Contains Duplicate

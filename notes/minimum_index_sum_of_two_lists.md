@@ -1,8 +1,8 @@
 ---
-tags: [sum]
+tags: [application/array, data structure/array, data structure/map]
 title: Minimum Index Sum of Two Lists
 created: '2019-07-30T15:43:48.074Z'
-modified: '2019-08-02T05:35:15.175Z'
+modified: '2019-08-09T04:54:05.199Z'
 ---
 
 # Minimum Index Sum of Two Lists

@@ -1,8 +1,8 @@
 ---
-tags: [BFS, DFS, leetcode/559, queue, tree]
+tags: [data structure/queue, data structure/stack, data structure/tree, leetcode/559, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Maximum Depth of N-ary Tree
 created: '2019-08-06T14:46:41.707Z'
-modified: '2019-08-06T15:20:16.984Z'
+modified: '2019-08-09T04:32:49.850Z'
 ---
 
 # Maximum Depth of N-ary Tree

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09]
+tags: [2019/08/09, data structure/stack, data structure/tree, method/traversal/dfs]
 title: Binary Tree Paths
 created: '2019-08-09T04:06:28.553Z'
-modified: '2019-08-09T04:06:46.421Z'
+modified: '2019-08-09T04:25:23.262Z'
 ---
 
 # Binary Tree Paths

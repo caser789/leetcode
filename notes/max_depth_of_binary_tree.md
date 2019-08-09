@@ -1,8 +1,8 @@
 ---
-tags: [BFS, depth, DFS, leetcode/104, tree]
+tags: [application/tree/depth, data structure/queue, data structure/stack, data structure/tree, leetcode/104, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Maximum Depth of Binary Tree
 created: '2019-08-06T15:20:22.138Z'
-modified: '2019-08-06T15:35:52.234Z'
+modified: '2019-08-09T04:27:31.391Z'
 ---
 
 # Maximum Depth of Binary Tree

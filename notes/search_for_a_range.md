@@ -1,8 +1,8 @@
 ---
-tags: [binary search/3, search]
+tags: [data structure/array, method/search/binary/3]
 title: Search for a Range
 created: '2019-08-02T05:54:36.743Z'
-modified: '2019-08-02T05:55:44.609Z'
+modified: '2019-08-09T04:40:51.194Z'
 ---
 
 # Search for a Range

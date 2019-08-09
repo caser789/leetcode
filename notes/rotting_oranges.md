@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, BFS, leetcode/994]
+tags: [2019/08/07, data structure/queue, data structure/tree, leetcode/994, method/traversal/bfs]
 title: Rotting Oranges
 created: '2019-08-07T14:40:46.100Z'
-modified: '2019-08-07T15:08:38.137Z'
+modified: '2019-08-09T04:47:04.989Z'
 ---
 
 # Rotting Oranges

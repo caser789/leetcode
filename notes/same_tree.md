@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08, BFS, leetcode/100]
+tags: [2019/08/08, data structure/queue, data structure/tree, leetcode/100, method/traversal/bfs]
 title: Same Tree
 created: '2019-08-08T16:10:30.452Z'
-modified: '2019-08-09T02:18:14.418Z'
+modified: '2019-08-09T04:47:36.822Z'
 ---
 
 # Same Tree

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, BFS, leetcode/993]
+tags: [2019/08/07, data structure/queue, data structure/tree, leetcode/993, method/traversal/bfs]
 title: Cousins in Binary Tree
 created: '2019-08-07T05:44:58.885Z'
-modified: '2019-08-07T05:47:53.390Z'
+modified: '2019-08-09T04:44:31.458Z'
 ---
 
 # Cousins in Binary Tree

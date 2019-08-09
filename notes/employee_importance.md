@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, BFS, leetcode/690]
+tags: [2019/08/07, data structure/queue, data structure/tree, leetcode/690, method/traversal/bfs]
 title: Employee Importance
 created: '2019-08-07T05:38:02.816Z'
-modified: '2019-08-07T14:04:25.737Z'
+modified: '2019-08-09T04:45:19.074Z'
 ---
 
 # Employee Importance

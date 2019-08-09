@@ -1,8 +1,8 @@
 ---
-tags: [anagram, hash]
+tags: [application/string/anagram, data structure/array, data structure/map, method/search/hash]
 title: Group Anagrams
 created: '2019-08-01T05:41:53.092Z'
-modified: '2019-08-02T05:33:54.076Z'
+modified: '2019-08-09T04:50:55.955Z'
 ---
 
 # Group Anagrams

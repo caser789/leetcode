@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, BFS, leetcode/101]
+tags: [2019/08/07, data structure/queue, data structure/tree, leetcode/101, method/traversal/bfs]
 title: Symmetric Tree
 created: '2019-08-07T14:22:53.723Z'
-modified: '2019-08-07T14:23:41.966Z'
+modified: '2019-08-09T04:48:05.494Z'
 ---
 
 # Symmetric Tree

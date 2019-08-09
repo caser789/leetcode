@@ -1,8 +1,8 @@
 ---
-tags: [binary search/1, n-array]
+tags: [application/array/n-array, method/search/binary/1]
 title: Median of Two Sorted Arrays
 created: '2019-08-04T04:12:16.842Z'
-modified: '2019-08-04T05:00:41.876Z'
+modified: '2019-08-09T04:52:31.070Z'
 ---
 
 # Median of Two Sorted Arrays

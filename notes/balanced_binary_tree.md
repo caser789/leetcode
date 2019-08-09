@@ -44,12 +44,13 @@ Return false.
 ## Solution
 
 ```python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
 
 class Solution(object):
     def isBalanced(self, root):
@@ -57,4 +58,44 @@ class Solution(object):
         :type root: TreeNode
         :rtype: bool
         """
+        stack = []
+        node = root
+        last = None
+        depths = {}
+        while stack or node:
+            if node:
+                stack.append(node)
+                node = node.left
+            else:
+                node = stack[-1]
+                if not node.right or node.right == last:
+                    last = stack.pop()
+                    left = depths.get(last.left, 0)
+                    right = depths.get(last.right, 0)
+                    if abs(left - right) > 1:
+                        return False
+                    depths[last] = max(left, right) + 1
+                    node = None
+                else:
+                    node = node.right
+        return True
+
+
+
+_1 = TreeNode(1)
+_2 = TreeNode(2)
+_3 = TreeNode(3)
+_4 = TreeNode(4)
+_5 = TreeNode(5)
+_6 = TreeNode(6)
+_7 = TreeNode(7)
+
+_1.left = _2
+_1.right = _3
+_2.left = _4
+_2.right = _5
+_4.left = _6
+_4.right = _7
+
+Solution().isBalanced(_1)
 ```

@@ -1,8 +1,8 @@
 ---
-tags: [binary search/2, minimum, peak, rotated]
+tags: [application/array/rotated/peak, application/array/sorted/peak, method/search/binary/2]
 title: Find Minimum in Rotated Sorted Array
 created: '2019-08-02T05:50:42.988Z'
-modified: '2019-08-03T08:20:05.195Z'
+modified: '2019-08-09T04:37:25.908Z'
 ---
 
 # Find Minimum in Rotated Sorted Array

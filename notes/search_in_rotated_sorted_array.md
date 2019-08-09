@@ -1,8 +1,8 @@
 ---
-tags: [binary search/1, binary search/2, peak, rotated]
+tags: [application/rotated array, application/sorted array/peak, method/search/binary/1, method/search/binary/2]
 title: Search in Rotated Sorted Array
 created: '2019-08-02T05:45:12.458Z'
-modified: '2019-08-03T08:20:11.698Z'
+modified: '2019-08-09T04:36:20.532Z'
 ---
 
 # Search in Rotated Sorted Array
