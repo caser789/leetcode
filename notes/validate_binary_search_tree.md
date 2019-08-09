@@ -51,10 +51,26 @@ Explanation: The root node's value is 5 but its right child's value is 4.
 #         self.left = None
 #         self.right = None
 
+
 class Solution(object):
     def isValidBST(self, root):
         """
         :type root: TreeNode
         :rtype: bool
         """
+        if not root:
+            return True
+        node = root
+        stack = []
+        prev = None
+        while stack or node:
+            while node:
+                stack.append(node)
+                node = node.left
+            node = stack.pop()
+            if prev is not None and node.val <= prev:
+                return False
+            prev = node.val
+            node = node.right
+        return True
 ```
