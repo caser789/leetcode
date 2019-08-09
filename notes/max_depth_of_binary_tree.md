@@ -2,7 +2,7 @@
 tags: [application/tree/depth, data structure/queue, data structure/stack, data structure/tree, leetcode/104, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Maximum Depth of Binary Tree
 created: '2019-08-06T15:20:22.138Z'
-modified: '2019-08-09T04:27:31.391Z'
+modified: '2019-08-09T09:54:40.528Z'
 ---
 
 # Maximum Depth of Binary Tree
@@ -109,8 +109,8 @@ class Solution(object):
             return 0
 
         nodes = [root]
-        depths = [1]
-        max_depth = 1
+        depths = [0]
+        max_depth = 0
         while nodes:
             n = nodes.pop()
             depth = depths.pop()
