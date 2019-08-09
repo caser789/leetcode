@@ -44,11 +44,13 @@ What if the BST is modified (insert/delete operations) often and you need to fin
 
 ```python
 # Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
 
 class Solution(object):
     def kthSmallest(self, root, k):
@@ -57,4 +59,36 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        if not root:
+            return
+
+        stack = []
+        node = root
+        i = 0
+        while stack or node:
+            while node:
+                stack.append(node)
+                node = node.left
+            node = stack.pop()
+            i += 1
+            if i == k:
+                return node.val
+            node = node.right
+
+
+
+_1 = TreeNode(1)
+_2 = TreeNode(2)
+_3 = TreeNode(3)
+_4 = TreeNode(4)
+_5 = TreeNode(5)
+_6 = TreeNode(6)
+
+_5.left = _3
+_5.right = _6
+_3.left = _2
+_3.right = _4
+_2.left = _1
+
+Solution().kthSmallest(_5, 1)
 ```
