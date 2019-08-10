@@ -1,8 +1,8 @@
 ---
-tags: [leetcode/752]
+tags: [2019/08/09, leetcode/752, method/traversal/bfs]
 title: Open the Lock
 created: '2019-08-05T05:53:45.083Z'
-modified: '2019-08-09T15:30:00.595Z'
+modified: '2019-08-10T03:11:04.999Z'
 ---
 
 # Open the Lock
