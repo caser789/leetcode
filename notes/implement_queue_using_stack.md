@@ -34,6 +34,8 @@ queue.empty(); // returns false
 
 ## Solution
 
+### method1
+
 ```python
 class MyQueue(object):
 
@@ -87,4 +89,50 @@ class MyQueue(object):
         :rtype: bool
         """
         return not self.n
+```
+
+### method 2
+
+```python
+class MyQueue(object):
+
+    def __init__(self):
+        """
+        Initialize your data structure here.
+        """
+        self.stack1 = []
+        self.stack2 = []
+
+    def push(self, x):
+        """
+        Push element x to the back of queue.
+        :type x: int
+        :rtype: None
+        """
+        while self.stack1:
+            self.stack2.append(self.stack1.pop())
+        self.stack2.append(x)
+        while self.stack2:
+            self.stack1.append(self.stack2.pop())
+
+    def pop(self):
+        """
+        Removes the element from in front of queue and returns that element.
+        :rtype: int
+        """
+        return self.stack1.pop()
+
+    def peek(self):
+        """
+        Get the front element.
+        :rtype: int
+        """
+        return self.stack1[-1]
+
+    def empty(self):
+        """
+        Returns whether the queue is empty.
+        :rtype: bool
+        """
+        return not self.stack1
 ```
