@@ -1,7 +1,8 @@
 ---
+tags: [2019/08/10, leetcode/279]
 title: Perfect Squares
 created: '2019-08-05T05:56:38.797Z'
-modified: '2019-08-05T05:56:52.569Z'
+modified: '2019-08-10T04:57:42.150Z'
 ---
 
 # Perfect Squares
