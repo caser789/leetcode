@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/10, leetcode/947, method/union find]
+tags: [2019/08/11, leetcode/947, method/union find]
 title: Most Stones Removed with Same Row or Column
 created: '2019-08-11T02:23:00.531Z'
-modified: '2019-08-11T02:24:07.116Z'
+modified: '2019-08-11T05:24:59.533Z'
 ---
 
 # Most Stones Removed with Same Row or Column
