@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/BST, leetcode/98, TODO]
+tags: [2019/08/09, data structure/BST, leetcode/98, method/traversal/inorder]
 title: Validate Binary Search Tree
 created: '2019-08-09T09:39:15.214Z'
-modified: '2019-08-09T09:46:10.514Z'
+modified: '2019-08-11T13:41:54.205Z'
 ---
 
 # Validate Binary Search Tree
