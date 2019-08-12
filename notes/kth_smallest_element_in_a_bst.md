@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, leetcode/230, TODO]
+tags: [2019/08/09, data structure/tree, leetcode/230, method/traversal/inorder]
 title: Kth Smallest Element in a BST
 created: '2019-08-09T09:41:18.677Z'
-modified: '2019-08-09T09:46:01.754Z'
+modified: '2019-08-11T14:15:48.558Z'
 ---
 
 # Kth Smallest Element in a BST
