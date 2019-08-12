@@ -135,3 +135,32 @@ class Solution(object):
         yield s[:index] + s[index].upper() + s[index+1:], index+1
         yield s[:index] + s[index].lower() + s[index+1:], index+1
 ```
+
+### from xue yan
+
+```python
+class Solution(object):
+    def letterCasePermutation(self, S):
+        """
+        >>> S = "a1b2"
+        >>> Solution().letterCasePermutation(S)
+        ["a1b2", "a1B2", "A1b2", "A1B2"]
+        >>> S = "3z4"
+        >>> Solution().letterCasePermutation(S)
+        ["3z4", "3Z4"]
+        >>> S = "12345"
+        >>> Solution().letterCasePermutation(S)
+        ["12345"]
+        """
+        res = ['']
+        for c in S:
+            tmp = []
+            for s in res:
+                if c.isdigit():
+                    tmp.append(s + c)
+                else:
+                    tmp.append(s + c.lower())
+                    tmp.append(s + c.upper())
+            res = tmp
+        return res
+```
