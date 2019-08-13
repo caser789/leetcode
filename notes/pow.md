@@ -1,8 +1,8 @@
 ---
-tags: [math]
+tags: [leetcode/50, math, method/recursion]
 title: 'Pow(x, n)'
 created: '2019-08-03T12:49:16.150Z'
-modified: '2019-08-03T13:01:57.188Z'
+modified: '2019-08-13T15:33:20.109Z'
 ---
 
 # Pow(x, n)
