@@ -1,8 +1,8 @@
 ---
-tags: [application/tree/depth, data structure/queue, data structure/stack, data structure/tree, leetcode/104, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/08/13, leetcode/104, method/recursion]
 title: Maximum Depth of Binary Tree
-created: '2019-08-06T15:20:22.138Z'
-modified: '2019-08-09T09:54:40.528Z'
+created: '2019-08-13T15:30:54.876Z'
+modified: '2019-08-13T15:31:18.246Z'
 ---
 
 # Maximum Depth of Binary Tree
@@ -26,11 +26,8 @@ Given binary tree [3,9,20,null,null,15,7],
 return its depth = 3.
 ```
 
-
 ## Solution
 
-### BFS
-
 ```python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -39,89 +36,14 @@ return its depth = 3.
 #         self.left = None
 #         self.right = None
 
-from collections import deque
-
-
 class Solution(object):
     def maxDepth(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
-        depth = 0
-        if not root:
-            return depth
-        q = deque()
-        q.append(root)
-        while q:
-            depth += 1
-            for _ in range(len(q)):
-                n = q.popleft()
-                if n.left:
-                    q.append(n.left)
-                if n.right:
-                    q.append(n.right)
-        return depth
-```
-
-### Recur
-
-```python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-from collections import deque
-
-
-class Solution(object):
-    def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if not root:
+        if root is None:
             return 0
+
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 ```
-
-
-### DFS
-
-```python
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
-
-class Solution(object):
-    def maxDepth(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if not root:
-            return 0
-
-        nodes = [root]
-        depths = [0]
-        max_depth = 0
-        while nodes:
-            n = nodes.pop()
-            depth = depths.pop()
-
-            if not n:
-                max_depth = max(max_depth, depth)
-            else:
-                nodes.append(n.left)
-                depths.append(depth+1)
-                nodes.append(n.right)
-                depths.append(depth+1)
-        return max_depth
-```
-
