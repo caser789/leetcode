@@ -2,12 +2,14 @@
 tags: [2019/08/13, leetcode/119, method/recursion]
 title: Pascal's Triangle II
 created: '2019-08-13T15:21:50.707Z'
-modified: '2019-08-13T15:22:40.142Z'
+modified: '2019-08-13T15:23:55.285Z'
 ---
 
 # Pascal's Triangle II
 
 Given a non-negative index k where k ≤ 33, return the kth index row of the Pascal's triangle.
+
+![pic](https://upload.wikimedia.org/wikipedia/commons/0/0d/PascalTriangleAnimated2.gif)
 
 Note that the row index starts from 0.
 
