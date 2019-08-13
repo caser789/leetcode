@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/13, method/recursion]
+tags: [2019/08/13, leetcode/118, method/recursion]
 title: Pascal's Triangle
 created: '2019-08-13T15:17:05.885Z'
-modified: '2019-08-13T15:19:57.394Z'
+modified: '2019-08-13T15:21:47.044Z'
 ---
 
 #  Pascal's Triangle
