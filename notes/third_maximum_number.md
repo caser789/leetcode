@@ -1,50 +1,74 @@
 ---
-tags: [2019/08/15, data structure/priority queue, leetcode/215]
-title: Kth Largest Element in an Array
-created: '2019-08-15T15:35:48.783Z'
-modified: '2019-08-15T15:40:14.884Z'
+tags: [2019/08/15, data structure/priority queue, leetcode/414]
+title: Third Maximum Number
+created: '2019-08-15T15:42:01.178Z'
+modified: '2019-08-15T16:03:24.457Z'
 ---
 
-# Kth Largest Element in an Array
+# Third Maximum Number
 
-Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
 
 ### Example 1:
 
 ```
-Input: [3,2,1,5,6,4] and k = 2
-Output: 5
+Input: [3, 2, 1]
+
+Output: 1
+
+Explanation: The third maximum is 1.
 ```
 
 ### Example 2:
 
 ```
-Input: [3,2,3,1,2,4,5,5,6] and k = 4
-Output: 4
+Input: [1, 2]
+
+Output: 2
+
+Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
 ```
 
-> You may assume k is always valid, 1 ≤ k ≤ array's length.
+### Example 3:
+
+```
+Input: [2, 2, 3, 1]
+
+Output: 1
+
+Explanation: Note that the third maximum here means the third maximum distinct number.
+Both numbers with value 2 are both considered as second maximum.
+```
 
 ## Solution
 
 ```python
 class Solution(object):
-    def findKthLargest(self, nums, k):
+    def thirdMax(self, nums):
         """
         :type nums: List[int]
-        :type k: int
         :rtype: int
         """
-        pq = MinPriorityQueue()
+        if not nums:
+            return
 
+        _max = nums[0]
+        pq = MinPriorityQueue()
+        s = set()
         for num in nums:
-            if len(pq) < k:
+            _max = max(_max, num)
+            if num in s: continue
+            if len(pq) < 3:
                 pq.push(num)
+                s.add(num)
             else:
                 if num > pq.min:
                     pq.pop()
                     pq.push(num)
-        return pq.min if len(pq) else None
+                    s.add(num)
+        if len(pq) == 3:
+            return pq.min
+        return _max
 
 
 class MinPriorityQueue(object):

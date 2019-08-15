@@ -1,50 +1,21 @@
----
-tags: [2019/08/15, data structure/priority queue, leetcode/215]
-title: Kth Largest Element in an Array
-created: '2019-08-15T15:35:48.783Z'
-modified: '2019-08-15T15:40:14.884Z'
----
-
-# Kth Largest Element in an Array
-
-Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element.
-
-### Example 1:
-
-```
-Input: [3,2,1,5,6,4] and k = 2
-Output: 5
-```
-
-### Example 2:
-
-```
-Input: [3,2,3,1,2,4,5,5,6] and k = 4
-Output: 4
-```
-
-> You may assume k is always valid, 1 ≤ k ≤ array's length.
-
-## Solution
-
-```python
 class Solution(object):
-    def findKthLargest(self, nums, k):
+    def thirdMax(self, nums):
         """
         :type nums: List[int]
-        :type k: int
         :rtype: int
         """
-        pq = MinPriorityQueue()
+        if not nums:
+            return
 
+        _max = nums[0]
+        pq = MinPriorityQueue()
+        s = set()
         for num in nums:
-            if len(pq) < k:
+            _max = max(_max, num)
+            if num in s: continue
+            if len(pq) < 3:
                 pq.push(num)
-            else:
-                if num > pq.min:
-                    pq.pop()
-                    pq.push(num)
-        return pq.min if len(pq) else None
+                s.add(num)
 
 
 class MinPriorityQueue(object):
@@ -201,4 +172,3 @@ class MinPriorityQueue(object):
         for i in range(self.n+1):
             tmp[i] = self.keys[i]
         self.keys = tmp
-```
