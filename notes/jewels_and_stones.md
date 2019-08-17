@@ -1,8 +1,8 @@
 ---
-tags: [hash]
+tags: [2019/08/17, data structure/set, leetcode/771, method/search/hash]
 title: Jewels and Stones
-created: '2019-08-01T05:45:12.027Z'
-modified: '2019-08-02T05:34:49.454Z'
+created: '2019-08-17T03:37:44.836Z'
+modified: '2019-08-17T03:38:37.307Z'
 ---
 
 # Jewels and Stones
@@ -25,9 +25,9 @@ Input: J = "z", S = "ZZ"
 Output: 0
 ```
 
+
 > S and J will consist of letters and have length at most 50.
 > The characters in J are distinct.
-
 
 ## Solution
 
