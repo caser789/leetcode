@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/13, leetcode/509, method/recursion]
+tags: [2019/08/13, leetcode/509, method/dp, method/recursion]
 title: Fibonacci Number
 created: '2019-08-13T15:26:28.429Z'
-modified: '2019-08-13T15:27:03.033Z'
+modified: '2019-08-17T09:11:52.769Z'
 ---
 
 # Fibonacci Number
@@ -44,6 +44,8 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 
 ## Solution
 
+### recursion
+
 ```python
 class Solution(object):
     def fib(self, N):
@@ -59,4 +61,25 @@ class Solution(object):
             store[N] = res
             return res
         return _fib(N)
+```
+
+### dp
+
+```python
+class Solution(object):
+    def fib(self, n):
+        """
+        :type N: int
+        :rtype: int
+        """
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        dp = [0] * (n+1)
+        dp[1] = 1
+        for i in range(2, n+1):
+            dp[i] = dp[i-1] + dp[i-2]
+        return dp[n]
+
 ```

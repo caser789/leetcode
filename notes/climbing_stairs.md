@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/13, leetcode/70, method/recursion]
+tags: [2019/08/13, leetcode/70, method/dp, method/recursion]
 title: Climbing Stairs
 created: '2019-08-13T15:28:56.433Z'
-modified: '2019-08-13T15:29:21.996Z'
+modified: '2019-08-17T09:16:09.892Z'
 ---
 
 # Climbing Stairs
@@ -36,6 +36,8 @@ Explanation: There are three ways to climb to the top.
 
 ## Solution
 
+### recursion
+
 ```python
 class Solution(object):
     def climbStairs(self, n):
@@ -51,4 +53,28 @@ class Solution(object):
             store[n] = res
             return res
         return _climb(n)
+```
+
+
+### dp
+
+```python
+class Solution(object):
+    def climbStairs(self, n):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n == 0:
+            return 0
+        if n == 1:
+            return 1
+        if n == 2:
+            return 2
+        dp = [0] * (n+1)
+        dp[1] = 1
+        dp[2] = 2
+        for i in range(3, n+1):
+            dp[i] = dp[i-1] + dp[i-2]
+        return dp[n]
 ```
