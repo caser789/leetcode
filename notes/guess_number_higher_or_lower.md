@@ -1,8 +1,8 @@
 ---
-tags: [binary search]
+tags: [2019/08/18, leetcode/374, method/search/binary/1]
 title: Guess Number Higher or Lower
 created: '2019-08-02T05:44:30.312Z'
-modified: '2019-08-02T05:45:00.383Z'
+modified: '2019-08-18T09:34:21.967Z'
 ---
 
 # Guess Number Higher or Lower
