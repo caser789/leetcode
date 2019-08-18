@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/17, leetcode/9]
+tags: [2019/08/17, application/array/palindrome, leetcode/9]
 title: Palindrome Number
 created: '2019-08-18T04:15:08.545Z'
-modified: '2019-08-18T04:15:35.565Z'
+modified: '2019-08-18T04:17:45.767Z'
 ---
 
 # Palindrome Number
@@ -58,4 +58,27 @@ class Solution(object):
             if digits[i] != digits[n-1-i]:
                 return False
         return True
+```
+
+### official
+
+```python
+class Solution(object):
+    def isPalindrome(self, x):
+        """
+        :type x: int
+        :rtype: bool
+        """
+        if x < 0:
+            return False
+        if x == 0:
+            return True
+        if x % 10 == 0:
+            return False
+
+        num = 0
+        while x > num:
+            x, r = divmod(x, 10)
+            num = num * 10 + r
+        return num == x or x == num/10
 ```
