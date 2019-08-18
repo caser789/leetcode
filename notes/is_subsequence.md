@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/18, leetcode/392]
+tags: [2019/08/18, leetcode/392, method/search/binary]
 title: Is Subsequence
 created: '2019-08-18T10:14:01.534Z'
-modified: '2019-08-18T10:14:30.538Z'
+modified: '2019-08-18T10:33:20.131Z'
 ---
 
 # Is Subsequence
