@@ -1,8 +1,8 @@
 ---
-tags: [application/array/k-closest, method/search/binary/3]
+tags: [2019/08/18, application/array/k-closest, leetcode/658, method/search/binary/3]
 title: Find K Closest Elements
 created: '2019-08-02T05:56:10.295Z'
-modified: '2019-08-09T04:53:02.598Z'
+modified: '2019-08-18T10:12:12.408Z'
 ---
 
 # Find K Closest Elements
