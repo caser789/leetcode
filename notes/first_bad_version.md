@@ -1,8 +1,8 @@
 ---
-tags: [binary search]
+tags: [2019/08/18, leetcode/278, method/search/binary]
 title: First Bad Version
 created: '2019-08-02T05:49:09.658Z'
-modified: '2019-08-02T05:49:35.896Z'
+modified: '2019-08-18T09:29:52.726Z'
 ---
 
 # First Bad Version
