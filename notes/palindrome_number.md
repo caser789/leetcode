@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/17, application/array/palindrome, leetcode/9]
+tags: [2019/08/18, application/array/palindrome, leetcode/9]
 title: Palindrome Number
 created: '2019-08-18T04:15:08.545Z'
-modified: '2019-08-18T04:17:45.767Z'
+modified: '2019-08-18T04:39:22.708Z'
 ---
 
 # Palindrome Number

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/17, leetcode/27, method/2 pointers]
+tags: [2019/08/18, leetcode/27, method/2 pointers]
 title: Remove Element
 created: '2019-08-18T04:26:48.656Z'
-modified: '2019-08-18T04:35:03.112Z'
+modified: '2019-08-18T04:38:53.292Z'
 ---
 
 # Remove Element
