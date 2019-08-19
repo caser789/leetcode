@@ -1,8 +1,8 @@
 ---
-tags: [hash, top-k]
+tags: [2019/08/19, data structure/map, data structure/priority queue, leetcode/347, method/search/search, method/sort]
 title: Top K Frequent Elements
 created: '2019-08-01T05:46:51.151Z'
-modified: '2019-08-02T05:35:35.410Z'
+modified: '2019-08-19T13:25:01.499Z'
 ---
 
 # Top K Frequent Elements
