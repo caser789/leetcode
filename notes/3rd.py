@@ -16,6 +16,14 @@ class Solution(object):
             if len(pq) < 3:
                 pq.push(num)
                 s.add(num)
+            else:
+                if num > pq.min:
+                    pq.pop()
+                    pq.push(num)
+                    s.add(num)
+        if len(pq) == 3:
+            return pq.min
+        return _max
 
 
 class MinPriorityQueue(object):
