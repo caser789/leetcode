@@ -1,68 +1,81 @@
 ---
-tags: [2019/08/19, data structure/priority queue, leetcode/973, method/union find]
-title: K Closest Points to Origin
-created: '2019-08-19T12:46:57.686Z'
-modified: '2019-08-19T13:07:16.491Z'
+tags: [2019/08/19, leetcode/451]
+title: Sort Characters By Frequency
+created: '2019-08-19T13:07:23.672Z'
+modified: '2019-08-19T13:08:04.377Z'
 ---
 
-# K Closest Points to Origin
+# Sort Characters By Frequency
 
-We have a list of points on the plane.  Find the K closest points to the origin (0, 0).
-
-(Here, the distance between two points on a plane is the Euclidean distance.)
-
-You may return the answer in any order.  The answer is guaranteed to be unique (except for the order that it is in.)
+Given a string, sort it in decreasing order based on the frequency of characters.
 
 ### Example 1:
 
 ```
-Input: points = [[1,3],[-2,2]], K = 1
-Output: [[-2,2]]
+Input:
+"tree"
+
+Output:
+"eert"
+
 Explanation:
-The distance between (1, 3) and the origin is sqrt(10).
-The distance between (-2, 2) and the origin is sqrt(8).
-Since sqrt(8) < sqrt(10), (-2, 2) is closer to the origin.
-We only want the closest K = 1 points from the origin, so the answer is just [[-2,2]].
+'e' appears twice while 'r' and 't' both appear once.
+So 'e' must appear before both 'r' and 't'. Therefore "eetr" is also a valid answer.
 ```
 
 ### Example 2:
 
 ```
-Input: points = [[3,3],[5,-1],[-2,4]], K = 2
-Output: [[3,3],[-2,4]]
-(The answer [[-2,4],[3,3]] would also be accepted.)
+Input:
+"cccaaa"
+
+Output:
+"cccaaa"
+
+Explanation:
+Both 'c' and 'a' appear three times, so "aaaccc" is also a valid answer.
+Note that "cacaca" is incorrect, as the same characters must be together.
 ```
 
+### Example 3:
 
-> 1 <= K <= points.length <= 10000
-> -10000 < points[i][0] < 10000
-> -10000 < points[i][1] < 10000
+```
+Input:
+"Aabb"
+
+Output:
+"bbAa"
+
+Explanation:
+"bbaA" is also a valid answer, but "Aabb" is incorrect.
+Note that 'A' and 'a' are treated as two different characters.
+```
 
 ## Solution
 
+### priority queue
+
 ```python
 class Solution(object):
-    def kClosest(self, points, K):
+    def frequencySort(self, s):
         """
-        :type points: List[List[int]]
-        :type K: int
-        :rtype: List[List[int]]
+        :type s: str
+        :rtype: str
         """
+        store = {}
+        for c in s:
+            store.setdefault(c, 0)
+            store[c] += 1
+
         pq = MaxPriorityQueue()
-        for x, y in points:
-            d = x*x + y*y
-            if len(pq) == K:
-                if d < pq.max[0]:
-                    pq.pop()
-                    pq.push((d, x, y))
-            else:
-                pq.push((d, x, y))
+        for c, cnt in store.items():
+            pq.push((cnt, c))
+
         res = []
         for _ in range(len(pq)):
-            d, x, y = pq.pop()
-            res.append([x, y])
-        return res
-
+            cnt, c = pq.pop()
+            res.append(c * cnt)
+        return ''.join(res)
 
 
 class MaxPriorityQueue(object):
@@ -226,4 +239,27 @@ class MaxPriorityQueue(object):
         for i in range(self.n+1):
             tmp[i] = self.keys[i]
         self.keys = tmp
+```
+
+### sort
+
+```python
+class Solution(object):
+    def frequencySort(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+        store = {}
+        for c in s:
+            store.setdefault(c, 0)
+            store[c] += 1
+
+        items = store.items()
+        items.sort(key=lambda x: -x[1])
+
+        res = []
+        for c, cnt in items:
+            res.append(c * cnt)
+        return ''.join(res)
 ```
