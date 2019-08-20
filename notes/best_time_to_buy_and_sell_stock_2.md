@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/20, leetcode/122]
+tags: [2019/08/20, leetcode/122, method/2 pointers, method/sort/quick]
 title: Best Time to Buy and Sell Stock II
 created: '2019-08-20T13:13:34.175Z'
-modified: '2019-08-20T13:13:54.503Z'
+modified: '2019-08-20T13:48:12.444Z'
 ---
 
 # Best Time to Buy and Sell Stock II
@@ -43,6 +43,8 @@ Explanation: In this case, no transaction is done, i.e. max profit = 0.
 
 ## Solution
 
+### 2 pointer
+
 ```python
 class Solution(object):
     def maxProfit(self, prices):
@@ -70,4 +72,30 @@ class Solution(object):
         if hi > lo:
             s += prices[hi] - prices[lo]
         return s
+```
+
+### quick sort
+
+```python
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if not prices: return 0
+        i = 0
+        n = len(prices)
+        valley = prices[i]
+        peak = prices[i]
+        profit = 0
+        while i < n - 1:
+            while i < n - 1 and prices[i] >= prices[i+1]:
+                i += 1
+            valley = prices[i]
+            while i < n - 1 and prices[i] <= prices[i+1]:
+                i += 1
+            peak = prices[i]
+            profit += peak - valley
+        return profit
 ```
