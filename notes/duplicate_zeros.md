@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/20, leetcode/1089]
+tags: [2019/08/20, leetcode/1089, method/2 pointers]
 title: Duplicate Zeros
 created: '2019-08-20T12:51:12.191Z'
-modified: '2019-08-20T12:51:36.504Z'
+modified: '2019-08-20T13:10:51.654Z'
 ---
 
 # Duplicate Zeros
