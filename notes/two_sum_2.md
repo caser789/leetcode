@@ -1,7 +1,8 @@
 ---
+tags: [2019/08/20, leetcode/167, method/search/binary/1]
 title: Two Sum II - Input array is sorted
 created: '2019-08-03T15:01:15.844Z'
-modified: '2019-08-03T15:01:34.173Z'
+modified: '2019-08-20T14:46:43.368Z'
 ---
 
 # Two Sum II - Input array is sorted
