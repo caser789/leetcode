@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/21, leetcode/1010]
+tags: [2019/08/21, knack, leetcode/1010]
 title: Pairs of Songs With Total Durations Divisible by 60
 created: '2019-08-21T12:59:01.373Z'
-modified: '2019-08-21T12:59:34.321Z'
+modified: '2019-08-21T13:12:23.720Z'
 ---
 
 # Pairs of Songs With Total Durations Divisible by 60
