@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/21, application/array/2-D, leetcode/840]
+tags: [2019/08/22, application/array/2-D, leetcode/840]
 title: Magic Squares In Grid
 created: '2019-08-22T12:50:15.981Z'
-modified: '2019-08-22T12:50:51.981Z'
+modified: '2019-08-22T13:45:13.511Z'
 ---
 
 # Magic Squares In Grid
