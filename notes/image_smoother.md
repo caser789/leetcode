@@ -1,9 +1,8 @@
 ---
-
-tags: [2019/08/22, leetcode/661]
+tags: [2019/08/22, application/array/2-D, leetcode/661]
 title: Image Smoother
 created: '2019-08-22T13:54:44.757Z'
-modified: '2019-08-22T13:55:04.587Z'
+modified: '2019-08-22T14:05:17.441Z'
 ---
 
 # Image Smoother
