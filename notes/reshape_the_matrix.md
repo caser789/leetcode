@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/22, leetcode/566]
+tags: [2019/08/23, application/array/2-D, leetcode/566]
 title: Reshape the Matrix
 created: '2019-08-23T13:39:33.752Z'
-modified: '2019-08-23T13:40:00.442Z'
+modified: '2019-08-23T13:50:55.447Z'
 ---
 
 # Reshape the Matrix
