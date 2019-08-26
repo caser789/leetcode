@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/15, leetcode/912, method/dnc, method/sort]
+tags: [2019/08/15, leetcode/912, method/devide and conquer, method/sort]
 title: Sort an Array
 created: '2019-08-15T14:32:55.754Z'
-modified: '2019-08-15T14:45:04.989Z'
+modified: '2019-08-26T15:02:00.271Z'
 ---
 
 # Sort an Array

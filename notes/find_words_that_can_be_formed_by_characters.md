@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/26, leetcode/1160]
+tags: [2019/08/26, data structure/map, leetcode/1160, method/search/hash]
 title: Find Words That Can Be Formed by Characters
 created: '2019-08-26T14:12:51.022Z'
-modified: '2019-08-26T14:13:15.270Z'
+modified: '2019-08-26T14:19:37.148Z'
 ---
 
 # Find Words That Can Be Formed by Characters
