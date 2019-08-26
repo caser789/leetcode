@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/23, leetcode/999]
+tags: [2019/08/23, application/array/2-D, leetcode/999]
 title: Available Captures for Rook
 created: '2019-08-23T13:51:29.490Z'
-modified: '2019-08-23T13:51:54.915Z'
+modified: '2019-08-23T14:18:36.488Z'
 ---
 
 # Available Captures for Rook
