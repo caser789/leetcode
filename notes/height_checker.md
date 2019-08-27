@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/26]
+tags: [2019/08/27, data structure/array, leetcode/1051, method/index]
 title: Height Checker
 created: '2019-08-27T14:08:10.670Z'
-modified: '2019-08-27T14:08:20.505Z'
+modified: '2019-08-27T14:34:46.493Z'
 ---
 
 # Height Checker
