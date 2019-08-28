@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/28, leetcode/888]
+tags: [2019/08/28, data structure/set, leetcode/888, method/search/hash]
 title: Fair Candy Swap
 created: '2019-08-28T14:02:39.677Z'
-modified: '2019-08-28T14:02:59.704Z'
+modified: '2019-08-28T14:16:22.937Z'
 ---
 
 # Fair Candy Swap
