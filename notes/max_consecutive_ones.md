@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/28, leetcode/485]
+tags: [2019/08/28, application/array/status, leetcode/485]
 title: Max Consecutive Ones
 created: '2019-08-28T14:51:48.796Z'
-modified: '2019-08-28T14:52:10.489Z'
+modified: '2019-08-28T15:07:28.036Z'
 ---
 
 # Max Consecutive Ones
