@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/28, leetcode/283]
+tags: [2019/08/28, leetcode/283, method/2 pointers]
 title: Move Zeroes
 created: '2019-08-28T15:08:24.963Z'
-modified: '2019-08-28T15:08:42.837Z'
+modified: '2019-08-28T15:12:43.088Z'
 ---
 
 # Move Zeroes

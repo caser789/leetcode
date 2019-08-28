@@ -1,8 +1,8 @@
 ---
-tags: [application/array/duplicate, data structure/set, method/search/hash]
+tags: [2019/08/28, application/array/duplicate, data structure/set, leetcode/217, method/search/hash]
 title: Contains Duplicate
 created: '2019-07-30T14:57:06.427Z'
-modified: '2019-08-09T04:38:28.901Z'
+modified: '2019-08-28T15:14:52.642Z'
 ---
 
 # Contains Duplicate
