@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/27]
+tags: [2019/08/28, application/array/2-D, data structure/map, leetcode/766, method/search/hash]
 title: Toeplitz Matrix
 created: '2019-08-28T13:43:14.439Z'
-modified: '2019-08-28T13:43:25.883Z'
+modified: '2019-08-28T14:02:37.690Z'
 ---
 
 # Toeplitz Matrix
@@ -50,8 +50,6 @@ The diagonal "[1, 2]" has different elements.
 
 ## Solution
 
-### Intuition
-
 ```python
 class Solution(object):
     def isToeplitzMatrix(self, matrix):
@@ -59,59 +57,4 @@ class Solution(object):
         :type matrix: List[List[int]]
         :rtype: bool
         """
-        m = len(matrix)
-        n = len(matrix[0])
-        for r in range(1, m):
-            if not self.has_same_elements(r, 0, matrix, m, n):
-                return False
-        for c in range(n):
-            if not self.has_same_elements(0, c, matrix, m, n):
-                return False
-        return True
-
-    def has_same_elements(self, i, j, matrix, m, n):
-        v = matrix[i][j]
-        while i + 1 < m and j + 1 < n:
-            i += 1
-            j += 1
-            if matrix[i][j] != v:
-                return False
-        return True
-```
-
-###  Hash
-
-```python
-class Solution(object):
-    def isToeplitzMatrix(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: bool
-        """
-        groups = {}
-        for r, row in enumerate(matrix):
-            for c, v in enumerate(row):
-                group = r - c
-                if group not in groups:
-                    groups[group] = v
-                elif groups[group] != v:
-                    return False
-        return True
-```
-
-### Other
-
-```python
-class Solution(object):
-    def isToeplitzMatrix(self, matrix):
-        """
-        :type matrix: List[List[int]]
-        :rtype: bool
-        """
-        for r, row in enumerate(matrix):
-            for c, v in enumerate(row):
-                if r == 0: continue
-                if c == 0: continue
-                if v != matrix[r-1][c-1]: return False
-        return True
 ```
