@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/27, leetcode/1170]
+tags: [2019/08/27, leetcode/1170, method/index, method/search/binary/1]
 title: Compare Strings by Frequency of the Smallest Character
 created: '2019-08-27T15:37:58.107Z'
-modified: '2019-08-27T15:38:18.747Z'
+modified: '2019-08-27T15:48:24.674Z'
 ---
 
 # Compare Strings by Frequency of the Smallest Character
