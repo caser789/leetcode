@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/29, leetcode/674]
+tags: [2019/08/29, leetcode/674, method/sliding window]
 title: Longest Continuous Increasing Subsequence
 created: '2019-08-29T14:59:53.217Z'
-modified: '2019-08-29T15:00:13.215Z'
+modified: '2019-08-29T15:06:40.746Z'
 ---
 
 # Longest Continuous Increasing Subsequence

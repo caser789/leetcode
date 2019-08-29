@@ -1,8 +1,8 @@
 ---
-tags: [hash, n-sum]
+tags: [2019/08/29, hash, leetcode/1, method/search/hash, n-sum]
 title: Two Sum
 created: '2019-07-30T15:39:58.401Z'
-modified: '2019-08-02T05:35:42.338Z'
+modified: '2019-08-29T15:08:26.338Z'
 ---
 
 # Two Sum
