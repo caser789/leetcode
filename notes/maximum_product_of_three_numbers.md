@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/29, leetcode/628]
+tags: [2019/08/29, leetcode/628, method/variable]
 title: Maximum Product of Three Numbers
 created: '2019-08-29T14:23:28.125Z'
-modified: '2019-08-29T14:25:41.848Z'
+modified: '2019-08-29T14:37:35.879Z'
 ---
 
 # Maximum Product of Three Numbers
