@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/29, leetcode/26]
+tags: [2019/08/29, leetcode/26, method/2 pointers]
 title: Remove Duplicates from Sorted Array
 created: '2019-08-29T15:18:36.392Z'
-modified: '2019-08-29T15:18:54.385Z'
+modified: '2019-08-29T15:26:26.706Z'
 ---
 
 # Remove Duplicates from Sorted Array
