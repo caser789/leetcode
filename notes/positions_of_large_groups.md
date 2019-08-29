@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/28, leetcode/830]
+tags: [2019/08/28, application/array/status, leetcode/830, method/2 pointers]
 title: Positions of Large Groups
 created: '2019-08-28T15:39:08.334Z'
-modified: '2019-08-28T15:39:25.275Z'
+modified: '2019-08-28T15:53:18.747Z'
 ---
 
 # Positions of Large Groups
