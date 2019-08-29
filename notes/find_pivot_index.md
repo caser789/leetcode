@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/29, leetcode/724]
+tags: [2019/08/29, leetcode/724, method/math]
 title: Find Pivot Index
 created: '2019-08-29T15:28:22.382Z'
-modified: '2019-08-29T15:28:42.277Z'
+modified: '2019-08-29T15:37:11.833Z'
 ---
 
 #  Find Pivot Index
