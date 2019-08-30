@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/30, leetcode/88]
+tags: [2019/08/30, leetcode/88, method/sort/merge]
 title: Merge Sorted Array
 created: '2019-08-30T14:48:44.129Z'
-modified: '2019-08-30T14:49:00.020Z'
+modified: '2019-08-30T15:24:47.443Z'
 ---
 
 # Merge Sorted Array

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/30, leetcode/941]
+tags: [2019/08/30, leetcode/941, TODO]
 title: Valid Mountain Array
 created: '2019-08-30T14:50:55.201Z'
-modified: '2019-08-30T14:52:11.460Z'
+modified: '2019-08-30T15:25:22.557Z'
 ---
 
 # Valid Mountain Array
@@ -39,6 +39,8 @@ Output: true
 
 ## Solution
 
+### intuitive
+
 ```python
 class Solution(object):
     def validMountainArray(self, A):
@@ -46,5 +48,25 @@ class Solution(object):
         :type A: List[int]
         :rtype: bool
         """
+        n = len(A)
+        if n < 3:
+            return False
 
+        increasing = None
+        turn = 0
+        for i in range(len(A)-1):
+            if A[i] == A[i+1]: return False
+            if increasing is None and A[i] < A[i+1]:
+                increasing = True
+            elif increasing is True:
+                if turn > 0: return False
+                if A[i] > A[i+1]:
+                    turn = 1
+                    increasing = False
+            elif  increasing is False:
+                if A[i] < A[i+1]: return False
+            else:
+                return False
+        if turn == 0: return False
+        return True
 ```
