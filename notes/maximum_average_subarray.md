@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/30, leetcode/643]
+tags: [2019/08/30, leetcode/643, method/sliding window]
 title: Maximum Average Subarray I
 created: '2019-08-30T14:46:54.026Z'
-modified: '2019-08-30T14:47:11.155Z'
+modified: '2019-08-30T15:19:47.597Z'
 ---
 
 # Maximum Average Subarray I
