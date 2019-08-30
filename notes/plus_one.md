@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/29, leetcode/66]
+tags: [2019/08/29, application/add, leetcode/66]
 title: Plus One
 created: '2019-08-29T15:37:54.610Z'
-modified: '2019-08-29T15:38:12.451Z'
+modified: '2019-08-29T15:41:42.550Z'
 ---
 
 # Plus One
