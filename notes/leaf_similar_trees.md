@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08]
+tags: [2019/08/08, leetcode/872]
 title: Leaf-Similar Trees
 created: '2019-08-08T15:09:36.423Z'
-modified: '2019-08-08T15:10:52.966Z'
+modified: '2019-08-31T09:49:37.037Z'
 ---
 
 # Leaf-Similar Trees

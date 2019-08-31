@@ -41,5 +41,76 @@ This is the maximum distance possible, so the answer is 3.
 
 ## Solution
 
+### 2 arrays
+
 ```python
+class Solution(object):
+    def maxDistToClosest(self, digits):
+        """
+        :type seats: List[int]
+        :rtype: int
+        """
+        n = len(digits)
+        left = [n] * n
+        right = [n] * n
+
+        for i in range(n):
+            if digits[i] == 1:
+                left[i] = 0
+            elif i > 0:
+                left[i] = left[i-1] + 1
+
+        for i in range(n-1, -1, -1):
+            if digits[i] == 1:
+                right[i] = 0
+            elif i < n - 1:
+                right[i] = right[i+1] + 1
+
+        return max(min(left[i], right[i]) for i, digit in enumerate(digits) if not digit)
+```
+
+### 2 pointers
+
+```python
+class Solution(object):
+    def maxDistToClosest(self, digits):
+        """
+        :type seats: List[int]
+        :rtype: int
+        """
+        people = (i for i, digit in enumerate(digits) if digit)
+        prev, future = None, next(people)
+
+        res = 0
+        for i, digit in enumerate(digits):
+            if digit == 1:
+                prev = i
+            else:
+                while future is not None and future < i:
+                    future = next(people, None)
+
+                left = float('inf') if prev is None else i - prev
+                right = float('inf') if future is None else future - i
+
+                res = max(res, min(left, right))
+        return res
+```
+
+### groupby
+
+```python
+import itertools
+class Solution(object):
+    def maxDistToClosest(self, digits):
+        """
+        :type seats: List[int]
+        :rtype: int
+        """
+        res = 0
+        for seat, group in itertools.groupby(digits):
+            if not seat:
+                k = len(list(group))
+                res = max(res, (k+1)/2)
+        return max(res, digits.index(1), digits[::-1].index(1))
+
 ```

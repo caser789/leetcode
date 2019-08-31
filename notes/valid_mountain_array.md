@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/30, leetcode/941, TODO]
+tags: [2019/08/30, leetcode/941, method/3 while]
 title: Valid Mountain Array
 created: '2019-08-30T14:50:55.201Z'
-modified: '2019-08-30T15:25:22.557Z'
+modified: '2019-08-30T15:50:11.242Z'
 ---
 
 # Valid Mountain Array
@@ -69,4 +69,27 @@ class Solution(object):
                 return False
         if turn == 0: return False
         return True
+```
+
+### one pass
+
+```
+class Solution(object):
+    def validMountainArray(self, A):
+        """
+        :type A: List[int]
+        :rtype: bool
+        """
+        n = len(A)
+        i = 0
+
+        while i+1 < n and A[i] < A[i+1]:
+            i += 1
+
+        if i == 0 or i == n - 1:
+            return False
+
+        while i + 1 < n and A[i] > A[i+1]:
+            i += 1
+        return i == n - 1
 ```
