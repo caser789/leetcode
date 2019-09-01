@@ -42,6 +42,8 @@ Output: "heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaa
 
 ## Solution
 
+### intuitive
+
 ```python
 class Solution(object):
     def toGoatLatin(self, S):
@@ -49,5 +51,20 @@ class Solution(object):
         :type S: str
         :rtype: str
         """
-
+        words = S.split(' ')
+        res = []
+        vowels = {'a', 'o', 'e', 'i', 'u', 'A', 'O', 'E', 'I', 'U'}
+        for i, word in enumerate(words):
+            tmp = []
+            if word[0] in vowels:
+                tmp.append(word)
+                tmp.append('ma')
+            else:
+                tmp.append(word[1:])
+                tmp.append(word[0])
+                tmp.append('ma')
+            for _ in range(i+1):
+                tmp.append('a')
+            res.append(''.join(tmp))
+        return ' '.join(res)
 ```
