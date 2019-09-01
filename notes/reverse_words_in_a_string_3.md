@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, leetcode/557, TODO]
+tags: [2019/09/01, leetcode/557, method/2 pointers]
 title: Reverse Words in a String III
 created: '2019-08-31T08:44:22.506Z'
-modified: '2019-08-31T08:44:41.124Z'
+modified: '2019-09-01T05:07:47.262Z'
 ---
 
 # Reverse Words in a String III
@@ -27,4 +27,24 @@ class Solution(object):
         :type s: str
         :rtype: str
         """
+        if not s:
+            return s
+        res = []
+        lo = 0
+        hi = 0
+        for i, c in enumerate(s):
+            if c == ' ':
+                while hi >= lo:
+                    res.append(s[hi])
+                    hi -= 1
+                res.append(c)
+                lo = i + 1
+            else:
+                hi = i
+
+        while hi >= lo:
+            res.append(s[hi])
+            hi -= 1
+
+        return ''.join(res)
 ```
