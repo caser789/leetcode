@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, knack, leetcode/521, TODO]
+tags: [2019/09/01, knack, leetcode/521]
 title: Longest Uncommon Subsequence I
 created: '2019-08-31T08:52:26.313Z'
-modified: '2019-09-01T04:35:48.706Z'
+modified: '2019-09-01T04:50:08.849Z'
 ---
 
 # Longest Uncommon Subsequence I

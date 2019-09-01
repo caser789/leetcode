@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, leetcode/917, TODO]
+tags: [2019/09/01, data structure/stack, leetcode/917, method/2 pointers, method/3 while]
 title: Reverse Only Letters
 created: '2019-08-31T08:53:58.864Z'
-modified: '2019-08-31T08:54:21.451Z'
+modified: '2019-09-01T04:57:19.347Z'
 ---
 
 # Reverse Only Letters
@@ -35,6 +35,9 @@ Output: "Qedo1ct-eeLg=ntse-T!"
 
 ## Solution
 
+### 2 pointers
+### 3 while
+
 ```python
 class Solution(object):
     def reverseOnlyLetters(self, S):
@@ -42,4 +45,41 @@ class Solution(object):
         :type S: str
         :rtype: str
         """
+        n = len(S)
+        i = 0
+        j = n - 1
+        res = list(S)
+        done = False
+        while not done and i < j:
+            while i < j and not S[i].isalpha():
+                i += 1
+            while i < j and not S[j].isalpha():
+                j -= 1
+            if i >= j:
+                done = True
+            else:
+                res[i], res[j] = res[j], res[i]
+                i += 1
+                j -= 1
+        return ''.join(res)
+```
+
+### stack
+
+```python
+class Solution(object):
+    def reverseOnlyLetters(self, S):
+        """
+        :type S: str
+        :rtype: str
+        """
+        stack = [c for c in S if c.isalpha()]
+        res = []
+
+        for c in S:
+            if c.isalpha():
+                res.append(stack.pop())
+            else:
+                res.append(c)
+        return ''.join(res)
 ```

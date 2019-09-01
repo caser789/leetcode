@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/30, leetcode/849, TODO]
+tags: [2019/08/30, leetcode/849]
 title: Maximize Distance to Closest Person
 created: '2019-08-30T14:35:12.089Z'
-modified: '2019-08-30T14:43:33.225Z'
+modified: '2019-09-01T03:48:55.409Z'
 ---
 
 # Maximize Distance to Closest Person
