@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, leetcode/824, TODO]
+tags: [2019/09/01, leetcode/824]
 title: Goat Latin
 created: '2019-08-31T08:50:50.639Z'
-modified: '2019-08-31T08:51:08.613Z'
+modified: '2019-09-01T04:10:08.594Z'
 ---
 
 # Goat Latin

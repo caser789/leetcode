@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, leetcode/893, TODO]
+tags: [2019/09/01, leetcode/893, method/index]
 title: Groups of Special-Equivalent Strings
 created: '2019-08-31T08:48:31.799Z'
-modified: '2019-08-31T08:49:58.758Z'
+modified: '2019-09-01T04:25:50.318Z'
 ---
 
 # Groups of Special-Equivalent Strings
@@ -49,6 +49,8 @@ Explanation: 1 group ["abcd","cdab","adcb","cbad"]
 
 ## Solution
 
+### intuitive
+
 ```python
 class Solution(object):
     def numSpecialEquivGroups(self, A):
@@ -56,5 +58,39 @@ class Solution(object):
         :type A: List[str]
         :rtype: int
         """
+        s = {}
+        for word in A:
+            k = self.get_key(word)
+            s.setdefault(k, [])
+            s[k].append(word)
+        return len(s)
 
+    def get_key(self, word):
+        lst1 = list(word[::2])
+        lst2 = list(word[1::2])
+        lst1.sort()
+        lst2.sort()
+        return tuple(lst1), tuple(lst2)
+```
+
+### better
+
+```python
+class Solution(object):
+    def numSpecialEquivGroups(self, A):
+        """
+        :type A: List[str]
+        :rtype: int
+        """
+        s = set()
+        for word in A:
+            s.add(self.get_key(word))
+        return len(s)
+
+    def get_key(self, word):
+        res = [0] * 52
+        for i, c in enumerate(word):
+            index = ord(c) - ord('a') + 26 * (i%2)
+            res[index] += 1
+        return tuple(res)
 ```
