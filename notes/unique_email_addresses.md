@@ -44,4 +44,11 @@ class Solution(object):
         :type emails: List[str]
         :rtype: int
         """
+        addr = set()
+        for email in emails:
+            local_name, domain_name = email.split('@')
+            local_name = local_name.split('+')[0]
+            local_name = ''.join(local_name.split('.'))
+            addr.add('@'.join([local_name, domain_name]))
+        return len(addr)
 ```
