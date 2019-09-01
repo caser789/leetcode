@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, leetcode/521, TODO]
+tags: [2019/09/01, knack, leetcode/521, TODO]
 title: Longest Uncommon Subsequence I
 created: '2019-08-31T08:52:26.313Z'
-modified: '2019-08-31T08:52:43.334Z'
+modified: '2019-09-01T04:35:48.706Z'
 ---
 
 # Longest Uncommon Subsequence I
@@ -30,6 +30,9 @@ but not a subsequence of any other strings in the group of two strings.
 
 ## Solution
 
+
+### intuitive
+
 ```python
 class Solution(object):
     def findLUSlength(self, a, b):
@@ -38,5 +41,34 @@ class Solution(object):
         :type b: str
         :rtype: int
         """
+        s_to_cnt = {}
+        for s in [a, b]:
+            n = len(s)
+            for i in range(n):
+                for j in range(n+1):
+                    sub_s = s[i:j]
+                    if not sub_s: continue
+                    s_to_cnt.setdefault(sub_s, 0)
+                    s_to_cnt[sub_s] += 1
 
+        max_len = 0
+        for k, v in s_to_cnt.items():
+            if v != 1: continue
+            max_len = max(max_len, len(k))
+        return max_len
+```
+
+### knack
+
+```python
+class Solution(object):
+    def findLUSlength(self, a, b):
+        """
+        :type a: str
+        :type b: str
+        :rtype: int
+        """
+        if a == b:
+            return -1
+        return max(len(a), len(b))
 ```
