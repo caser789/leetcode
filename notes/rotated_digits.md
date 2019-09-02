@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/02, leetcode/788, TODO]
+tags: [2019/09/03, leetcode/788]
 title: Rotated Digits
 created: '2019-08-31T08:59:14.799Z'
-modified: '2019-09-02T01:06:00.815Z'
+modified: '2019-09-02T14:43:05.735Z'
 ---
 
 # Rotated Digits
@@ -29,20 +29,42 @@ Note that 1 and 10 are not good numbers, since they remain unchanged after rotat
 ## Solution
 
 ```python
+kv = {
+    '0': '0',
+    '1': '1',
+    '2': '5',
+    '5': '2',
+    '6': '9',
+    '8': '8',
+    '9': '6',
+}
+
+def rotate(n):
+    n = str(n)
+    res = []
+    for c in n:
+        if c not in kv:
+            return False
+        res.append(kv[c])
+    m = ''.join(res)
+    if n == m:
+        return False
+    return True
+
 class Solution(object):
     def rotatedDigits(self, N):
         """
         :type N: int
         :rtype: int
         """
+        cnt = 0
+        for i in range(1, N+1):
+            if rotate(str(i)):
+                cnt += 1
+        return cnt
 ```
 
 ## schedule
 
-* [ ] 0 2019/09/02
+* [x] 0 2019/09/02
 * [ ] 1 2019/09/03
-* [ ] 3 2019/09/05
-* [ ] 7 2019/09/09
-* [ ] 15 2019/09/17
-* [ ] 13 2019/10/03
-* [ ] 13 2019/11/04

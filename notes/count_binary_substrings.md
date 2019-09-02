@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/02, 2019/09/03, 2019/09/05, 2019/09/09, 2019/09/17, 2019/10/03, 2019/11/04, knack, leetcode/696, method/variable]
+tags: [2019/09/03, knack, leetcode/696, method/variable]
 title: Count Binary Substrings
 created: '2019-08-31T09:03:02.312Z'
-modified: '2019-09-02T01:07:45.826Z'
+modified: '2019-09-02T05:58:21.778Z'
 ---
 
 # Count Binary Substrings
@@ -82,8 +82,3 @@ class Solution(object):
 
 * [x] 0 2019/09/02
 * [ ] 1 2019/09/03
-* [ ] 3 2019/09/05
-* [ ] 7 2019/09/09
-* [ ] 15 2019/09/17
-* [ ] 13 2019/10/03
-* [ ] 13 2019/11/04

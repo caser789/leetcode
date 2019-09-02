@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/02, leetcode/1071, TODO]
+tags: [2019/09/03, application/gcd, leetcode/1071]
 title: Greatest Common Divisor of Strings
 created: '2019-08-31T09:01:01.319Z'
-modified: '2019-09-02T01:05:37.796Z'
+modified: '2019-09-02T15:21:53.724Z'
 ---
 
 # Greatest Common Divisor of Strings
@@ -44,15 +44,17 @@ class Solution(object):
         :type str2: str
         :rtype: str
         """
-
+        if len(str1) < len(str2):
+            return self.gcdOfStrings(str2, str1)
+        if not str1.startswith(str2):
+            return ''
+        if not str2:
+            return str1
+        return self.gcdOfStrings(str1[len(str2):], str2)
 ```
 
 ## schedule
 
-* [ ] 0 2019/09/02
+* [x] 0 2019/09/02
 * [ ] 1 2019/09/03
-* [ ] 3 2019/09/05
-* [ ] 7 2019/09/09
-* [ ] 15 2019/09/17
-* [ ] 13 2019/10/03
-* [ ] 13 2019/11/04
+

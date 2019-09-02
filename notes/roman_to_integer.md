@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/02, leetcode/13, TODO]
+tags: [2019/09/03, leetcode/13, method/direction]
 title: Roman to Integer
 created: '2019-08-31T09:05:05.950Z'
-modified: '2019-09-02T01:05:52.277Z'
+modified: '2019-09-02T14:22:04.835Z'
 ---
 
 # Roman to Integer
@@ -59,22 +59,40 @@ Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def romanToInt(self, s):
         """
         :type s: str
         :rtype: int
         """
+        if not s:
+            return 0
+        symbol_to_value = {
+            'I': 1,
+            'V': 5,
+            'X': 10,
+            'L': 50,
+            'C': 100,
+            'D': 500,
+            'M': 1000,
+        }
+        def get_value(c):
+            return symbol_to_value[c]
 
+        prev = s[-1]
+        num = get_value(prev)
+        n = len(s)
+        for i in range(n-2, -1, -1):
+            if get_value(s[i]) < get_value(prev):
+                num -= get_value(s[i])
+            else:
+                num += get_value(s[i])
+                prev = s[i]
+        return num
 ```
 
 ## schedule
 
-* [ ] 0 2019/09/02
+* [x] 0 2019/09/02
 * [ ] 1 2019/09/03
-* [ ] 3 2019/09/05
-* [ ] 7 2019/09/09
-* [ ] 15 2019/09/17
-* [ ] 13 2019/10/03
-* [ ] 13 2019/11/04

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/02, leetcode/937, TODO]
+tags: [2019/09/03, leetcode/937]
 title: Reorder Log Files
 created: '2019-08-31T08:57:05.976Z'
-modified: '2019-09-02T01:05:45.736Z'
+modified: '2019-09-02T14:10:09.389Z'
 ---
 
 # Reorder Log Files
@@ -34,6 +34,8 @@ Output: ["g1 act car","a8 act zoo","ab1 off key dog","a1 9 2 3 1","zo4 4 7"]
 
 ## Solution
 
+## intuitive
+
 ```python
 class Solution(object):
     def reorderLogFiles(self, logs):
@@ -42,14 +44,17 @@ class Solution(object):
         :rtype: List[str]
         """
 
+        def func(a):
+            i = a.index(' ')
+            if a[i+1].isdigit():
+                return chr(ord('z')+1), 1
+            return a[i+1:], a[:i]
+
+
+        return sorted(logs, key=func)
 ```
 
 ## schedule
 
-* [ ] 0 2019/09/02
+* [x] 0 2019/09/02
 * [ ] 1 2019/09/03
-* [ ] 3 2019/09/05
-* [ ] 7 2019/09/09
-* [ ] 15 2019/09/17
-* [ ] 13 2019/10/03
-* [ ] 13 2019/11/04

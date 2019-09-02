@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/01, data structure/stack, leetcode/917, method/2 pointers, method/3 while]
+tags: [2019/09/05, data structure/stack, leetcode/917, method/2 pointers, method/3 while]
 title: Reverse Only Letters
 created: '2019-08-31T08:53:58.864Z'
-modified: '2019-09-01T15:25:27.926Z'
+modified: '2019-09-02T14:50:03.012Z'
 ---
 
 # Reverse Only Letters
@@ -87,9 +87,6 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/01
-* [ ] 1 2019/09/02
-* [ ] 3 2019/09/04
-* [ ] 7 2019/09/08
-* [ ] 15 2019/09/16
-* [ ] 13 2019/10/02
-* [ ] 13 2019/11/03
+* [x] 1 2019/09/02
+* [ ] 3 2019/09/05
+
