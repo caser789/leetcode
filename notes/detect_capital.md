@@ -2,7 +2,7 @@
 tags: [2019/09/02, leetcode/520, TODO]
 title: Detect Capital
 created: '2019-08-31T09:06:38.843Z'
-modified: '2019-08-31T09:06:49.908Z'
+modified: '2019-09-02T01:05:28.107Z'
 ---
 
 # Detect Capital
@@ -44,5 +44,30 @@ class Solution(object):
         :type word: str
         :rtype: bool
         """
+        n = len(word)
+        if n <= 1:
+            return True
+
+        if word[0].islower():
+            for i in range(1, n):
+                if word[i].isupper():
+                    return False
+        else:
+            if n <= 2:
+                return True
+            for i in range(2, n):
+                if word[i].isupper() != word[i-1].isupper():
+                    return False
+        return True
 
 ```
+
+## schedule
+
+* [x] 0 2019/09/02
+* [ ] 1 2019/09/03
+* [ ] 3 2019/09/05
+* [ ] 7 2019/09/09
+* [ ] 15 2019/09/17
+* [ ] 13 2019/10/03
+* [ ] 13 2019/11/04

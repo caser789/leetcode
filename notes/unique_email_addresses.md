@@ -2,7 +2,7 @@
 tags: [2019/09/01, leetcode/929]
 title: Unique Email Addresses
 created: '2019-08-31T08:42:21.188Z'
-modified: '2019-09-01T05:21:18.284Z'
+modified: '2019-09-01T15:25:38.638Z'
 ---
 
 # Unique Email Addresses
@@ -52,3 +52,13 @@ class Solution(object):
             addr.add('@'.join([local_name, domain_name]))
         return len(addr)
 ```
+
+## schedule
+
+* [x] 0 2019/09/01
+* [ ] 1 2019/09/02
+* [ ] 3 2019/09/04
+* [ ] 7 2019/09/08
+* [ ] 15 2019/09/16
+* [ ] 13 2019/10/02
+* [ ] 13 2019/11/03

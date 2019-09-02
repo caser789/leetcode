@@ -2,7 +2,7 @@
 tags: [2019/09/02, leetcode/788, TODO]
 title: Rotated Digits
 created: '2019-08-31T08:59:14.799Z'
-modified: '2019-08-31T08:59:36.746Z'
+modified: '2019-09-02T01:06:00.815Z'
 ---
 
 # Rotated Digits
@@ -36,3 +36,13 @@ class Solution(object):
         :rtype: int
         """
 ```
+
+## schedule
+
+* [ ] 0 2019/09/02
+* [ ] 1 2019/09/03
+* [ ] 3 2019/09/05
+* [ ] 7 2019/09/09
+* [ ] 15 2019/09/17
+* [ ] 13 2019/10/03
+* [ ] 13 2019/11/04

@@ -2,7 +2,7 @@
 tags: [2019/09/02, leetcode/1071, TODO]
 title: Greatest Common Divisor of Strings
 created: '2019-08-31T09:01:01.319Z'
-modified: '2019-08-31T09:01:39.405Z'
+modified: '2019-09-02T01:05:37.796Z'
 ---
 
 # Greatest Common Divisor of Strings
@@ -46,3 +46,13 @@ class Solution(object):
         """
 
 ```
+
+## schedule
+
+* [ ] 0 2019/09/02
+* [ ] 1 2019/09/03
+* [ ] 3 2019/09/05
+* [ ] 7 2019/09/09
+* [ ] 15 2019/09/17
+* [ ] 13 2019/10/03
+* [ ] 13 2019/11/04

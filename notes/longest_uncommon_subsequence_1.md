@@ -2,7 +2,7 @@
 tags: [2019/09/01, knack, leetcode/521]
 title: Longest Uncommon Subsequence I
 created: '2019-08-31T08:52:26.313Z'
-modified: '2019-09-01T04:50:08.849Z'
+modified: '2019-09-01T15:25:22.476Z'
 ---
 
 # Longest Uncommon Subsequence I
@@ -72,3 +72,13 @@ class Solution(object):
             return -1
         return max(len(a), len(b))
 ```
+
+## schedule
+
+* [x] 0 2019/09/01
+* [ ] 1 2019/09/02
+* [ ] 3 2019/09/04
+* [ ] 7 2019/09/08
+* [ ] 15 2019/09/16
+* [ ] 13 2019/10/02
+* [ ] 13 2019/11/03

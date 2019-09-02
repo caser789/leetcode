@@ -2,7 +2,7 @@
 tags: [2019/09/01, leetcode/824]
 title: Goat Latin
 created: '2019-08-31T08:50:50.639Z'
-modified: '2019-09-01T04:10:08.594Z'
+modified: '2019-09-01T15:25:03.330Z'
 ---
 
 # Goat Latin
@@ -68,3 +68,13 @@ class Solution(object):
             res.append(''.join(tmp))
         return ' '.join(res)
 ```
+
+## schedule
+
+* [x] 0 2019/09/01
+* [ ] 1 2019/09/02
+* [ ] 3 2019/09/04
+* [ ] 7 2019/09/08
+* [ ] 15 2019/09/16
+* [ ] 13 2019/10/02
+* [ ] 13 2019/11/03

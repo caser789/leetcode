@@ -2,7 +2,7 @@
 tags: [2019/09/01, leetcode/893, method/index]
 title: Groups of Special-Equivalent Strings
 created: '2019-08-31T08:48:31.799Z'
-modified: '2019-09-01T04:25:50.318Z'
+modified: '2019-09-01T15:25:15.735Z'
 ---
 
 # Groups of Special-Equivalent Strings
@@ -94,3 +94,13 @@ class Solution(object):
             res[index] += 1
         return tuple(res)
 ```
+
+## schedule
+
+* [x] 0 2019/09/01
+* [ ] 1 2019/09/02
+* [ ] 3 2019/09/04
+* [ ] 7 2019/09/08
+* [ ] 15 2019/09/16
+* [ ] 13 2019/10/02
+* [ ] 13 2019/11/03

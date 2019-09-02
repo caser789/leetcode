@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/02, leetcode/696, TODO]
+tags: [2019/09/02, 2019/09/03, 2019/09/05, 2019/09/09, 2019/09/17, 2019/10/03, 2019/11/04, knack, leetcode/696, method/variable]
 title: Count Binary Substrings
 created: '2019-08-31T09:03:02.312Z'
-modified: '2019-08-31T09:03:19.735Z'
+modified: '2019-09-02T01:07:45.826Z'
 ---
 
 # Count Binary Substrings
@@ -34,13 +34,56 @@ Explanation: There are 4 substrings: "10", "01", "10", "01" that have equal numb
 
 ## Solution
 
+### groups
 
-```
+```python
 class Solution(object):
     def countBinarySubstrings(self, s):
         """
         :type s: str
         :rtype: int
         """
+        groups = [1]
+        n = len(s)
 
+        for i in range(1, n):
+            if s[i-1] != s[i]:
+                groups.append(1)
+            else:
+                groups[-1] += 1
+
+        res = 0
+        for i in range(1, len(groups)):
+            res += min(groups[i-1], groups[i])
+        return res
 ```
+
+### variables
+
+```python
+class Solution(object):
+    def countBinarySubstrings(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        res, prev, cur = 0, 0, 1
+
+        for i in range(1, len(s)):
+            if s[i-1] != s[i]:
+                res += min(prev, cur)
+                prev, cur = cur, 1
+            else:
+                cur += 1
+        return res + min(prev, cur)
+```
+
+## schedule
+
+* [x] 0 2019/09/02
+* [ ] 1 2019/09/03
+* [ ] 3 2019/09/05
+* [ ] 7 2019/09/09
+* [ ] 15 2019/09/17
+* [ ] 13 2019/10/03
+* [ ] 13 2019/11/04
