@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/03, leetcode/541, TODO]
+tags: [2019/09/05, leetcode/541]
 title: Reverse String II
 created: '2019-08-31T09:12:28.918Z'
-modified: '2019-08-31T09:12:47.246Z'
+modified: '2019-09-04T14:30:52.319Z'
 ---
 
 # Reverse String II
@@ -21,7 +21,7 @@ Output: "bacdfeg"
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def reverseStr(self, s, k):
         """
@@ -29,5 +29,14 @@ class Solution(object):
         :type k: int
         :rtype: str
         """
-
+        a = list(s)
+        for i in range(0, len(s), 2*k):
+            a[i:i+k] = reversed(a[i:i+k])
+        return ''.join(a)
 ```
+
+## schedule
+
+* [x] 0 2019/09/03
+* [x] 1 2019/09/04
+* [ ] 1 2019/09/05

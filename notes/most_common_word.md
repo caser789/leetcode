@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/04, leetcode/819, TODO]
+tags: [2019/09/05, leetcode/819]
 title: Most Common Word
 created: '2019-08-31T09:18:03.909Z'
-modified: '2019-08-31T09:18:20.448Z'
+modified: '2019-09-04T02:11:11.330Z'
 ---
 
 # Most Common Word
@@ -48,5 +48,46 @@ class Solution(object):
         :type banned: List[str]
         :rtype: str
         """
-
+        banned = set(banned)
+        
+        chars = set('!?\',;.')
+        
+        max_cnt = 0
+        word_to_cnt = {}
+        
+        res = []
+        for c in paragraph:
+            if c in set({' ', '.', ','}):
+                w = ''.join(res)
+                if w in banned:
+                    res = []
+                    continue
+                if not w:
+                    res = []
+                    continue
+                word_to_cnt.setdefault(w, 0)
+                word_to_cnt[w] += 1
+                max_cnt = max(max_cnt, word_to_cnt[w])
+                
+                res = []
+            elif c in chars:
+                continue
+            else:
+                res.append(c.lower())
+        
+        w = ''.join(res)
+        if w not in banned and w:
+            word_to_cnt.setdefault(w, 0)
+            word_to_cnt[w] += 1
+            max_cnt = max(max_cnt, word_to_cnt[w])
+        
+        for k, v in word_to_cnt.items():
+            if v == max_cnt:
+                return k
+                
 ```
+
+## schedule
+
+* [x] 0 2019/09/04
+* [ ] 1 2019/09/05

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/03, leetcode/551, TODO]
+tags: [2019/09/07, application/array/status, leetcode/551]
 title: Student Attendance Record I
 created: '2019-08-31T09:13:55.004Z'
-modified: '2019-08-31T09:14:09.884Z'
+modified: '2019-09-04T14:33:48.720Z'
 ---
 
 # Student Attendance Record I
@@ -31,12 +31,36 @@ Output: False
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def checkRecord(self, s):
         """
         :type s: str
         :rtype: bool
         """
+        count_A = 0
+        count_L = 0
+        for c in s:
+
+            if c == 'A':
+                count_L = 0
+                count_A += 1
+                if count_A > 1:
+                    return False
+
+            elif c == 'L':
+                count_L += 1
+                if count_L > 2:
+                    return False
+            else:
+                count_L = 0
+
+        return True
 
 ```
+
+## schedule
+
+* [x] 0 2019/09/03
+* [x] 1 2019/09/04
+* [ ] 1 2019/09/07

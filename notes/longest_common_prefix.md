@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/05, leetcode/14, TODO]
+tags: [2019/09/06, data structure/trie, leetcode/14, TODO]
 title: Longest Common Prefix
 created: '2019-08-31T09:30:15.689Z'
-modified: '2019-08-31T09:31:04.923Z'
+modified: '2019-09-05T14:09:56.796Z'
 ---
 
 # Longest Common Prefix
@@ -28,7 +28,7 @@ All given inputs are in lowercase letters a-z.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def longestCommonPrefix(self, strs):
         """
@@ -36,4 +36,27 @@ class Solution(object):
         :rtype: str
         """
 
+        n = len(strs)
+        if not n:
+            return ''
+        m = min(len(strs[i]) for i in range(n))
+
+        i = 0
+        res = []
+        done = False
+        while i < m and not done:
+            v = strs[0][i]
+            for j in range(1, n):
+                if strs[j][i] != v:
+                    done = True
+            if not done:
+                res.append(v)
+            i += 1
+        return ''.join(res)
+
 ```
+
+## schedule
+
+* [x] 0 2019/09/05
+* [ ] 1 2019/09/06

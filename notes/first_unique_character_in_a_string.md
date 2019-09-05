@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/03, hash, leetcode/387, string, TODO]
+tags: [2019/09/07, data structure/map, leetcode/387, method/index, method/search/hash]
 title: First Unique Character in a String
 created: '2019-07-30T15:47:11.693Z'
-modified: '2019-08-31T09:11:52.780Z'
+modified: '2019-09-04T05:52:18.384Z'
 ---
 
 # First Unique Character in a String
@@ -44,3 +44,36 @@ class Solution(object):
                 return i
         return -1
 ```
+
+### index
+
+```python
+class Solution(object):
+    def firstUniqChar(self, s):
+        """
+        >>> s = "leetcode"
+        >>> Solution().firstUniqChar(s)
+        0
+        >>> s = "loveleetcode"
+        >>> Solution().firstUniqChar(s)
+        2
+        """
+        res = [0] * 26
+        
+        for c in s:
+            i = ord(c) - ord('a')
+            res[i] += 1
+        
+        for j, c in enumerate(s):
+            i = ord(c) - ord('a')
+            if res[i] == 1:
+                return j
+        return -1
+```
+
+## schedule
+
+* [x] 0 2019/09/03
+* [x] 1 2019/09/04
+* [ ] 1 2019/09/07
+

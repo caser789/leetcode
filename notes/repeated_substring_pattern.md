@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/04, leetcode/459, TODO]
+tags: [2019/09/05, knack, leetcode/459]
 title: Repeated Substring Pattern
 created: '2019-08-31T09:22:50.801Z'
-modified: '2019-08-31T09:23:01.533Z'
+modified: '2019-09-04T13:31:38.741Z'
 ---
 
 # Repeated Substring Pattern
@@ -35,5 +35,10 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-
+        return s in (s+s)[1:-1]
 ```
+
+## schedule
+
+* [x] 0 2019/09/04
+* [ ] 1 2019/09/05

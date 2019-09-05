@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/03, leetcode/415, TODO]
+tags: [2019/09/07, application/add, leetcode/415]
 title: Add Strings
 created: '2019-08-31T09:16:40.741Z'
-modified: '2019-08-31T09:16:58.061Z'
+modified: '2019-09-04T05:49:49.239Z'
 ---
 
 # Add Strings
@@ -18,7 +18,10 @@ Given two non-negative integers num1 and num2 represented as string, return the 
 
 ## Solution
 
-```
+
+## intuitive
+
+```python
 class Solution(object):
     def addStrings(self, num1, num2):
         """
@@ -27,4 +30,47 @@ class Solution(object):
         :rtype: str
         """
 
+        def add(a, b, carry):
+            s = ord(a) - ord('0') + ord(b) - ord('0') + ord(carry) - ord('0')
+            if s >= 10:
+                carry = 1
+                i = s - 10
+            else:
+                carry = 0
+                i = s
+            return chr(carry + ord('0')), chr(i + ord('0'))
+
+        n = len(num1)
+        m = len(num2)
+        carry = '0'
+
+        i = n - 1
+        j = m - 1
+        res = []
+        while i >=0 and j >= 0:
+            carry, s = add(num1[i], num2[j], carry)
+            res.append(s)
+            i -= 1
+            j -= 1
+
+        while i >=0:
+            carry, s = add(num1[i], '0', carry)
+            res.append(s)
+            i -= 1
+
+        while j >=0:
+            carry, s = add(num2[j], '0', carry)
+            res.append(s)
+            j -= 1
+
+        if carry == '1':
+            res.append(carry)
+
+        return ''.join(res[::-1])
 ```
+
+## schedule
+
+* [x] 0 2019/09/03
+* [x] 1 2019/09/04
+* [ ] 1 2019/09/07

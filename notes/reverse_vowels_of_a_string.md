@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/04, leetcode/345, TODO]
+tags: [2019/09/05, leetcode/345, method/2 pointers, method/3 while]
 title: Reverse Vowels of a String
 created: '2019-08-31T09:20:02.087Z'
-modified: '2019-08-31T09:20:13.039Z'
+modified: '2019-09-04T13:35:49.551Z'
 ---
 
 # Reverse Vowels of a String
@@ -25,12 +25,36 @@ Output: "leotcede"
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def reverseVowels(self, s):
         """
         :type s: str
         :rtype: str
         """
+        res = list(s)
+        n = len(res)
 
+        i = 0
+        j = n - 1
+        vowels = set({'a', 'o', 'e', 'i', 'u', 'A', 'O', 'E', 'I', 'U'})
+        done = False
+        while i < j and not done:
+            while i < j and res[i] not in vowels:
+                i += 1
+            while i < j and res[j] not in vowels:
+                j -= 1
+            if i >= j:
+                done = True
+            else:
+                res[i], res[j] = res[j], res[i]
+                i += 1
+                j -= 1
+
+        return ''.join(res)
 ```
+
+## schedule
+
+* [x] 0 2019/09/04
+* [ ] 1 2019/09/05

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/04, leetcode/38, TODO]
+tags: [2019/09/05, application/array/status, leetcode/38]
 title: Count and Say
 created: '2019-08-31T09:21:26.026Z'
-modified: '2019-08-31T09:21:43.364Z'
+modified: '2019-09-04T00:45:09.520Z'
 ---
 
 # Count and Say
@@ -46,5 +46,69 @@ class Solution(object):
         :type n: int
         :rtype: str
         """
+        s = '1'
+        for i in range(n-1):
+            s = count(s)
+        return s
 
+
+def count(s):
+    res = []
+    cnt = 0
+    v = 0
+
+    for c in s:
+        if c == v:
+            cnt += 1
+        else:
+            if cnt > 0:
+                res.append(str(cnt))
+                res.append(v)
+            cnt = 1
+            v = c
+
+    if cnt > 0:
+        res.append(str(cnt))
+        res.append(v)
+    return ''.join(res)
 ```
+
+### better
+
+```python
+class Solution(object):
+    def countAndSay(self, n):
+        """
+        :type n: int
+        :rtype: str
+        """
+        v = '1'
+        for i in range(n-1):
+            v = count(v)
+        return v
+
+def count(chars):
+    res = []
+    cnt = 0
+    v = None
+    for c in chars:
+        if v is None:
+            v = c
+            cnt = 1
+        elif v == c:
+            cnt += 1
+        else:
+            res.append(str(cnt))
+            res.append(v)
+            v = c
+            cnt = 1
+
+    res.append(str(cnt))
+    res.append(c)
+    return ''.join(res)
+```
+
+## schedule
+
+* [x] 0 2019/09/04
+* [ ] 1 2019/09/05

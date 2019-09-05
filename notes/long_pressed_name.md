@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/03, leetcode/925, TODO]
+tags: [2019/09/05, application/array/group, leetcode/925, method/2 pointers]
 title: Long Pressed Name
 created: '2019-08-31T09:15:08.335Z'
-modified: '2019-08-31T09:15:28.995Z'
+modified: '2019-09-04T14:26:22.781Z'
 ---
 
 # Long Pressed Name
@@ -43,13 +43,69 @@ Explanation: It's not necessary to long press any character.
 
 ## Solution
 
-```
+### group
+
+```python
+import itertools
 class Solution(object):
     def isLongPressedName(self, name, typed):
         """
         :type name: str
         :type typed: str
         :rtype: bool
+        >>> name = 'saeed'
+        >>> typed = 'ssaaedd'
+        >>> Solution().isLongPressedName(name, typed)
+        True
         """
+        g1 = [(k, len(list(grp))) for k, grp in itertools.groupby(name)]
+        g2 = [(k, len(list(grp))) for k, grp in itertools.groupby(typed)]
 
+        if len(g1) != len(g2):
+            return False
+
+        return all(k1 == k2 and v1 <= v2 for (k1, v1), (k2, v2) in zip(g1, g2))
 ```
+
+### 2 pointer
+
+```python
+import itertools
+class Solution(object):
+    def isLongPressedName(self, name, typed):
+        """
+        :type name: str
+        :type typed: str
+        :rtype: bool
+        >>> name = 'saeed'
+        >>> typed = 'ssaaedd'
+        >>> Solution().isLongPressedName(name, typed)
+        True
+        """
+        j = 0
+        for c in name:
+            if j == len(typed):
+                return False
+
+            if typed[j] != c:
+                if j == 0:
+                    return False
+
+                if typed[j-1] != typed[j]:
+                    return False
+
+                cur = typed[j]
+                while j < len(typed) and typed[j] == cur:
+                    j += 1
+
+                if j == len(typed) or typed[j] != c:
+                    return False
+            j += 1
+        return True
+```
+
+## schedule
+
+* [x] 0 2019/09/03
+* [x] 1 2019/09/04
+* [ ] 1 2019/09/05

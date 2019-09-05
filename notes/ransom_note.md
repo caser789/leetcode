@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/03, leetcode/383, TODO]
+tags: [2019/09/07, leetcode/383]
 title: Ransom Note
 created: '2019-08-31T09:08:58.787Z'
-modified: '2019-08-31T09:09:23.649Z'
+modified: '2019-09-04T05:54:40.158Z'
 ---
 
 # Ransom Note
@@ -23,6 +23,8 @@ canConstruct("aa", "aab") -> true
 
 ## Solution
 
+### index
+
 ```python
 class Solution(object):
     def canConstruct(self, ransomNote, magazine):
@@ -31,5 +33,23 @@ class Solution(object):
         :type magazine: str
         :rtype: bool
         """
+        res = [0] * 26
 
+        for c in magazine:
+            i = ord(c) - ord('a')
+            res[i] += 1
+
+        for c in ransomNote:
+            i = ord(c) - ord('a')
+            if res[i] == 0:
+                return False
+            res[i] -= 1
+
+        return True
 ```
+
+## schedule
+
+* [x] 0 2019/09/03
+* [x] 1 2019/09/04
+* [ ] 1 2019/09/07

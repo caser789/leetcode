@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/04, leetcode/443, TODO]
+tags: [2019/09/05, application/array/status, leetcode/443]
 title: String Compression
 created: '2019-08-31T09:25:29.121Z'
-modified: '2019-08-31T09:25:39.309Z'
+modified: '2019-09-04T14:14:03.558Z'
 ---
 
 # String Compression
@@ -65,12 +65,54 @@ All characters have an ASCII value in [35, 126].
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def compress(self, chars):
         """
         :type chars: List[str]
         :rtype: int
         """
+        i = 0
+        n = len(chars)
+        v = None
+        cnt = 0
+        j = 0
+        while j < n:
+            if v is None:
+                cnt = 1
+                v = chars[j]
+            elif chars[j] == v:
+                cnt += 1
+            else:
+                if i < n:
+                    chars[i] = v
+                    i += 1
+                if i < n and 10 >cnt > 1:
+                    chars[i] = str(cnt)
+                    i += 1
+                elif i < n and cnt > 9:
+                    for c in str(cnt):
+                        chars[i] = c
+                        i += 1
+                v = chars[j]
+                cnt = 1
+            j += 1
 
+        if i < n:
+            chars[i] = v
+            i += 1
+        if i < n and 10 > cnt > 1:
+            chars[i] = str(cnt)
+            i += 1
+        elif i < n and cnt > 9:
+            for c in str(cnt):
+                chars[i] = c
+                i += 1
+
+        return i
 ```
+
+## schedule
+
+* [x] 0 2019/09/04
+* [ ] 1 2019/09/05

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/05, leetcode/58, TODO]
+tags: [2019/09/06, leetcode/58]
 title: Length of Last Word
 created: '2019-08-31T09:33:29.772Z'
-modified: '2019-08-31T09:33:49.367Z'
+modified: '2019-09-05T13:10:46.881Z'
 ---
 
 # Length of Last Word
@@ -20,12 +20,27 @@ Output: 5
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def lengthOfLastWord(self, s):
         """
         :type s: str
         :rtype: int
         """
-
+        n = len(s)
+        j = n - 1
+        while j >= 0 and s[j] == ' ':
+            j -= 1
+        cnt = 0
+        while j >= 0:
+            if s[j] == ' ':
+                return cnt
+            cnt += 1
+            j -= 1
+        return cnt
 ```
+
+## schedule
+
+* [x] 0 2019/09/05
+* [ ] 1 2019/09/06
