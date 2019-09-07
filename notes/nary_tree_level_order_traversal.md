@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, leetcode/429, TODO]
+tags: [2019/09/08, data structure/tree, leetcode/429, method/backtracking, method/traversal/bfs]
 title: N-ary Tree Level Order Traversal
 created: '2019-08-31T09:51:16.775Z'
-modified: '2019-08-31T09:51:44.594Z'
+modified: '2019-09-07T05:06:04.408Z'
 ---
 
 # N-ary Tree Level Order Traversal
@@ -15,11 +15,14 @@ For example, given a 3-ary tree:
 
 We should return its level order traversal:
 
+```
+
 [
      [1],
      [3,2,4],
      [5,6]
 ]
+```
 
 
 ## Note:
@@ -29,7 +32,9 @@ We should return its level order traversal:
 
 ## Solution
 
-```
+### bfs
+
+```python
 """
 # Definition for a Node.
 class Node(object):
@@ -43,5 +48,59 @@ class Solution(object):
         :type root: Node
         :rtype: List[List[int]]
         """
+        res = []
+        if root is None:
+            return res
+
+        q = [root]
+        while q:
+            tmp = []
+            nxt = []
+            for e in q:
+                nxt.extend(e.children)
+                tmp.append(e.val)
+            q = nxt
+            res.append(tmp)
+        return res
 
 ```
+
+### recursive
+
+```python
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val, children):
+        self.val = val
+        self.children = children
+"""
+class Solution(object):
+    def levelOrder(self, root):
+        """
+        :type root: Node
+        :rtype: List[List[int]]
+        """
+        def collect(node, level, res, count):
+            if node is None:
+                return
+            if level < len(count):
+                count[level] += 1
+                res[level].append(node.val)
+            else:
+                count.append(1)
+                res.append([node.val])
+            for n in node.children:
+                collect(n, level+1, res, count)
+
+        res = []
+        count = []
+        collect(root, 0, res, count)
+        return res
+
+```
+
+## schedule
+
+* [x] 0 2019/09/07
+* [ ] 1 2019/09/08

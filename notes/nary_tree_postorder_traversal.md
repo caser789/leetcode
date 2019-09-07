@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/06, leetcode/590, TODO]
+tags: [2019/09/07, leetcode/590]
 title: N-ary Tree Postorder Traversal
 created: '2019-08-31T09:45:05.727Z'
-modified: '2019-08-31T09:45:21.646Z'
+modified: '2019-09-06T14:10:34.191Z'
 ---
 
 # N-ary Tree Postorder Traversal
@@ -23,7 +23,9 @@ Recursive solution is trivial, could you do it iteratively?
 
 ## Solution
 
-```
+### recursive
+
+```python
 """
 # Definition for a Node.
 class Node(object):
@@ -37,5 +39,41 @@ class Solution(object):
         :type root: Node
         :rtype: List[int]
         """
+        res = []
+        def get(node):
+            if node is None:
+                return
+            for c in node.children:
+                get(c)
+
+            res.append(node.val)
+        get(root)
+        return res
+
 
 ```
+
+### itertive
+
+```python
+class Solution(object):
+    def postorder(self, root):
+        if root is None:
+            return []
+        stack, count, res = [root], [0], []
+        while stack:
+            while count[-1] < len(stack[-1].children):
+                stack.append(stack[-1].children[count[-1]])
+                count.append(0)
+            res.append(stack.pop().val)
+            count.pop()
+            if len(count) != 0:
+                count[-1] += 1
+
+        return res
+```
+
+## schedule
+
+* [x] 0 2019/09/06
+* [ ] 1 2019/09/07

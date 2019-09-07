@@ -1,8 +1,9 @@
 ---
-tags: [2019/09/06, leetcode/686, TODO]
+favorited: true
+tags: [2019/09/07, leetcode/686]
 title: Repeated String Match
 created: '2019-08-31T09:36:24.127Z'
-modified: '2019-08-31T09:36:44.724Z'
+modified: '2019-09-05T23:46:16.531Z'
 ---
 
 # Repeated String Match
@@ -27,5 +28,13 @@ class Solution(object):
         :type B: str
         :rtype: int
         """
-
+        q = (len(B)-1) / len(A) + 1
+        for i in range(2):
+            if B in A*(q+i): return q+i
+        return -1
 ```
+
+## schedule
+
+* [x] 0 2019/09/06
+* [ ] 1 2019/09/07

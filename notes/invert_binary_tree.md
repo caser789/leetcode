@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, leetcode/226, TODO]
+tags: [2019/09/08, data structure/tree, leetcode/226, method/traversal/bfs]
 title: Invert Binary Tree
 created: '2019-08-31T09:54:21.169Z'
-modified: '2019-08-31T09:54:30.387Z'
+modified: '2019-09-07T04:44:51.554Z'
 ---
 
 # Invert Binary Tree
@@ -35,6 +35,8 @@ Google: 90% of our engineers use the software you wrote (Homebrew), but you canâ
 
 ## Solution
 
+### recursive
+
 ```python
 # Definition for a binary tree node.
 # class TreeNode(object):
@@ -49,5 +51,44 @@ class Solution(object):
         :type root: TreeNode
         :rtype: TreeNode
         """
+        if root is None:
+            return
+
+        root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+        return root
+```
+
+### iter
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def invertTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        if root is None:
+            return
+        stack = [root]
+        while stack:
+            n = stack.pop()
+            n.left, n.right = n.right, n.left
+            if n.left: stack.append(n.left)
+            if n.right: stack.append(n.right)
+        return root
+
 
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/07
+* [ ] 1 2019/09/08

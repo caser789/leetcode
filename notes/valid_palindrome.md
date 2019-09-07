@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/06, leetcode/125, method/2 pointers, method/3 while]
+tags: [2019/09/09, leetcode/125, method/2 pointers, method/3 while]
 title: Valid Palindrome
 created: '2019-08-31T09:34:49.507Z'
-modified: '2019-09-05T13:37:59.265Z'
+modified: '2019-09-06T15:18:27.117Z'
 ---
 
 # Valid Palindrome
@@ -55,4 +55,5 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/05
-* [ ] 1 2019/09/06
+* [x] 1 2019/09/06
+* [ ] 1 2019/09/09

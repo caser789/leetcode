@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/06, leetcode/859, TODO]
+tags: [2019/09/09, leetcode/859]
 title: Buddy Strings
 created: '2019-08-31T09:37:46.330Z'
-modified: '2019-08-31T09:37:58.513Z'
+modified: '2019-09-06T11:38:14.231Z'
 ---
 
 # Buddy Strings
@@ -44,7 +44,7 @@ A and B consist only of lowercase letters.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def buddyStrings(self, A, B):
         """
@@ -52,5 +52,32 @@ class Solution(object):
         :type B: str
         :rtype: bool
         """
+        indexes = []
+        n = len(A)
+        m = len(B)
 
+        if n != m:
+            return False
+        if A == B:
+            seen = set()
+            for a in A:
+                if a in seen:
+                    return True
+                seen.add(a)
+            return False
+        for i in range(m):
+            if A[i] != B[i]:
+                indexes.append(i)
+
+        if len(indexes) != 2:
+            return False
+
+        i, j = indexes
+        return A[i] == B[j] and B[i] == A[j]
 ```
+
+## schedule
+
+* [x] 0 2019/09/05
+* [x] 1 2019/09/06
+* [ ] 0 2019/09/09

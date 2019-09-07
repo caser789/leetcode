@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/05, leetcode/238, method/direction]
+tags: [2019/09/08, leetcode/238, method/direction]
 title: Product of Array Except Self
 created: '2019-09-04T14:35:39.784Z'
-modified: '2019-09-04T14:52:52.828Z'
+modified: '2019-09-05T15:26:55.370Z'
 ---
 
 # Product of Array Except Self
@@ -52,4 +52,5 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/04
-* [ ] 1 2019/09/05
+* [x] 1 2019/09/05
+* [ ] 1 2019/09/08

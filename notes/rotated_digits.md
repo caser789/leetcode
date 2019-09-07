@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/06, leetcode/788]
+tags: [2019/09/13, leetcode/788]
 title: Rotated Digits
 created: '2019-08-31T08:59:14.799Z'
-modified: '2019-09-03T15:25:17.454Z'
+modified: '2019-09-06T15:13:03.092Z'
 ---
 
 # Rotated Digits
@@ -68,4 +68,5 @@ class Solution(object):
 
 * [x] 0 2019/09/02
 * [x] 1 2019/09/03
-* [ ] 1 2019/09/06
+* [x] 1 2019/09/06
+* [ ] 1 2019/09/13

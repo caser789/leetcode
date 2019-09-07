@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/06, leetcode/434]
+tags: [2019/09/09, leetcode/434]
 title: Number of Segments in a String
 created: '2019-08-31T09:26:58.869Z'
-modified: '2019-09-05T13:27:25.099Z'
+modified: '2019-09-06T14:38:26.583Z'
 ---
 
 # Number of Segments in a String
@@ -45,7 +45,34 @@ class Solution(object):
         return cnt
 ```
 
+### better
+
+```python
+class Solution(object):
+    def countSegments(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(s)
+        i = 0
+        while i < n and s[i] == ' ':
+            i += 1
+
+        if i == n:
+            return 0
+
+        cnt = 1
+        i += 1
+        while i < n:
+            if s[i] != ' ' and s[i-1] == ' ':
+                cnt += 1
+            i += 1
+        return cnt
+```
+
 ## schedule
 
 * [x] 0 2019/09/05
-* [ ] 1 2019/09/06
+* [x] 1 2019/09/06
+* [ ] 1 2019/09/09

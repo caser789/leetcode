@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/05, leetcode/824]
+tags: [2019/09/12, leetcode/824]
 title: Goat Latin
 created: '2019-08-31T08:50:50.639Z'
-modified: '2019-09-02T05:59:30.141Z'
+modified: '2019-09-05T14:50:29.717Z'
 ---
 
 # Goat Latin
@@ -69,9 +69,36 @@ class Solution(object):
         return ' '.join(res)
 ```
 
+### better
+
+```python
+class Solution(object):
+    def toGoatLatin(self, S):
+        """
+        :type S: str
+        :rtype: str
+        """
+        words = S.split(' ')
+        vowels = set({'a', 'o', 'i', 'e', 'u', 'A', 'O', 'I', 'E', 'U'})
+        res = []
+        for i, word in enumerate(words):
+            w = []
+            if word[0] in vowels:
+                w.append(word)
+            else:
+                w.append(word[1:])
+                w.append(word[0])
+            w.append('ma')
+            for _ in range(i+1):
+                w.append('a')
+            res.append(''.join(w))
+        return ' '.join(res)
+```
+
 ## schedule
 
 * [x] 0 2019/09/01
 * [x] 1 2019/09/02
-* [ ] 3 2019/09/05
+* [x] 3 2019/09/05
+* [ ] 3 2019/09/12
 

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/05, leetcode/929]
+tags: [2019/09/12, leetcode/929]
 title: Unique Email Addresses
 created: '2019-08-31T08:42:21.188Z'
-modified: '2019-09-02T15:02:44.180Z'
+modified: '2019-09-05T15:55:09.571Z'
 ---
 
 # Unique Email Addresses
@@ -57,5 +57,6 @@ class Solution(object):
 
 * [x] 0 2019/09/01
 * [x] 1 2019/09/02
-* [ ] 3 2019/09/05
+* [x] 3 2019/09/05
+* [ ] 3 2019/09/12
 

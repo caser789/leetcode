@@ -1,8 +1,9 @@
 ---
-tags: [2019/09/06, leetcode/28, TODO]
+favorited: true
+tags: [2019/09/07, leetcode/28]
 title: Implement strStr()
 created: '2019-08-31T09:32:10.214Z'
-modified: '2019-09-05T14:17:45.323Z'
+modified: '2019-09-06T15:39:16.082Z'
 ---
 
 # Implement strStr()
@@ -66,4 +67,5 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/05
-* [ ] 1 2019/09/06
+* [x] 1 2019/09/06
+* [ ] 1 2019/09/07

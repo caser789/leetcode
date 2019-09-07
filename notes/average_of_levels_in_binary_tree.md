@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, leetcode/637, TODO]
+tags: [2019/09/08, leetcode/637, method/backtracking, method/traversal/bfs]
 title: Average of Levels in Binary Tree
 created: '2019-08-31T09:53:06.738Z'
-modified: '2019-08-31T09:53:17.342Z'
+modified: '2019-09-07T04:37:04.767Z'
 ---
 
 # Average of Levels in Binary Tree
@@ -31,7 +31,7 @@ The range of node's value is in the range of 32-bit signed integer.
 
 ## Solution
 
-```
+```python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -46,4 +46,30 @@ class Solution(object):
         :rtype: List[float]
         """
 
+        count = []
+        res = []
+        average(root, 0, res, count)
+        for level in range(len(res)):
+            res[level] = res[level] / count[level]
+        return res
+
+
+def average(node, level, res, count):
+    if node is None:
+        return
+
+    if level < len(res):
+        res[level] += node.val
+        count[level] += 1
+    else:
+        res.append(1.0*node.val)
+        count.append(1)
+
+    average(node.left, level+1, res, count)
+    average(node.right, level+1, res, count)
 ```
+
+## schedule
+
+* [x] 0 2019/09/07
+* [ ] 1 2019/09/08

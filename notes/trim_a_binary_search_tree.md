@@ -51,7 +51,7 @@ Output:
 
 ## Solution
 
-```
+```python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
@@ -67,5 +67,16 @@ class Solution(object):
         :type R: int
         :rtype: TreeNode
         """
+        def trim(node):
+            if not node:
+                return None
+            if node.val > R:
+                return trim(node.left)
+            if node.val < L:
+                return trim(node.right)
+            node.left = trim(node.left)
+            node.right = trim(node.right)
+            return node
 
+        return trim(root)
 ```
