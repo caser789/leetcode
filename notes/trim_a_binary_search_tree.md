@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, leetcode/669, TODO]
+tags: [2019/09/08, data structure/tree, leetcode/669]
 title: Trim a Binary Search Tree
 created: '2019-08-31T09:50:12.923Z'
-modified: '2019-08-31T09:50:27.395Z'
+modified: '2019-09-07T05:21:26.876Z'
 ---
 
 # Trim a Binary Search Tree
@@ -80,3 +80,9 @@ class Solution(object):
 
         return trim(root)
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/07
+* [ ] 1 2019/09/08

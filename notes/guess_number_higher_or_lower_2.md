@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/18, leetcode/375, TOOD]
+tags: [2019/08/18, leetcode/375, TODO]
 title: Guess Number Higher or Lower II
 created: '2019-08-18T09:48:12.837Z'
-modified: '2019-08-18T09:54:40.473Z'
+modified: '2019-09-07T06:34:46.883Z'
 ---
 
 # Guess Number Higher or Lower II
