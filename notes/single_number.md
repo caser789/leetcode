@@ -1,8 +1,8 @@
 ---
-tags: [data structure/set, method/search/hash, number]
+tags: [data structure/set, leetcode/136, method/search/hash, number]
 title: Single Number
 created: '2019-07-30T15:07:46.850Z'
-modified: '2019-08-09T04:49:51.345Z'
+modified: '2019-09-07T08:23:45.727Z'
 ---
 
 # Single Number

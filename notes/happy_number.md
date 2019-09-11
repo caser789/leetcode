@@ -1,8 +1,8 @@
 ---
-tags: [loop, number]
+tags: [leetcode/202, loop, number]
 title: Happy Number
 created: '2019-07-30T15:22:08.469Z'
-modified: '2019-07-30T15:38:18.555Z'
+modified: '2019-09-07T08:43:55.086Z'
 ---
 
 # Happy Number

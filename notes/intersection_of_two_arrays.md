@@ -1,8 +1,8 @@
 ---
-tags: [application/array/intersection, application/array/n-array, data structure/set, method/search/hash]
+tags: [application/array/intersection, application/array/n-array, data structure/set, leetcode/349, method/search/hash]
 title: Intersection of Two Arrays
 created: '2019-07-30T15:15:35.478Z'
-modified: '2019-08-09T04:42:09.911Z'
+modified: '2019-09-07T08:29:10.913Z'
 ---
 
 # Intersection of Two Arrays

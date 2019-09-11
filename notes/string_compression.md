@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, application/array/status, leetcode/443]
+tags: [2019/09/15, application/array/status, leetcode/443]
 title: String Compression
 created: '2019-08-31T09:25:29.121Z'
-modified: '2019-09-05T16:01:44.072Z'
+modified: '2019-09-08T12:50:25.849Z'
 ---
 
 # String Compression
@@ -116,4 +116,5 @@ class Solution(object):
 
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
-* [ ] 1 2019/09/08
+* [x] 1 2019/09/08
+* [ ] 1 2019/09/15

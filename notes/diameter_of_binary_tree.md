@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, leetcode/543, TODO]
+tags: [2019/09/12, application/tree/height, data structure/tree, leetcode/543]
 title: Diameter of Binary Tree
 created: '2019-09-07T06:46:04.327Z'
-modified: '2019-09-07T06:47:04.448Z'
+modified: '2019-09-09T12:58:35.816Z'
 ---
 
 # Diameter of Binary Tree
@@ -24,3 +24,39 @@ Given a binary tree
 Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].
 
 Note: The length of path between two nodes is represented by the number of edges between them.
+
+## Solution
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+
+        self.res = 1
+        def depth(node):
+            if node is None:
+                return 0
+
+            L = depth(node.left)
+            R = depth(node.right)
+            self.res = max(self.res, L+R+1)
+            return max(L, R) + 1
+        depth(root)
+        return self.res - 1
+```
+
+## schedule
+
+* [x] 0 2019/09/08
+* [x] 1 2019/09/09
+* [ ] 1 2019/09/12

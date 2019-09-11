@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, data structure/tree, leetcode/429, method/backtracking, method/traversal/bfs]
+tags: [2019/09/11, data structure/tree, leetcode/429, method/backtracking, method/traversal/bfs]
 title: N-ary Tree Level Order Traversal
 created: '2019-08-31T09:51:16.775Z'
-modified: '2019-09-07T05:06:04.408Z'
+modified: '2019-09-08T11:35:57.354Z'
 ---
 
 # N-ary Tree Level Order Traversal
@@ -103,4 +103,6 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/07
-* [ ] 1 2019/09/08
+* [x] 1 2019/09/08
+* [ ] 1 2019/09/11
+

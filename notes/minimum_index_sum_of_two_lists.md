@@ -1,8 +1,8 @@
 ---
-tags: [application/array, data structure/array, data structure/map]
+tags: [application/array, data structure/array, data structure/map, leetcode/599]
 title: Minimum Index Sum of Two Lists
 created: '2019-07-30T15:43:48.074Z'
-modified: '2019-08-09T04:54:05.199Z'
+modified: '2019-09-07T08:43:12.955Z'
 ---
 
 # Minimum Index Sum of Two Lists

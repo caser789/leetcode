@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, leetcode/819]
+tags: [2019/09/15, leetcode/819]
 title: Most Common Word
 created: '2019-08-31T09:18:03.909Z'
-modified: '2019-09-05T15:23:05.006Z'
+modified: '2019-09-08T11:33:26.734Z'
 ---
 
 # Most Common Word
@@ -91,4 +91,5 @@ class Solution(object):
 
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
-* [ ] 1 2019/09/08
+* [x] 1 2019/09/08
+* [ ] 1 2019/09/15

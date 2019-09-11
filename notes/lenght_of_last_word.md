@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/09, leetcode/58]
+tags: [2019/09/16, leetcode/58]
 title: Length of Last Word
 created: '2019-08-31T09:33:29.772Z'
-modified: '2019-09-06T14:32:47.616Z'
+modified: '2019-09-09T13:22:42.960Z'
 ---
 
 # Length of Last Word
@@ -44,4 +44,5 @@ class Solution(object):
 
 * [x] 0 2019/09/05
 * [x] 1 2019/09/06
-* [ ] 1 2019/09/09
+* [x] 1 2019/09/09
+* [ ] 1 2019/09/16

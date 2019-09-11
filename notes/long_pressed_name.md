@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, application/array/group, leetcode/925, method/2 pointers]
+tags: [2019/09/17, application/array/group, leetcode/925, method/2 pointers]
 title: Long Pressed Name
 created: '2019-08-31T09:15:08.335Z'
-modified: '2019-09-06T15:35:27.709Z'
+modified: '2019-09-10T14:21:47.522Z'
 ---
 
 # Long Pressed Name
@@ -110,4 +110,6 @@ class Solution(object):
 * [x] 1 2019/09/04
 * [x] 1 2019/09/05
 * [x] 1 2019/09/06
-* [ ] 1 2019/09/07
+* [x] 1 2019/09/07
+* [x] 1 2019/09/10
+* [ ] 1 2019/09/17

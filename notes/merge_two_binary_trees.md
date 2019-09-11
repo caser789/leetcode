@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, leetcode/617]
+tags: [2019/09/18, data structure/tree, leetcode/617]
 title: Merge Two Binary Trees
 created: '2019-08-31T09:39:47.220Z'
-modified: '2019-09-06T13:44:01.339Z'
+modified: '2019-09-11T14:08:53.206Z'
 ---
 
 # Merge Two Binary Trees
@@ -104,4 +104,7 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/06
-* [ ] 1 2019/09/07
+* [x] 1 2019/09/07
+* [x] 1 2019/09/08
+* [x] 1 2019/09/11
+* [ ] 1 2019/09/18

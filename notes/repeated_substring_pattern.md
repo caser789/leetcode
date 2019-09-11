@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, knack, leetcode/459]
+tags: [2019/09/15, knack, leetcode/459]
 title: Repeated Substring Pattern
 created: '2019-08-31T09:22:50.801Z'
-modified: '2019-09-05T15:28:35.189Z'
+modified: '2019-09-08T11:50:47.199Z'
 ---
 
 # Repeated Substring Pattern
@@ -42,4 +42,5 @@ class Solution(object):
 
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
-* [ ] 1 2019/09/08
+* [x] 1 2019/09/08
+* [ ] 1 2019/09/15

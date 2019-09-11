@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/31, leetcode/532, TODO]
+tags: [2019/09/15, leetcode/532, TODO]
 title: K-diff Pairs in an Array
 created: '2019-08-31T08:35:43.192Z'
-modified: '2019-08-31T08:35:59.042Z'
+modified: '2019-09-07T09:32:32.950Z'
 ---
 
 # K-diff Pairs in an Array

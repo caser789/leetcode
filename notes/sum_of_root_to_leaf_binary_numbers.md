@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, leetcode/1022, TODO]
+tags: [2019/09/12, leetcode/1022]
 title: Sum of Root To Leaf Binary Numbers
 created: '2019-09-07T06:29:00.205Z'
-modified: '2019-09-07T06:36:11.905Z'
+modified: '2019-09-09T14:03:59.692Z'
 ---
 
 # Sum of Root To Leaf Binary Numbers
@@ -13,19 +13,93 @@ For all leaves in the tree, consider the numbers represented by the path from th
 
 Return the sum of these numbers.
 
- 
 
-Example 1:
+
+### Example 1:
 
 ![pic](https://assets.leetcode.com/uploads/2019/04/04/sum-of-root-to-leaf-binary-numbers.png)
 
 Input: [1,0,1,0,1,0,1]
 Output: 22
 Explanation: (100) + (101) + (110) + (111) = 4 + 5 + 6 + 7 = 22
- 
 
-Note:
+
+## Note:
 
 The number of nodes in the tree is between 1 and 1000.
 node.val is 0 or 1.
 The answer will not exceed 2^31 - 1.
+
+## Solution
+
+### iter
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def sumRootToLeaf(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        self.s = 0
+        def _sum(node, _s):
+            if node is None:
+                return
+            _s = _s*2 + node.val
+
+            if node.left is None and node.right is None:
+                self.s += _s
+            _sum(node.left, _s)
+            _sum(node.right,  _s)
+
+        _sum(root,  0)
+        return self.s
+```
+
+### iter
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def sumRootToLeaf(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root is None:
+            return 0
+        stack = [(root, 0)]
+        s = 0
+        while stack:
+            n, _s = stack.pop()
+            _s = _s*2 + n.val
+
+            if n.left is None and n.right is None:
+                s += _s
+
+            if n.left:
+                stack.append((n.left, _s))
+            if n.right:
+                stack.append((n.right, _s))
+        return s
+
+```
+
+## schedule
+
+* [x] 0 2019/09/08
+* [x] 1 2019/09/09
+* [ ] 1 2019/09/12

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/09, leetcode/859]
+tags: [2019/09/16, leetcode/859]
 title: Buddy Strings
 created: '2019-08-31T09:37:46.330Z'
-modified: '2019-09-06T11:38:14.231Z'
+modified: '2019-09-09T11:31:25.624Z'
 ---
 
 # Buddy Strings
@@ -80,4 +80,5 @@ class Solution(object):
 
 * [x] 0 2019/09/05
 * [x] 1 2019/09/06
-* [ ] 0 2019/09/09
+* [x] 0 2019/09/09
+* [ ] 0 2019/09/16

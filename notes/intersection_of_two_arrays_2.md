@@ -1,8 +1,8 @@
 ---
-tags: [application/array/intersection, application/array/n-array, data structure/array, data structure/map, method/search/hash]
+tags: [application/array/intersection, application/array/n-array, data structure/array, data structure/map, leetcode/350, method/search/hash]
 title: Intersection of Two Arrays II
 created: '2019-07-30T15:48:53.870Z'
-modified: '2019-08-09T04:51:48.356Z'
+modified: '2019-09-07T08:29:28.592Z'
 ---
 
 #  Intersection of Two Arrays II

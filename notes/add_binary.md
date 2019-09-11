@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/08, application/add, leetcode/67]
+tags: [2019/09/15, application/add, leetcode/67]
 title: Add Binary
 created: '2019-08-31T09:24:18.833Z'
-modified: '2019-09-05T14:35:26.403Z'
+modified: '2019-09-08T09:37:54.871Z'
 ---
 
 # Add Binary
@@ -75,4 +75,5 @@ class Solution(object):
 
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
-* [ ] 1 2019/09/08
+* [x] 1 2019/09/08
+* [ ] 1 2019/09/15

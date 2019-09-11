@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/07, leetcode/383]
+tags: [2019/09/14, leetcode/383]
 title: Ransom Note
 created: '2019-08-31T09:08:58.787Z'
-modified: '2019-09-04T05:54:40.158Z'
+modified: '2019-09-07T13:38:50.813Z'
 ---
 
 # Ransom Note
@@ -52,4 +52,5 @@ class Solution(object):
 
 * [x] 0 2019/09/03
 * [x] 1 2019/09/04
-* [ ] 1 2019/09/07
+* [x] 1 2019/09/07
+* [ ] 1 2019/09/14
