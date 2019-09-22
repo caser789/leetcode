@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/31, leetcode/657, TODO]
+tags: [2019/09/23, leetcode/657, TODO]
 title: Robot Return to Origin
 created: '2019-08-31T08:40:56.288Z'
-modified: '2019-08-31T08:41:12.433Z'
+modified: '2019-09-22T11:09:45.506Z'
 ---
 
 # Robot Return to Origin

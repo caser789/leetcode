@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/11, leetcode/748, TODO]
+tags: [2019/09/23, leetcode/748]
 title: Shortest Completing Word
 created: '2019-09-07T08:32:39.530Z'
-modified: '2019-09-07T08:33:04.427Z'
+modified: '2019-09-19T15:03:25.973Z'
 ---
 
 # Shortest Completing Word
@@ -34,3 +34,48 @@ licensePlate will contain digits, spaces, or letters (uppercase or lowercase).
 words will have a length in the range [10, 1000].
 Every words[i] will consist of lowercase letters, and have length in range [1, 15].
 
+## Solution
+
+```python
+class Solution(object):
+    def shortestCompletingWord(self, licensePlate, words):
+        """
+        :type licensePlate: str
+        :type words: List[str]
+        :rtype: str
+        """
+        def match(word, indexes):
+            lst = [0] * 26
+            for c in word:
+                if not c.isalpha():
+                    continue
+                i = ord(c.lower()) - ord('a')
+                lst[i] += 1
+            for i in range(26):
+                if indexes[i] < lst[i]:
+                    return False
+            return True
+
+
+        indexes = [0] * 26
+        for c in licensePlate:
+            if not c.isalpha():
+                continue
+            i = ord(c.lower()) - ord('a')
+            indexes[i] += 1
+        min_length = 999999999
+        result = None
+        for word in words:
+            n = len(word)
+            if match(word, indexes) and n < min_length:
+                min_length = n
+                result = word
+```
+
+## schedule
+
+* [x] 0 2019/09/11
+* [x] 1 2019/09/12
+* [x] 1 2019/09/13
+* [x] 1 2019/09/16
+* [ ] 1 2019/09/23

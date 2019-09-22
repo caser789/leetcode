@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/12, leetcode/1022]
+tags: [2019/10/04, leetcode/1022]
 title: Sum of Root To Leaf Binary Numbers
 created: '2019-09-07T06:29:00.205Z'
-modified: '2019-09-09T14:03:59.692Z'
+modified: '2019-09-22T07:07:53.103Z'
 ---
 
 # Sum of Root To Leaf Binary Numbers
@@ -102,4 +102,6 @@ class Solution(object):
 
 * [x] 0 2019/09/08
 * [x] 1 2019/09/09
-* [ ] 1 2019/09/12
+* [x] 1 2019/09/12
+* [x] 1 2019/09/19
+* [ ] 1 2019/10/04

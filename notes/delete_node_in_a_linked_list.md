@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/14, leetcode/237, TODO]
+tags: [2019/09/25, leetcode/237]
 title: Delete Node in a Linked List
 created: '2019-09-07T09:08:54.179Z'
-modified: '2019-09-07T09:09:37.539Z'
+modified: '2019-09-21T11:06:01.061Z'
 ---
 
 # Delete Node in a Linked List
@@ -35,3 +35,28 @@ All of the nodes' values will be unique.
 The given node will not be the tail and it will always be a valid node of the linked list.
 Do not return anything from your function.
 
+## Solution
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def deleteNode(self, node):
+        """
+        :type node: ListNode
+        :rtype: void Do not return anything, modify node in-place instead.
+        """
+        node.val = node.next.val
+        node.next = node.next.next
+```
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

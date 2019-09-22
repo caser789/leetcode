@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/299, TODO]
+tags: [2019/09/24, leetcode/299, method/index]
 title: Bulls and Cows
 created: '2019-09-07T08:55:35.163Z'
-modified: '2019-09-07T08:55:53.178Z'
+modified: '2019-09-21T05:24:08.505Z'
 ---
 
 # Bulls and Cows
@@ -33,3 +33,44 @@ Explanation: The 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow.
 You may assume that the secret number and your friend's guess only contain digits, and their lengths are always equal.
 
 
+## Solution
+
+```python
+class Solution(object):
+    def getHint(self, secret, guess):
+        """
+        :type secret: str
+        :type guess: str
+        :rtype: str
+        """
+        count = [0] * 10
+        for digit in secret:
+            i = ord(digit) - ord('0')
+            count[i] += 1
+        bull = 0
+        cow = 0
+        for a, b in zip(secret, guess):
+            if a == b:
+                bull += 1
+                i = ord(a) - ord('0')
+                count[i] -= 1
+
+        for i in range(len(guess)):
+            if secret[i] == guess[i]:
+                continue
+            digit = guess[i]
+            j = ord(digit) - ord('0')
+            if count[j] == 0:
+                continue
+            cow += 1
+            count[j] -= 1
+
+        return '{}A{}B'.format(bull, cow)
+```
+
+## schedule
+
+* [x] 0 2019/09/13
+* [x] 1 2019/09/14
+* [x] 1 2019/09/17
+* [ ] 1 2019/09/24

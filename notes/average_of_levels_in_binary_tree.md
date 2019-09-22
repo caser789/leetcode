@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/18, leetcode/637, method/backtracking, method/traversal/bfs]
+tags: [2019/10/03, leetcode/637, method/backtracking, method/traversal/bfs]
 title: Average of Levels in Binary Tree
 created: '2019-08-31T09:53:06.738Z'
-modified: '2019-09-11T05:53:45.972Z'
+modified: '2019-09-21T10:57:20.756Z'
 ---
 
 # Average of Levels in Binary Tree
@@ -74,4 +74,5 @@ def average(node, level, res, count):
 * [x] 0 2019/09/07
 * [x] 1 2019/09/08
 * [x] 1 2019/09/11
-* [ ] 1 2019/09/18
+* [x] 1 2019/09/18
+* [ ] 1 2019/10/03

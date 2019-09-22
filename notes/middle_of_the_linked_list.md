@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/876, TODO]
+tags: [2019/09/25, leetcode/876, method/2 pointers/fast and slow]
 title: Middle of the Linked List
 created: '2019-09-07T09:07:24.677Z'
-modified: '2019-09-07T09:07:46.118Z'
+modified: '2019-09-21T12:13:48.581Z'
 ---
 
 # Middle of the Linked List
@@ -32,3 +32,36 @@ Since the list has two middle nodes with values 3 and 4, we return the second on
 
 The number of nodes in the given list will be between 1 and 100.
 
+
+## Solution
+
+```
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def middleNode(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if not head:
+            return
+        a = b = head
+        while a.next and b.next:
+            a = a.next
+            b = b.next
+            if b.next:
+                b = b.next
+        return a
+```
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

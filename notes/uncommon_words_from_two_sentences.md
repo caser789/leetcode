@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/14, leetcode/884]
+tags: [2019/10/06, leetcode/884]
 title: Uncommon Words from Two Sentences
 created: '2019-09-07T08:24:21.824Z'
-modified: '2019-09-11T14:18:40.951Z'
+modified: '2019-09-22T10:40:38.796Z'
 ---
 
 # Uncommon Words from Two Sentences
@@ -58,4 +58,6 @@ class Solution(object):
 
 * [x] 0 2019/09/10
 * [x] 1 2019/09/11
-* [ ] 1 2019/09/14
+* [x] 1 2019/09/14
+* [x] 1 2019/09/21
+* [ ] 1 2019/10/06

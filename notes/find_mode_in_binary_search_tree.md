@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/501, method/traversal/inorder]
+tags: [2019/10/05, leetcode/501, method/traversal/inorder]
 title: Find Mode in Binary Search Tree
 created: '2019-09-07T07:00:15.112Z'
-modified: '2019-09-10T14:09:15.763Z'
+modified: '2019-09-22T07:58:19.455Z'
 ---
 
 # Find Mode in Binary Search Tree
@@ -111,5 +111,6 @@ class Solution(object):
 
 * [x] 0 2019/09/09
 * [x] 1 2019/09/10
-* [ ] 1 2019/09/13
-
+* [x] 1 2019/09/13
+* [x] 1 2019/09/20
+* [ ] 1 2019/10/05

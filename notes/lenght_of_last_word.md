@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/16, leetcode/58]
+tags: [2019/10/01, leetcode/58]
 title: Length of Last Word
 created: '2019-08-31T09:33:29.772Z'
-modified: '2019-09-09T13:22:42.960Z'
+modified: '2019-09-18T15:28:20.639Z'
 ---
 
 # Length of Last Word
@@ -28,16 +28,16 @@ class Solution(object):
         :rtype: int
         """
         n = len(s)
-        j = n - 1
-        while j >= 0 and s[j] == ' ':
-            j -= 1
-        cnt = 0
-        while j >= 0:
-            if s[j] == ' ':
-                return cnt
-            cnt += 1
-            j -= 1
-        return cnt
+        i = n - 1
+        
+        while i >= 0 and s[i] == ' ':
+            i -= 1
+        
+        res = 0
+        while i >= 0 and s[i] != ' ':
+            i -= 1
+            res += 1
+        return res
 ```
 
 ## schedule
@@ -45,4 +45,5 @@ class Solution(object):
 * [x] 0 2019/09/05
 * [x] 1 2019/09/06
 * [x] 1 2019/09/09
-* [ ] 1 2019/09/16
+* [x] 1 2019/09/16
+* [ ] 1 2019/10/01

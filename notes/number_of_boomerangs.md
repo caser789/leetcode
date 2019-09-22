@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/12, leetcode/447, TODO]
+tags: [2019/09/23, leetcode/447]
 title: Number of Boomerangs
 created: '2019-09-07T08:39:16.819Z'
-modified: '2019-09-07T08:39:35.957Z'
+modified: '2019-09-19T05:31:52.791Z'
 ---
 
 # Number of Boomerangs
@@ -21,3 +21,35 @@ Output:
 
 Explanation:
 The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]]
+
+## Solution
+
+```python
+class Solution(object):
+    def numberOfBoomerangs(self, points):
+        """
+        :type points: List[List[int]]
+        :rtype: int
+        """
+        res = 0
+        for p in points:
+            cmap = {}
+            for q in points:
+                a = p[0] - q[0]
+                b = p[1] - q[1]
+                v = a*a + b*b
+                cmap.setdefault(v, 0)
+                cmap[v] += 1
+            for k in cmap:
+                res += cmap[k] * (cmap[k] - 1)
+        return res
+```
+
+
+## schedule
+
+* [x] 0 2019/09/12
+* [x] 1 2019/09/13
+* [x] 1 2019/09/16
+* [ ] 1 2019/09/23
+

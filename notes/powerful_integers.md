@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/970, TODO]
+tags: [2019/09/25, leetcode/970]
 title: Powerful Integers
 created: '2019-09-07T08:56:50.445Z'
-modified: '2019-09-07T08:57:10.629Z'
+modified: '2019-09-22T03:58:42.313Z'
 ---
 
 # Powerful Integers
@@ -40,3 +40,40 @@ Output: [2,4,6,8,10,14]
 1 <= y <= 100
 0 <= bound <= 10^6
 
+
+## Solution
+
+```python
+class Solution(object):
+    def powerfulIntegers(self, x, y, bound):
+        """
+        :type x: int
+        :type y: int
+        :type bound: int
+        :rtype: List[int]
+        """
+        s = set()
+        i = 0
+        while x**i < bound:
+            j = 0
+            while y**j < bound:
+                k = x**i + y**j
+                if k > bound:
+                    break
+                s.add(k)
+                j += 1
+                if y == 1:
+                    break
+            i += 1
+            if x == 1:
+                break
+        return list(s)
+```
+
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

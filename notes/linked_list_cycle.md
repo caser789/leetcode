@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/14, leetcode/141, TODO]
+tags: [2019/09/25, leetcode/141]
 title: Linked List Cycle
 created: '2019-09-07T09:13:18.859Z'
-modified: '2019-09-07T09:14:17.731Z'
+modified: '2019-09-21T12:02:44.118Z'
 ---
 
 # Linked List Cycle
@@ -43,3 +43,38 @@ Explanation: There is no cycle in the linked list.
 Can you solve it using O(1) (i.e. constant) memory?
 
 
+## Solution
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def hasCycle(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
+        if head is None or head.next is None:
+            return False
+
+        fast = head.next
+        slow = head
+        while fast != slow:
+            if fast is None or fast.next is None:
+                return False
+            fast = fast.next.next
+            slow = slow.next
+        return True
+```
+
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

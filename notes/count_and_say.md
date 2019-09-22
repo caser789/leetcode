@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/15, application/array/status, leetcode/38]
+tags: [2019/09/30, application/array/status, leetcode/38]
 title: Count and Say
 created: '2019-08-31T09:21:26.026Z'
-modified: '2019-09-08T10:08:40.087Z'
+modified: '2019-09-17T14:10:51.326Z'
 ---
 
 # Count and Say
@@ -113,4 +113,5 @@ def count(chars):
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
 * [x] 1 2019/09/08
-* [ ] 1 2019/09/15
+* [x] 1 2019/09/15
+* [ ] 1 2019/09/30

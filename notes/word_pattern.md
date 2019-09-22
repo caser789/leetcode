@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/290, TODO]
+tags: [2019/09/25, leetcode/290]
 title: Word Pattern
 created: '2019-09-07T09:00:37.754Z'
-modified: '2019-09-07T09:01:02.943Z'
+modified: '2019-09-22T04:12:31.188Z'
 ---
 
 # Word Pattern
@@ -34,3 +34,42 @@ Output: false
 ## Notes:
 
 You may assume pattern contains only lowercase letters, and str contains lowercase letters that may be separated by a single space.
+
+## Solution
+
+```python
+class Solution(object):
+    def wordPattern(self, pattern, str):
+        """
+        :type pattern: str
+        :type str: str
+        :rtype: bool
+        """
+        words = str.split(' ')
+        n = len(pattern)
+        m = len(words)
+        if n != m:
+            return False
+        kv = {}
+        vk = {}
+        for i in range(n):
+            word = words[i]
+            c = pattern[i]
+            if word not in kv:
+                kv[word] = c
+            elif kv[word] != c:
+                return False
+            if c not in vk:
+                vk[c] = word
+            elif vk[c] != word:
+                return False
+        return True
+```
+
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

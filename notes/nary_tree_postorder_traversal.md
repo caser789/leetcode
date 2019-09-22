@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/17, leetcode/590]
+tags: [2019/10/02, leetcode/590]
 title: N-ary Tree Postorder Traversal
 created: '2019-08-31T09:45:05.727Z'
-modified: '2019-09-10T14:42:36.292Z'
+modified: '2019-09-21T08:19:03.839Z'
 ---
 
 # N-ary Tree Postorder Traversal
@@ -78,4 +78,5 @@ class Solution(object):
 * [x] 0 2019/09/06
 * [x] 1 2019/09/07
 * [x] 1 2019/09/10
-* [ ] 1 2019/09/17
+* [x] 1 2019/09/17
+* [ ] 1 2019/10/02

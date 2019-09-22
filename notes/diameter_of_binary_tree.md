@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/12, application/tree/height, data structure/tree, leetcode/543]
+tags: [2019/10/04, application/tree/height, data structure/tree, leetcode/543]
 title: Diameter of Binary Tree
 created: '2019-09-07T06:46:04.327Z'
-modified: '2019-09-09T12:58:35.816Z'
+modified: '2019-09-22T04:44:08.618Z'
 ---
 
 # Diameter of Binary Tree
@@ -59,4 +59,6 @@ class Solution(object):
 
 * [x] 0 2019/09/08
 * [x] 1 2019/09/09
-* [ ] 1 2019/09/12
+* [x] 1 2019/09/12
+* [x] 1 2019/09/19
+* [ ] 1 2019/10/04

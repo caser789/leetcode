@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/11, leetcode/575, TODO]
+tags: [2019/10/07, leetcode/575]
 title: Distribute Candies
 created: '2019-09-07T08:25:29.027Z'
-modified: '2019-09-07T08:26:38.172Z'
+modified: '2019-09-22T10:48:00.487Z'
 ---
 
 # Distribute Candies
@@ -29,3 +29,30 @@ The sister has two different kinds of candies, the brother has only one kind of 
 
 The length of the given array is in range [2, 10,000], and will be even.
 The number in given array is in range [-100,000, 100,000].
+
+## Solution
+
+```python
+class Solution(object):
+    def distributeCandies(self, candies):
+        """
+        :type candies: List[int]
+        :rtype: int
+        """
+        candies.sort()
+        cnt = 1
+        i = 1
+        while i < len(candies) and cnt < len(candies)/2:
+            if candies[i] > candies[i-1]:
+                cnt += 1
+            i += 1
+        return cnt
+```
+
+## schedule
+
+* [x] 0 2019/09/11
+* [x] 1 2019/09/12
+* [x] 1 2019/09/15
+* [x] 1 2019/09/22
+* [ ] 1 2019/10/07

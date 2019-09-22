@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/563]
+tags: [2019/10/06, leetcode/563]
 title: Binary Tree Tilt
 created: '2019-09-07T06:48:19.230Z'
-modified: '2019-09-10T14:00:50.723Z'
+modified: '2019-09-22T09:11:37.033Z'
 ---
 
 # Binary Tree Tilt
@@ -69,5 +69,6 @@ class Solution(object):
 
 * [x] 0 2019/09/09
 * [x] 1 2019/09/10
-* [ ] 1 2019/09/13
-
+* [x] 1 2019/09/13
+* [x] 1 2019/09/21
+* [ ] 1 2019/10/06

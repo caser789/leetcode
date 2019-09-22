@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/11, leetcode/389, TODO]
+tags: [2019/10/07, leetcode/389, method/index]
 title: Find the Difference
 created: '2019-09-07T08:34:48.091Z'
-modified: '2019-09-07T08:35:06.225Z'
+modified: '2019-09-22T11:00:44.798Z'
 ---
 
 # Find the Difference
@@ -26,3 +26,33 @@ Explanation:
 'e' is the letter that was added.
 
 
+## Solution
+
+```python
+class Solution(object):
+    def findTheDifference(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: str
+        """
+        lst = [0] * 26
+
+        for c in s:
+            i = ord(c) - ord('a')
+            lst[i] += 1
+
+        for c in t:
+            i = ord(c) - ord('a')
+            if lst[i] == 0:
+                return c
+            lst[i] -= 1
+```
+
+## schedule
+
+* [x] 0 2019/09/11
+* [x] 1 2019/09/12
+* [x] 1 2019/09/15
+* [x] 1 2019/09/22
+* [ ] 1 2019/10/07

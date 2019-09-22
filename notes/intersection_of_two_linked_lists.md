@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/14, leetcode/160, TODO]
+tags: [2019/09/25, leetcode/160]
 title: Intersection of Two Linked Lists
 created: '2019-09-07T09:18:10.076Z'
-modified: '2019-09-07T09:19:50.925Z'
+modified: '2019-09-21T11:18:06.543Z'
 ---
 
 # Intersection of Two Linked Lists
@@ -50,3 +50,40 @@ If the two linked lists have no intersection at all, return null.
 The linked lists must retain their original structure after the function returns.
 You may assume there are no cycles anywhere in the entire linked structure.
 Your code should preferably run in O(n) time and use only O(1) memory.
+
+## Solution
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        """
+        :type head1, head1: ListNode
+        :rtype: ListNode
+        """
+        a = headA
+        b = headB
+        while a is not b:
+            if a is None:
+                a = headB
+            else:
+                a = a.next
+
+            if b is None:
+                b = headA
+            else:
+                b = b.next
+        return a
+```
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

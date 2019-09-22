@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/14, leetcode/83, TODO]
+tags: [2019/09/25, leetcode/83]
 title: Remove Duplicates from Sorted List
 created: '2019-09-07T09:11:50.715Z'
-modified: '2019-09-07T09:12:14.900Z'
+modified: '2019-09-22T04:01:28.619Z'
 ---
 
 # Remove Duplicates from Sorted List
@@ -18,3 +18,44 @@ Output: 1->2
 
 Input: 1->1->2->3->3
 Output: 1->2->3
+
+## Solution
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def deleteDuplicates(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        Input: 1->1->2->3->3
+        Output: 1->2->3
+        """
+        if not head or not head.next:
+            return head
+
+        prev = head
+        h = head.next
+
+        while h:
+            if h.val == prev.val:
+                prev.next = h.next
+                h = h.next
+            else:
+                prev = h
+                h = h.next
+        return head
+```
+
+
+## schedule
+
+* [x] 0 2019/09/14
+* [x] 1 2019/09/15
+* [x] 1 2019/09/18
+* [ ] 1 2019/09/25

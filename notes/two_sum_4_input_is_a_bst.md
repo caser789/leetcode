@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/12, leetcode/653]
+tags: [2019/10/04, leetcode/653]
 title: Two Sum IV - Input is a BST
 created: '2019-09-07T06:31:25.541Z'
-modified: '2019-09-09T14:43:06.496Z'
+modified: '2019-09-22T07:24:00.723Z'
 ---
 
 # Two Sum IV - Input is a BST
@@ -161,4 +161,6 @@ class Solution(object):
 
 * [x] 0 2019/09/08
 * [x] 1 2019/09/09
-* [ ] 1 2019/09/12
+* [x] 1 2019/09/12
+* [x] 1 2019/09/19
+* [ ] 1 2019/10/04

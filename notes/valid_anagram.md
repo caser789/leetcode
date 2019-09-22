@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/12, leetcode/242, TODO]
+tags: [2019/09/23, leetcode/242]
 title: Valid Anagram
 created: '2019-09-07T08:36:24.334Z'
-modified: '2019-09-07T08:36:47.514Z'
+modified: '2019-09-19T15:10:30.487Z'
 ---
 
 # Valid Anagram
@@ -26,3 +26,32 @@ You may assume the string contains only lowercase alphabets.
 What if the inputs contain unicode characters? How would you adapt your solution to such case?
 
 
+## Solution
+
+```python
+class Solution(object):
+    def isAnagram(self, s, t):
+        """
+        :type s: str
+        :type t: str
+        :rtype: bool
+        """
+        lst = [0] * 26
+        for c in s:
+            i = ord(c) - ord('a')
+            lst[i] += 1
+        for c in t:
+            i = ord(c) - ord('a')
+            lst[i] -= 1
+        for i in lst:
+            if i != 0:
+                return False
+        return True
+```
+
+## schedule
+
+* [x] 0 2019/09/12
+* [x] 1 2019/09/13
+* [x] 1 2019/09/16
+* [ ] 1 2019/09/23

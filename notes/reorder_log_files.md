@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/13, leetcode/937]
+tags: [2019/09/28, leetcode/937]
 title: Reorder Log Files
 created: '2019-08-31T08:57:05.976Z'
-modified: '2019-09-06T15:49:45.482Z'
+modified: '2019-09-15T04:06:23.403Z'
 ---
 
 # Reorder Log Files
@@ -59,4 +59,5 @@ class Solution(object):
 * [x] 0 2019/09/02
 * [x] 1 2019/09/03
 * [x] 1 2019/09/06
-* [ ] 1 2019/09/13
+* [x] 1 2019/09/13
+* [ ] 1 2019/09/28

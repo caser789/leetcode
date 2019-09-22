@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/15, leetcode/1030, TODO]
+tags: [2019/09/26, leetcode/1030]
 title: Matrix Cells in Distance Order
 created: '2019-09-07T09:24:35.935Z'
-modified: '2019-09-07T09:25:02.070Z'
+modified: '2019-09-22T06:38:45.230Z'
 ---
 
 # Matrix Cells in Distance Order
@@ -42,3 +42,48 @@ There are other answers that would also be accepted as correct, such as [[1,2],[
 1 <= C <= 100
 0 <= r0 < R
 0 <= c0 < C
+
+## Solution
+
+```python
+from collections import deque
+class Solution(object):
+    def allCellsDistOrder(self, R, C, r0, c0):
+        """
+        :type R: int
+        :type C: int
+        :type r0: int
+        :type c0: int
+        :rtype: List[List[int]]
+        """
+        seen = [[0 for _ in range(C)] for _ in range(R)]
+
+        q = deque()
+
+        res = []
+        q.append([r0, c0])
+
+        while q:
+            x, y = q.popleft()
+            if not 0 <= x < R:
+                continue
+            if not 0 <= y < C:
+                continue
+
+            if seen[x][y]:
+                continue
+            res.append([x, y])
+            seen[x][y] = 1
+            q.append([x+1, y])
+            q.append([x-1, y])
+            q.append([x, y+1])
+            q.append([x, y-1])
+        return res
+```
+
+## schedule
+
+* [x] 0 2019/09/15
+* [x] 1 2019/09/16
+* [x] 1 2019/09/19
+* [ ] 1 2019/09/26

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/15, leetcode/345, method/2 pointers, method/3 while]
+tags: [2019/09/30, leetcode/345, method/2 pointers, method/3 while]
 title: Reverse Vowels of a String
 created: '2019-08-31T09:20:02.087Z'
-modified: '2019-09-08T11:53:38.890Z'
+modified: '2019-09-18T05:45:49.326Z'
 ---
 
 # Reverse Vowels of a String
@@ -59,4 +59,5 @@ class Solution(object):
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
 * [x] 1 2019/09/08
-* [ ] 1 2019/09/15
+* [x] 1 2019/09/15
+* [ ] 1 2019/09/30

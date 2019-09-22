@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/15, leetcode/532, TODO]
+tags: [2019/09/26, leetcode/532]
 title: K-diff Pairs in an Array
 created: '2019-08-31T08:35:43.192Z'
-modified: '2019-09-07T09:32:32.950Z'
+modified: '2019-09-22T06:28:21.174Z'
 ---
 
 # K-diff Pairs in an Array
@@ -42,4 +42,27 @@ class Solution(object):
         :type k: int
         :rtype: int
         """
+        if k < 0:
+            return 0
+        counter = {}
+        for num in nums:
+            counter.setdefault(num, 0)
+            counter[num] += 1
+
+        res = 0
+        for i, cnt in counter.items():
+            if k == 0:
+                if cnt > 1:
+                    res += 1
+            else:
+                if i + k in counter:
+                    res += 1
+        return res
 ```
+
+## schedule
+
+* [x] 0 2019/09/15
+* [x] 1 2019/09/16
+* [x] 1 2019/09/19
+* [ ] 1 2019/09/26

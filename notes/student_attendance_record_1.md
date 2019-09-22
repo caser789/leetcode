@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/14, application/array/status, leetcode/551]
+tags: [2019/09/29, application/array/status, leetcode/551]
 title: Student Attendance Record I
 created: '2019-08-31T09:13:55.004Z'
-modified: '2019-09-07T13:51:16.574Z'
+modified: '2019-09-17T05:13:22.436Z'
 ---
 
 # Student Attendance Record I
@@ -64,4 +64,5 @@ class Solution(object):
 * [x] 0 2019/09/03
 * [x] 1 2019/09/04
 * [x] 1 2019/09/07
-* [ ] 1 2019/09/14
+* [x] 1 2019/09/14
+* [ ] 1 2019/09/29

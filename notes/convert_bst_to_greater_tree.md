@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/12, leetcode/538]
+tags: [2019/10/04, leetcode/538]
 title: Convert BST to Greater Tree
 created: '2019-09-07T06:33:36.093Z'
-modified: '2019-09-09T12:19:54.347Z'
+modified: '2019-09-22T04:39:31.421Z'
 ---
 
 # Convert BST to Greater Tree
@@ -141,4 +141,6 @@ class Solution(object):
 
 * [x] 0 2019/09/08
 * [x] 1 2019/09/09
-* [ ] 1 2019/09/12
+* [x] 1 2019/09/12
+* [x] 1 2019/09/19
+* [ ] 1 2019/10/04
