@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/31, leetcode/581, TODO]
+tags: [2019/09/30, leetcode/581, TODO]
 title: Shortest Unsorted Continuous Subarray
 created: '2019-08-31T08:34:12.401Z'
-modified: '2019-08-31T08:34:34.079Z'
+modified: '2019-09-24T15:21:31.129Z'
 ---
 
 # Shortest Unsorted Continuous Subarray

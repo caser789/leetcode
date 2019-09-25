@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/748]
+tags: [2019/10/08, leetcode/748]
 title: Shortest Completing Word
 created: '2019-09-07T08:32:39.530Z'
-modified: '2019-09-19T15:03:25.973Z'
+modified: '2019-09-23T14:27:42.330Z'
 ---
 
 # Shortest Completing Word
@@ -78,4 +78,5 @@ class Solution(object):
 * [x] 1 2019/09/12
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
-* [ ] 1 2019/09/23
+* [x] 1 2019/09/23
+* [ ] 1 2019/10/08

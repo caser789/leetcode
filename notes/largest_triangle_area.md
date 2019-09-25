@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/24]
+tags: [2019/09/25, leetcode/812]
 title: Largest Triangle Area
 created: '2019-09-22T11:14:58.323Z'
-modified: '2019-09-22T11:15:34.152Z'
+modified: '2019-09-24T01:20:07.991Z'
 ---
 
 # Largest Triangle Area
@@ -26,12 +26,28 @@ Answers within 10^-6 of the true value will be accepted as correct.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def largestTriangleArea(self, points):
         """
         :type points: List[List[int]]
         :rtype: float
         """
-        
+        max_area = 0
+        for p in points:
+            for q in points:
+                for r in points:
+                    area = 0.5*(
+                        (q[0]*r[1] - r[0]*q[1]) - 
+                        (p[0]*r[1] - r[0]*p[1]) + 
+                        (p[0]*q[1] - q[0]*p[1])
+                    )
+                    max_area = max(max_area, area)
+        return max_area
+                      
 ```
+
+## schedule
+
+* [x] 0 2019/09/24
+* [ ] 1 2019/09/25

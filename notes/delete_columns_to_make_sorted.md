@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/944]
+tags: [2019/09/27, leetcode/944]
 title: Delete Columns to Make Sorted
 created: '2019-09-22T11:03:00.125Z'
-modified: '2019-09-22T11:03:48.350Z'
+modified: '2019-09-24T04:56:27.626Z'
 ---
 
 # Delete Columns to Make Sorted
@@ -17,28 +17,30 @@ Suppose we chose a set of deletion indices D such that after deletions, each rem
 
 Return the minimum possible value of D.length.
 
- 
 
-Example 1:
+
+### Example 1:
 
 Input: ["cba","daf","ghi"]
 Output: 1
-Explanation: 
+Explanation:
 After choosing D = {1}, each column ["c","d","g"] and ["a","f","i"] are in non-decreasing sorted order.
 If we chose D = {}, then a column ["b","a","h"] would not be in non-decreasing sorted order.
-Example 2:
+
+### Example 2:
 
 Input: ["a","b"]
 Output: 0
 Explanation: D = {}
-Example 3:
+
+### Example 3:
 
 Input: ["zyx","wvu","tsr"]
 Output: 3
 Explanation: D = {0, 1, 2}
- 
 
-Note:
+
+## Note:
 
 1 <= A.length <= 100
 1 <= A[i].length <= 1000
@@ -46,12 +48,27 @@ Note:
 
 ## solution
 
-```
+```python
 class Solution(object):
     def minDeletionSize(self, A):
         """
         :type A: List[str]
         :rtype: int
         """
-        
+        D = []
+        n = len(A)
+        m = len(A[0])
+        for j in range(m):
+            for i in range(1, n):
+                if not A[i][j] >= A[i-1][j]:
+                    D.append(j)
+                    break
+        return len(D)
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/23
+* [x] 0 2019/09/24
+* [ ] 0 2019/09/27

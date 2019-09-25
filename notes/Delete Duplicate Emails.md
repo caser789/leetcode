@@ -1,0 +1,37 @@
+---
+tags: [2019/09/26, leetcode/196, sql]
+title: Delete Duplicate Emails
+created: '2019-09-24T14:57:44.304Z'
+modified: '2019-09-24T14:58:11.779Z'
+---
+
+# Delete Duplicate Emails
+
+Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
+
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Id is the primary key column for this table.
+For example, after running your query, the above Person table should have the following rows:
+
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+Note:
+
+Your output is the whole Person table after executing your sql. Use delete statement.
+
+## Solution
+
+```
+# Write your MySQL query statement below
+
+```

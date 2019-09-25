@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/409]
+tags: [2019/10/08, leetcode/409]
 title: Longest Palindrome
 created: '2019-09-07T08:40:56.846Z'
-modified: '2019-09-19T05:13:18.702Z'
+modified: '2019-09-23T05:12:21.589Z'
 ---
 
 # Longest Palindrome
@@ -56,4 +56,5 @@ class Solution(object):
 * [x] 0 2019/09/12
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
-* [ ] 1 2019/09/23
+* [x] 1 2019/09/23
+* [ ] 1 2019/10/08

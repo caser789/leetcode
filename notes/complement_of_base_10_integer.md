@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/1009]
+tags: [2019/09/26, leetcode/1009]
 title: Complement of Base 10 Integer
 created: '2019-09-22T11:22:09.307Z'
-modified: '2019-09-22T11:22:41.472Z'
+modified: '2019-09-24T14:28:15.555Z'
 ---
 
 # Complement of Base 10 Integer
@@ -38,12 +38,29 @@ Note:
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def bitwiseComplement(self, N):
         """
         :type N: int
         :rtype: int
         """
+        if N == 0:
+            return 1
         
+        res = []
+        while N:
+            N, c = divmod(N, 2)
+            res.append(c)
+        m = 0
+        for c in res[::-1]:
+            v = 1 if c == 0 else 0
+            m = m * 2 + v
+        return m
+                
 ```
+
+## schedule
+
+* [x] 0 2019/09/25
+* [ ] 1 2019/09/26

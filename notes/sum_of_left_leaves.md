@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/404]
+tags: [2019/10/08, leetcode/404]
 title: Sum of Left Leaves
 created: '2019-09-07T06:43:00.528Z'
-modified: '2019-09-19T15:08:13.308Z'
+modified: '2019-09-23T14:38:45.996Z'
 ---
 
 # Sum of Left Leaves
@@ -96,4 +96,5 @@ class Solution(object):
 * [x] 1 2019/09/12
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
-* [ ] 1 2019/09/23
+* [x] 1 2019/09/23
+* [ ] 1 2019/10/08

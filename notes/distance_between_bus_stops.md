@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/24]
+tags: [2019/09/28, leetcode/1184]
 title: Distance Between Bus Stops
 created: '2019-09-22T11:16:09.014Z'
-modified: '2019-09-22T11:17:03.675Z'
+modified: '2019-09-25T04:53:04.336Z'
 ---
 
 # Distance Between Bus Stops
@@ -15,7 +15,7 @@ Return the shortest distance between the given start and destination stops.
 
  
 
-Example 1:
+### Example 1:
 
 ![pic](https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1.jpg)
 
@@ -24,7 +24,7 @@ Output: 1
 Explanation: Distance between 0 and 1 is 1 or 9, minimum is 1.
  
 
-Example 2:
+### Example 2:
 
 ![pic](https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1-1.jpg)
 
@@ -33,7 +33,7 @@ Output: 3
 Explanation: Distance between 0 and 2 is 3 or 7, minimum is 3.
  
 
-Example 3:
+### Example 3:
 
 ![pic](https://assets.leetcode.com/uploads/2019/09/03/untitled-diagram-1-2.jpg)
 
@@ -51,7 +51,7 @@ distance.length == n
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def distanceBetweenBusStops(self, distance, start, destination):
         """
@@ -60,4 +60,23 @@ class Solution(object):
         :type destination: int
         :rtype: int
         """
+        
+        s = sum(distance)
+        n = len(distance)
+        
+        i = start
+        j = destination
+        x = 0
+        while i != j:
+            x += distance[i]
+            i = (i+1)%n
+        
+        return min(x, s-x)
+            
 ```
+
+## schedule
+
+* [x] 0 2019/09/24
+* [x] 1 2019/09/25
+* [ ] 1 2019/09/28

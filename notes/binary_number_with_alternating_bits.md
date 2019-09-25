@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/693]
+tags: [2019/09/26, leetcode/693]
 title: Binary Number with Alternating Bits
 created: '2019-09-22T11:19:00.236Z'
-modified: '2019-09-22T11:19:30.207Z'
+modified: '2019-09-24T01:24:07.685Z'
 ---
 
 # Binary Number with Alternating Bits
@@ -32,12 +32,25 @@ The binary representation of 10 is: 1010.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def hasAlternatingBits(self, n):
         """
         :type n: int
         :rtype: bool
         """
-        
+        lst = []
+        prev = None
+        while n:
+            n, c = divmod(n, 2)
+            lst.append(c)
+            if prev is not None and c == prev:
+                return False
+            prev = c
+        return True
 ```
+
+## schedule
+
+* [x] 0 2019/09/25
+* [ ] 1 2019/09/26

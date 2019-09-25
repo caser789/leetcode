@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/876, method/2 pointers/fast and slow]
+tags: [2019/10/10, leetcode/876, method/2 pointers/fast and slow]
 title: Middle of the Linked List
 created: '2019-09-07T09:07:24.677Z'
-modified: '2019-09-21T12:13:48.581Z'
+modified: '2019-09-25T05:02:00.604Z'
 ---
 
 # Middle of the Linked List
@@ -64,4 +64,5 @@ class Solution(object):
 * [x] 0 2019/09/14
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [ ] 1 2019/10/10

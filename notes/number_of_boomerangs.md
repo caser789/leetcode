@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/447]
+tags: [2019/10/08, leetcode/447]
 title: Number of Boomerangs
 created: '2019-09-07T08:39:16.819Z'
-modified: '2019-09-19T05:31:52.791Z'
+modified: '2019-09-23T05:58:58.486Z'
 ---
 
 # Number of Boomerangs
@@ -51,5 +51,6 @@ class Solution(object):
 * [x] 0 2019/09/12
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
-* [ ] 1 2019/09/23
+* [x] 1 2019/09/23
+* [ ] 1 2019/10/08
 

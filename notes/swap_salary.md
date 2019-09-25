@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/627]
+tags: [2019/09/27, leetcode/627]
 title: Swap Salary
 created: '2019-09-22T11:05:42.070Z'
-modified: '2019-09-22T11:06:19.587Z'
+modified: '2019-09-24T05:12:35.102Z'
 ---
 
 # Swap Salary
@@ -11,7 +11,7 @@ Given a table salary, such as the one below, that has m=male and f=female values
 
 Note that you must write a single update statement, DO NOT write any select statement for this problem.
 
- 
+
 
 Example:
 
@@ -33,4 +33,18 @@ After running your update statement, the above salary table should have the foll
 
 ```
 # Write your MySQL query statement below
+
+UPDATE salary
+SET
+    sex =
+        CASE sex
+            WHEN 'f' THEN 'm'
+            ELSE 'f'
+        END;
 ```
+
+## schedule
+
+* [x] 0 2019/09/23
+* [x] 1 2019/09/24
+* [ ] 1 2019/09/27

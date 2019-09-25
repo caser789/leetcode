@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/12, leetcode/401, TODO]
+tags: [2019/09/28, leetcode/401, TODO]
 title: Binary Watch
 created: '2019-08-12T13:33:55.567Z'
-modified: '2019-08-12T14:24:30.970Z'
+modified: '2019-09-24T15:06:55.208Z'
 ---
 
 # Binary Watch

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/141]
+tags: [2019/10/10, leetcode/141]
 title: Linked List Cycle
 created: '2019-09-07T09:13:18.859Z'
-modified: '2019-09-21T12:02:44.118Z'
+modified: '2019-09-25T05:00:38.218Z'
 ---
 
 # Linked List Cycle
@@ -77,4 +77,5 @@ class Solution(object):
 * [x] 0 2019/09/14
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [ ] 1 2019/10/10

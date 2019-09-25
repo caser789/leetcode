@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/645]
+tags: [2019/10/08, leetcode/645]
 title: Set Mismatch
 created: '2019-09-07T08:54:10.509Z'
-modified: '2019-09-19T06:05:30.842Z'
+modified: '2019-09-23T14:17:53.749Z'
 ---
 
 # Set Mismatch
@@ -77,4 +77,5 @@ class Solution(object):
 * [x] 0 2019/09/12
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
-* [ ] 1 2019/09/23
+* [x] 1 2019/09/23
+* [ ] 1 2019/10/08

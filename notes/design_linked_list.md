@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/15, design, leetcode/707, TODO]
+tags: [2019/10/01, design, leetcode/707]
 title: Design Linked List
 created: '2019-09-07T09:21:17.418Z'
-modified: '2019-09-07T09:22:27.807Z'
+modified: '2019-09-24T15:27:13.197Z'
 ---
 
 # Design Linked List

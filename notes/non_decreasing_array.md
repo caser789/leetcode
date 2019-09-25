@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/31, leetcode/665, TODO]
+tags: [2019/10/01, leetcode/665]
 title: Non-decreasing Array
 created: '2019-08-31T08:37:45.110Z'
-modified: '2019-08-31T08:37:58.721Z'
+modified: '2019-09-24T15:25:40.204Z'
 ---
 
 # Non-decreasing Array

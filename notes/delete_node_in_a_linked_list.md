@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/237]
+tags: [2019/10/10, leetcode/237]
 title: Delete Node in a Linked List
 created: '2019-09-07T09:08:54.179Z'
-modified: '2019-09-21T11:06:01.061Z'
+modified: '2019-09-25T04:51:16.336Z'
 ---
 
 # Delete Node in a Linked List
@@ -59,4 +59,5 @@ class Solution(object):
 * [x] 0 2019/09/14
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [ ] 1 2019/10/10

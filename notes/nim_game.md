@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/24, leetcode/292]
+tags: [2019/09/25, leetcode/292]
 title: Nim Game
 created: '2019-09-22T11:12:48.088Z'
-modified: '2019-09-22T11:13:17.904Z'
+modified: '2019-09-23T15:56:36.673Z'
 ---
 
 # Nim Game
@@ -21,12 +21,17 @@ Explanation: If there are 4 stones in the heap, then you will never win the game
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def canWinNim(self, n):
         """
         :type n: int
         :rtype: bool
         """
-        
+        return n % 4 != 0
 ```
+
+## schedule
+
+* [x] 0 2019/09/24
+* [ ] 1 2019/09/25

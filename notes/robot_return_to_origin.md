@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/23, leetcode/657, TODO]
+tags: [2019/09/27, leetcode/657]
 title: Robot Return to Origin
 created: '2019-08-31T08:40:56.288Z'
-modified: '2019-09-22T11:09:45.506Z'
+modified: '2019-09-24T05:06:57.170Z'
 ---
 
 # Robot Return to Origin
@@ -36,4 +36,18 @@ class Solution(object):
         :type moves: str
         :rtype: bool
         """
+        x = y = 0
+        for move in moves:
+            if move == 'U': y -= 1
+            elif move == 'D': y += 1
+            elif move == 'L': x -= 1
+            elif move == 'R': x += 1
+        return x == y == 0
 ```
+
+## schedule
+
+* [x] 0 2019/09/23
+* [x] 1 2019/09/24
+* [ ] 1 2019/09/27
+
