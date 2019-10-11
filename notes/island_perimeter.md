@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/06, leetcode/463]
+tags: [2019/11/06, leetcode/463]
 title: Island Perimeter
 created: '2019-09-07T08:21:48.277Z'
-modified: '2019-09-22T09:19:56.842Z'
+modified: '2019-10-07T15:23:37.240Z'
 ---
 
 # Island Perimeter
@@ -59,4 +59,5 @@ class Solution(object):
 * [x] 1 2019/09/11
 * [x] 1 2019/09/14
 * [x] 1 2019/09/21
-* [ ] 1 2019/10/06
+* [x] 1 2019/10/06
+* [ ] 1 2019/11/06

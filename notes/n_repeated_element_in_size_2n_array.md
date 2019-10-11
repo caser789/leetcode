@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/05, leetcode/961]
+tags: [2019/11/05, leetcode/961]
 title: N-Repeated Element in Size 2N Array
 created: '2019-09-07T08:12:21.094Z'
-modified: '2019-09-22T08:13:07.987Z'
+modified: '2019-10-07T04:59:19.280Z'
 ---
 
 # N-Repeated Element in Size 2N Array
@@ -74,4 +74,5 @@ class Solution(object):
 * [x] 1 2019/09/10
 * [x] 1 2019/09/13
 * [x] 1 2019/09/20
-* [ ] 1 2019/10/05
+* [x] 1 2019/10/05
+* [ ] 1 2019/11/05

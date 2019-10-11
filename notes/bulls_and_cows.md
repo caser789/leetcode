@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/299, method/index]
+tags: [2019/11/09, leetcode/299, method/index]
 title: Bulls and Cows
 created: '2019-09-07T08:55:35.163Z'
-modified: '2019-09-24T04:52:48.509Z'
+modified: '2019-10-08T14:38:21.634Z'
 ---
 
 # Bulls and Cows
@@ -74,4 +74,5 @@ class Solution(object):
 * [x] 1 2019/09/14
 * [x] 1 2019/09/17
 * [x] 1 2019/09/24
-* [ ] 1 2019/10/09
+* [x] 1 2019/10/09
+* [ ] 1 2019/11/09

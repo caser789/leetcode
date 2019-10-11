@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/08, leetcode/953]
+tags: [2019/10/12, leetcode/953]
 title: Verifying an Alien Dictionary
 created: '2019-09-07T08:29:50.510Z'
-modified: '2019-09-23T14:48:56.818Z'
+modified: '2019-10-09T14:39:25.562Z'
 ---
 
 # Verifying an Alien Dictionary
@@ -73,4 +73,6 @@ class Solution(object):
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
 * [x] 1 2019/09/23
-* [ ] 1 2019/10/08
+* [x] 1 2019/10/08
+* [x] 1 2019/10/09
+* [ ] 1 2019/10/12

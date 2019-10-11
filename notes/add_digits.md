@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/258]
+tags: [2019/10/19, application/divmod, leetcode/258]
 title: Add Digits
 created: '2019-09-22T11:11:43.303Z'
-modified: '2019-09-25T04:45:41.145Z'
+modified: '2019-10-05T04:58:13.893Z'
 ---
 
 # Add Digits
@@ -47,4 +47,6 @@ class Solution(object):
 
 * [x] 0 2019/09/23
 * [x] 1 2019/09/24
-* [ ] 1 2019/09/27
+* [x] 1 2019/09/27
+* [x] 1 2019/10/04
+* [ ] 1 2019/10/19

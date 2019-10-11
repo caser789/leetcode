@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/28, leetcode/717, math]
+tags: [2019/08/28, bit, leetcode/717, math]
 title: 1-bit and 2-bit Characters
 created: '2019-08-28T15:26:54.491Z'
-modified: '2019-08-28T15:38:10.239Z'
+modified: '2019-09-27T11:45:05.319Z'
 ---
 
 # 1-bit and 2-bit Characters

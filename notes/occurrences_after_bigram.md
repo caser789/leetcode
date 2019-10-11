@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/05, leetcode/1078]
+tags: [2019/11/05, leetcode/1078, method/pointer]
 title: Occurrences After Bigram
 created: '2019-09-07T08:17:33.353Z'
-modified: '2019-09-22T08:39:51.934Z'
+modified: '2019-10-07T05:08:12.553Z'
 ---
 
 # Occurrences After Bigram
@@ -65,4 +65,5 @@ class Solution(object):
 * [x] 1 2019/09/10
 * [x] 1 2019/09/13
 * [x] 1 2019/09/20
-* [ ] 1 2019/10/05
+* [x] 1 2019/10/05
+* [ ] 1 2019/11/05

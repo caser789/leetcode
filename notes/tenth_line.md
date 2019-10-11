@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/26, leetcode/195]
+tags: [2019/10/11, leetcode/195]
 title: Tenth Line
 created: '2019-09-24T14:56:42.616Z'
-modified: '2019-09-24T14:57:27.379Z'
+modified: '2019-10-09T14:11:36.979Z'
 ---
 
 # Tenth Line
@@ -32,7 +32,27 @@ Note:
 
 ## Solution
 
-```
+```sh
 # Read from the file file.txt and output the tenth line to stdout.
 
+# Solution 2
+awk 'FNR == 10 {print }'  file.txt
+# OR
+awk 'NR == 10' file.txt
+
+# Solution 3
+sed -n 10p file.txt
+
+# Solution 4
+tail -n+10 file.txt|head -1
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/26
+* [x] 1 2019/09/27
+* [x] 1 2019/09/30
+* [x] 1 2019/10/07
+* [x] 1 2019/10/08
+* [ ] 1 2019/10/11

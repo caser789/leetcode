@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/02, data structure/tree, leetcode/700]
+tags: [2019/11/02, data structure/tree, leetcode/700]
 title: Search in a Binary Search Tree
 created: '2019-08-31T09:41:05.330Z'
-modified: '2019-09-21T08:43:17.665Z'
+modified: '2019-10-03T14:25:58.503Z'
 ---
 
 # Search in a Binary Search Tree
@@ -91,4 +91,5 @@ class Solution(object):
 * [x] 1 2019/09/07
 * [x] 1 2019/09/10
 * [x] 1 2019/09/17
-* [ ] 1 2019/10/02
+* [x] 1 2019/10/02
+* [ ] 1 2019/11/02

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/263]
+tags: [2019/10/23, leetcode/263]
 title: Ugly Number
 created: '2019-09-24T15:01:13.034Z'
-modified: '2019-09-24T15:01:52.110Z'
+modified: '2019-10-08T11:57:41.319Z'
 ---
 
 # Ugly Number
@@ -33,12 +33,31 @@ Input is within the 32-bit signed integer range: [−231,  231 − 1].
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def isUgly(self, num):
         """
         :type num: int
         :rtype: bool
         """
-        
+        if num < 1:
+            return False
+        if num in [1, 2, 3, 5]:
+            return True
+        if num % 2 == 0:
+            return self.isUgly(num/2)
+        if num % 3 == 0:
+            return self.isUgly(num/3)
+        if num % 5 == 0:
+            return self.isUgly(num/5)
+        return False
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/27
+* [x] 1 2019/09/28
+* [x] 1 2019/10/01
+* [x] 1 2019/10/08
+* [ ] 1 2019/10/23

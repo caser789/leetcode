@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/06, leetcode/811]
+tags: [2019/11/06, leetcode/811]
 title: Subdomain Visit Count
 created: '2019-09-07T08:14:56.941Z'
-modified: '2019-09-22T10:19:24.700Z'
+modified: '2019-10-08T01:21:11.960Z'
 ---
 
 # Subdomain Visit Count
@@ -69,4 +69,5 @@ class Solution(object):
 * [x] 1 2019/09/11
 * [x] 1 2019/09/14
 * [x] 1 2019/09/21
-* [ ] 1 2019/10/06
+* [x] 1 2019/10/06
+* [ ] 1 2019/11/06

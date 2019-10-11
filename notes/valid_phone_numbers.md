@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/26, bash, leetcode/193]
+tags: [2019/10/22, bash, leetcode/193]
 title: Valid Phone Numbers
 created: '2019-09-24T14:55:22.719Z'
-modified: '2019-09-24T14:56:24.827Z'
+modified: '2019-10-08T05:21:07.407Z'
 ---
 
 # Valid Phone Numbers
@@ -13,7 +13,7 @@ You may assume that a valid phone number must appear in one of the following two
 
 You may also assume each line in the text file must not contain leading or trailing white spaces.
 
-Example:
+### Example:
 
 Assume that file.txt has the following content:
 
@@ -30,4 +30,17 @@ Your script should output the following valid phone numbers:
 ```
 # Read from the file file.txt and output all valid phone numbers to stdout.
 
+grep -P '^(\d{3}-|\(\d{3}\) )\d{3}-\d{4}$' file.txt  # Pattern
+
+grep -P '^\d{3}-\d{3}-\d{4}$' file.txt
+grep -P '\(\d{3}\) \d{3}-\d{4}$' file.txt
+
 ```
+
+## schedule
+
+* [x] 0 2019/09/26
+* [x] 1 2019/09/27
+* [x] 1 2019/09/30
+* [x] 1 2019/10/07
+* [ ] 1 2019/10/22

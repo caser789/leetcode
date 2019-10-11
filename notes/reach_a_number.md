@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/01, leetcode/754]
+tags: [2019/10/09, leetcode/754]
 title: Reach a Number
 created: '2019-09-24T15:27:35.413Z'
-modified: '2019-09-24T15:28:00.429Z'
+modified: '2019-10-09T01:23:09.229Z'
 ---
 
 # Reach a Number

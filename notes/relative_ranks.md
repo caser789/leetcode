@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/29, leetcode/506]
+tags: [2019/10/25, leetcode/506]
 title: Relative Ranks
 created: '2019-09-24T15:17:24.600Z'
-modified: '2019-09-24T15:17:47.994Z'
+modified: '2019-10-10T16:26:35.507Z'
 ---
 
 # Relative Ranks
@@ -20,7 +20,7 @@ All the scores of athletes are guaranteed to be unique.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def findRelativeRanks(self, nums):
         """
@@ -28,4 +28,25 @@ class Solution(object):
         :rtype: List[str]
         """
         
+        x = sorted(nums)
+        kv = {}
+        for i, num in enumerate(x[::-1]):
+            if i == 0:
+                kv[num] = 'Gold Medal'
+            elif i == 1:
+                kv[num] = 'Silver Medal'
+            elif i == 2:
+                kv[num] = 'Bronze Medal'
+            else:
+                kv[num] = str(i+1)
+        
+        return [kv[num] for num in nums]
 ```
+
+## schedule
+
+* [x] 0 2019/09/29
+* [x] 1 2019/09/30
+* [x] 1 2019/10/03
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/25

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/29, leetcode/496]
+tags: [2019/10/25, data structure/stack, leetcode/496, method/next_great]
 title: Next Greater Element I
 created: '2019-09-24T15:15:34.750Z'
-modified: '2019-09-24T15:16:03.472Z'
+modified: '2019-10-10T13:44:23.233Z'
 ---
 
 # Next Greater Element I
@@ -30,7 +30,7 @@ The length of both nums1 and nums2 would not exceed 1000.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def nextGreaterElement(self, nums1, nums2):
         """
@@ -38,5 +38,22 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
+        kv = {}
+        stack = []
+        for num in nums2:
+            while stack and stack[-1] < num:
+                kv[stack.pop()] = num
+            stack.append(num)
         
+        for i in range(len(nums1)):
+            nums1[i] = kv.get(nums1[i], -1)
+        return nums1
 ```
+
+## schedule
+
+* [x] 0 2019/09/29
+* [x] 1 2019/09/30
+* [x] 1 2019/10/03
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/25

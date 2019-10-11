@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/28, leetcode/405]
+tags: [2019/10/13, leetcode/405]
 title: Convert a Number to Hexadecimal
 created: '2019-09-24T15:07:17.730Z'
-modified: '2019-09-24T15:07:46.020Z'
+modified: '2019-10-10T12:08:25.563Z'
 ---
 
 # Convert a Number to Hexadecimal
@@ -32,12 +32,30 @@ Output:
 
 ## Solution
 
-```
+```python
+chars = '0123456789abcdef'
 class Solution(object):
     def toHex(self, num):
         """
         :type num: int
         :rtype: str
         """
+        if num == 0:
+            return '0'
+        res = ''
+        for i in range(8):
+            j = num & 15
+            res = chars[j] + res
+            num = num >> 4
+        return res.lstrip('0')
         
 ```
+
+## schedule
+
+* [x] 0 2019/09/28
+* [x] 1 2019/09/29
+* [x] 1 2019/10/02
+* [x] 1 2019/10/09
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/13

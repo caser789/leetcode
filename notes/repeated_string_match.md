@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/10/02, leetcode/686, math]
+tags: [2019/10/13, leetcode/686, math]
 title: Repeated String Match
 created: '2019-08-31T09:36:24.127Z'
-modified: '2019-09-21T08:39:17.440Z'
+modified: '2019-10-07T15:46:25.515Z'
 ---
 
 # Repeated String Match
@@ -40,4 +40,7 @@ class Solution(object):
 * [x] 1 2019/09/07
 * [x] 1 2019/09/10
 * [x] 1 2019/09/17
-* [ ] 1 2019/10/02
+* [x] 1 2019/10/02
+* [x] 1 2019/10/03
+* [x] 1 2019/10/06
+* [ ] 1 2019/10/13

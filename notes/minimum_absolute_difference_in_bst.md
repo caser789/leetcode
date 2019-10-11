@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/04, leetcode/530]
+tags: [2019/11/04, leetcode/530]
 title: Minimum Absolute Difference in BST
 created: '2019-09-07T06:41:02.230Z'
-modified: '2019-09-22T06:54:58.402Z'
+modified: '2019-10-06T10:12:50.370Z'
 ---
 
 # Minimum Absolute Difference in BST
@@ -72,4 +72,5 @@ class Solution(object):
 * [x] 1 2019/09/09
 * [x] 1 2019/09/12
 * [x] 1 2019/09/19
-* [ ] 1 2019/10/04
+* [x] 1 2019/10/04
+* [ ] 1 2019/11/04

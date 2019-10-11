@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/234]
+tags: [2019/11/10, leetcode/234]
 title: Palindrome Linked List
 created: '2019-09-07T09:15:18.422Z'
-modified: '2019-09-22T03:53:12.874Z'
+modified: '2019-10-10T14:00:48.646Z'
 ---
 
 # Palindrome Linked List
@@ -76,4 +76,6 @@ class Solution(object):
 * [x] 0 2019/09/14
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [x] 1 2019/10/10
+* [ ] 1 2019/11/10

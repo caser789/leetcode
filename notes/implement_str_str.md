@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/10/01, leetcode/28]
+tags: [2019/11/01, leetcode/28]
 title: Implement strStr()
 created: '2019-08-31T09:32:10.214Z'
-modified: '2019-09-21T05:33:16.568Z'
+modified: '2019-10-03T05:25:12.108Z'
 ---
 
 # Implement strStr()
@@ -63,4 +63,5 @@ class Solution(object):
 * [x] 1 2019/09/07
 * [x] 1 2019/09/10
 * [x] 1 2019/09/17
-* [ ] 1 2019/10/01
+* [x] 1 2019/10/01
+* [ ] 1 2019/11/01

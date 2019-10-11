@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/10/01, data structure/trie, leetcode/14]
+tags: [2019/11/01, data structure/trie, leetcode/14]
 title: Longest Common Prefix
 created: '2019-08-31T09:30:15.689Z'
-modified: '2019-09-19T05:06:17.758Z'
+modified: '2019-10-03T05:20:25.362Z'
 ---
 
 # Longest Common Prefix
@@ -63,4 +63,5 @@ class Solution(object):
 * [x] 1 2019/09/06
 * [x] 1 2019/09/09
 * [x] 1 2019/09/16
-* [ ] 1 2019/10/01
+* [x] 1 2019/10/01
+* [ ] 1 2019/11/01

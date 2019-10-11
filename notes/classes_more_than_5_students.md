@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/26, leetcode/596, sql]
+tags: [2019/10/11, leetcode/596, sql]
 title: Classes More Than 5 Students
 created: '2019-09-17T15:34:06.328Z'
-modified: '2019-09-22T04:32:52.303Z'
+modified: '2019-09-26T04:54:35.487Z'
 ---
 
 # Classes More Than 5 Students
@@ -63,4 +63,5 @@ HAVING COUNT(DISTINCT student) >= 5
 * [x] 0 2019/09/15
 * [x] 1 2019/09/16
 * [x] 1 2019/09/19
-* [ ] 1 2019/09/26
+* [x] 1 2019/09/26
+* [ ] 1 2019/10/11

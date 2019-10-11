@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/08, leetcode/645]
+tags: [2019/11/08, leetcode/645, method/index]
 title: Set Mismatch
 created: '2019-09-07T08:54:10.509Z'
-modified: '2019-09-23T14:17:53.749Z'
+modified: '2019-10-08T05:39:53.456Z'
 ---
 
 # Set Mismatch
@@ -72,10 +72,33 @@ class Solution(object):
         return res
 ```
 
+```python
+class Solution(object):
+    def findErrorNums(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        s = sum(nums)
+        n = len(nums)
+        p = None
+        for i in range(n):
+            j = abs(nums[i]) - 1
+            if nums[j] < 0:
+                p = abs(nums[i])
+                break
+            else:
+                nums[j] = -nums[j]
+        
+        q = (1+n)*n/2 - s + p
+        return [p, q]
+```
+
 ## schedule
 
 * [x] 0 2019/09/12
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
 * [x] 1 2019/09/23
-* [ ] 1 2019/10/08
+* [x] 1 2019/10/08
+* [ ] 1 2019/11/08

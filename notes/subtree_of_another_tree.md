@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/06, leetcode/572]
+tags: [2019/11/06, leetcode/572]
 title: Subtree of Another Tree
 created: '2019-09-07T06:58:16.003Z'
-modified: '2019-09-22T10:32:57.333Z'
+modified: '2019-10-07T15:58:25.608Z'
 ---
 
 # Subtree of Another Tree
@@ -90,4 +90,5 @@ class Solution(object):
 * [x] 1 2019/09/11
 * [x] 1 2019/09/14
 * [x] 1 2019/09/21
-* [ ] 1 2019/10/06
+* [x] 1 2019/10/06
+* [ ] 1 2019/11/06

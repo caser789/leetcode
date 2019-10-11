@@ -2,7 +2,7 @@
 tags: [2019/09/30, leetcode/558]
 title: Quad Tree Intersection
 created: '2019-09-24T15:20:04.832Z'
-modified: '2019-09-24T15:20:34.548Z'
+modified: '2019-10-02T13:32:03.130Z'
 ---
 
 # Quad Tree Intersection
@@ -14,6 +14,8 @@ We want to store True/False information in our quad tree. The quad tree is used 
 For example, below are two quad trees A and B:
 
 A:
+
+```
 +-------+-------+   T: true
 |       |       |   F: false
 |   T   |   T   |
@@ -27,8 +29,11 @@ topLeft: T
 topRight: T
 bottomLeft: F
 bottomRight: F
+```
 
-B:               
+B:        
+
+```
 +-------+---+---+
 |       | F | F |
 |   T   +---+---+
@@ -46,10 +51,12 @@ topRight:
      bottomRight: T
 bottomLeft: T
 bottomRight: F
+```
  
 
 Your task is to implement a function that will take two quadtrees and return a quadtree that represents the logical OR (or union) of the two trees.
 
+```
 A:                 B:                 C (A or B):
 +-------+-------+  +-------+---+---+  +-------+-------+
 |       |       |  |       | F | F |  |       |       |
@@ -60,7 +67,9 @@ A:                 B:                 C (A or B):
 |   F   |   F   |  |   T   |   F   |  |   T   |   F   |
 |       |       |  |       |       |  |       |       |
 +-------+-------+  +-------+-------+  +-------+-------+
-Note:
+```
+
+## Note:
 
 Both A and B represent grids of size N * N.
 N is guaranteed to be a power of 2.

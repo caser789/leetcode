@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/01, leetcode/665]
+tags: [2019/10/12, leetcode/665]
 title: Non-decreasing Array
 created: '2019-08-31T08:37:45.110Z'
-modified: '2019-09-24T15:25:40.204Z'
+modified: '2019-10-07T05:04:29.442Z'
 ---
 
 # Non-decreasing Array
@@ -34,4 +34,31 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
+        p = None
+        for i in range(len(nums)-1):
+            if nums[i] > nums[i+1]:
+                if p is not None:
+                    return False
+                p = i
+        
+        if p is None:
+            return True
+        if p == 0:
+            return True
+        if p == len(nums) - 2:
+            return True
+        if nums[p-1] <= nums[p+1]:
+            return True
+        if nums[p] <= nums[p+2]:
+            return True
+        return False
+            
 ```
+
+
+## schedule
+
+* [x] 0 2019/10/01
+* [x] 1 2019/10/02
+* [x] 1 2019/10/05
+* [ ] 1 2019/10/12

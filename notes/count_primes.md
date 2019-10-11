@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/10, leetcode/204, math/prime]
+tags: [2019/10/11, leetcode/204, math/prime]
 title: Count Primes
 created: '2019-09-07T09:02:06.394Z'
-modified: '2019-09-25T04:50:06.294Z'
+modified: '2019-10-10T12:15:18.735Z'
 ---
 
 # Count Primes
@@ -47,4 +47,5 @@ class Solution(object):
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
 * [x] 1 2019/09/25
-* [ ] 1 2019/10/10
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/11

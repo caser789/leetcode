@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/08, data structure/trie, leetcode/720]
+tags: [2019/11/08, data structure/trie, leetcode/720]
 title: Longest Word in Dictionary
 created: '2019-09-07T08:44:41.517Z'
-modified: '2019-09-23T05:20:27.781Z'
+modified: '2019-10-08T14:26:12.690Z'
 ---
 
 # Longest Word in Dictionary
@@ -67,4 +67,5 @@ class Solution(object):
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
 * [x] 1 2019/09/23
-* [ ] 1 2019/10/08
+* [x] 1 2019/10/08
+* [ ] 1 2019/11/08

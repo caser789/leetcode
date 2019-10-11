@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/02, application/palindrome, leetcode/680, method/greedy]
+tags: [2019/11/02, application/palindrome, leetcode/680, method/greedy]
 title: Valid Palindrome II
 created: '2019-08-31T09:28:28.529Z'
-modified: '2019-09-21T08:50:07.357Z'
+modified: '2019-10-03T14:17:55.990Z'
 ---
 
 # Valid Palindrome II
@@ -60,4 +60,5 @@ class Solution(object):
 * [x] 1 2019/09/07
 * [x] 1 2019/09/10
 * [x] 1 2019/09/17
-* [ ] 1 2019/10/02
+* [x] 1 2019/10/02
+* [ ] 1 2019/11/02

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/08, leetcode/242]
+tags: [2019/11/08, leetcode/242]
 title: Valid Anagram
 created: '2019-09-07T08:36:24.334Z'
-modified: '2019-09-23T14:42:24.984Z'
+modified: '2019-10-08T05:33:27.804Z'
 ---
 
 # Valid Anagram
@@ -55,4 +55,5 @@ class Solution(object):
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
 * [x] 1 2019/09/23
-* [ ] 1 2019/10/08
+* [x] 1 2019/10/08
+* [ ] 1 2019/11/08

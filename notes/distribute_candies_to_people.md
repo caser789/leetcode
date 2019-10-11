@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/1103]
+tags: [2019/10/21, leetcode/1103]
 title: Distribute Candies to People
 created: '2019-09-22T11:24:14.928Z'
-modified: '2019-09-22T11:24:39.597Z'
+modified: '2019-10-07T05:38:39.053Z'
 ---
 
 # Distribute Candies to People
@@ -19,7 +19,7 @@ Return an array (of length num_people and sum candies) that represents the final
 
  
 
-Example 1:
+### Example 1:
 
 Input: candies = 7, num_people = 4
 Output: [1,2,3,1]
@@ -28,7 +28,8 @@ On the first turn, ans[0] += 1, and the array is [1,0,0,0].
 On the second turn, ans[1] += 2, and the array is [1,2,0,0].
 On the third turn, ans[2] += 3, and the array is [1,2,3,0].
 On the fourth turn, ans[3] += 1 (because there is only one candy left), and the final array is [1,2,3,1].
-Example 2:
+
+### Example 2:
 
 Input: candies = 10, num_people = 3
 Output: [5,2,3]
@@ -46,7 +47,7 @@ Constraints:
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def distributeCandies(self, candies, num_people):
         """
@@ -54,5 +55,70 @@ class Solution(object):
         :type num_people: int
         :rtype: List[int]
         """
-        
+        n = num_people
+        lst = [0] * n
+        nxt = 1
+        s = 0
+        i = 0
+        while s + nxt <= candies:
+            s += nxt
+            lst[i] += nxt
+            nxt += 1
+            i = (i+1) % n
+        if candies - s:
+            lst[i] += candies - s
+        return lst
 ```
+```python
+class Solution(object):
+    def distributeCandies(self, candies, n):
+        """
+        :type candies: int
+        :type num_people: int
+        :rtype: List[int]
+        """
+        
+        res = [0] * n
+        i = 0
+        j = 1
+        while candies > 0:
+            if candies < j:
+                v = candies
+            else:
+                v = j
+            candies -= v
+            res[i] += v
+            i = (i+1) % n
+            j += 1
+        
+            
+        return res
+```
+
+```python
+class Solution(object):
+    def distributeCandies(self, candies, num):
+        """
+        :type candies: int
+        :type num_people: int
+        :rtype: List[int]
+        """
+        res = [0] * num
+        i = 0
+        j = 1
+        
+        while candies > 0:
+            res[i] += j if candies >= j else candies
+            candies -= j
+            i = (i+1) % num
+            j += 1
+        return res
+```
+
+## schedule
+
+* [x] 0 2019/09/25
+* [x] 1 2019/09/26
+* [x] 1 2019/09/29
+* [x] 1 2019/10/06
+* [ ] 1 2019/10/21

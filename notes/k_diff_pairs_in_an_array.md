@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/26, leetcode/532]
+tags: [2019/10/11, leetcode/532]
 title: K-diff Pairs in an Array
 created: '2019-08-31T08:35:43.192Z'
-modified: '2019-09-22T06:28:21.174Z'
+modified: '2019-09-26T05:06:14.303Z'
 ---
 
 # K-diff Pairs in an Array
@@ -65,4 +65,5 @@ class Solution(object):
 * [x] 0 2019/09/15
 * [x] 1 2019/09/16
 * [x] 1 2019/09/19
-* [ ] 1 2019/09/26
+* [x] 1 2019/09/26
+* [ ] 1 2019/10/11

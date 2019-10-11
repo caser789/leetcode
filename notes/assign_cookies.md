@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/28, leetcode/455]
+tags: [2019/10/24, leetcode/455]
 title: Assign Cookies
 created: '2019-09-24T15:10:22.083Z'
-modified: '2019-09-24T15:10:49.596Z'
+modified: '2019-10-08T14:31:35.728Z'
 ---
 
 # Assign Cookies
@@ -32,6 +32,27 @@ You need to output 2.
 
 ## Solution
 
+```python
+class Solution(object):
+    def findContentChildren(self, g, s):
+        """
+        :type g: List[int]
+        :type s: List[int]
+        :rtype: int
+        """
+        g.sort()
+        s.sort()
+        i = 0
+        j = 0
+        while i < len(g) and j < len(s):
+            if g[i] <= s[j]:
+                i += 1
+            
+            j += 1
+        
+        return i
+```
+
 ```
 class Solution(object):
     def findContentChildren(self, g, s):
@@ -40,5 +61,22 @@ class Solution(object):
         :type s: List[int]
         :rtype: int
         """
-        
+        g.sort()
+        s.sort()
+        n = len(g)
+        m = len(s)
+        i = 0
+        for j in range(m):
+            if i < n and g[i] <= s[j]:
+                i += 1
+        return i
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/28
+* [x] 1 2019/09/29
+* [x] 1 2019/10/02
+* [x] 1 2019/10/09
+* [ ] 1 2019/10/24

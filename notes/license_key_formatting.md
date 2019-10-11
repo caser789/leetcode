@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/29, leetcode/482]
+tags: [2019/10/25, leetcode/482, method/parse]
 title: License Key Formatting
 created: '2019-09-24T15:13:39.964Z'
-modified: '2019-09-24T15:14:06.791Z'
+modified: '2019-10-10T12:56:22.841Z'
 ---
 
 # License Key Formatting
@@ -33,7 +33,7 @@ String S is non-empty.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def licenseKeyFormatting(self, S, K):
         """
@@ -41,5 +41,29 @@ class Solution(object):
         :type K: int
         :rtype: str
         """
+        n = len(S)
+        lst = []
+        tmp = []
         
+        
+        for i in range(n-1, -1, -1):
+            if S[i] == '-': continue
+            if len(tmp) == K:
+                lst.append(''.join(tmp[::-1]))
+                tmp = []
+            
+            tmp.append(S[i].upper())
+        if tmp:
+            lst.append(''.join(tmp[::-1]))
+            
+        
+        return '-'.join(lst[::-1])
 ```
+
+## schedule
+
+* [x] 0 2019/09/29
+* [x] 1 2019/09/30
+* [x] 1 2019/10/03
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/25

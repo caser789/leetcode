@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/728]
+tags: [2019/10/19, leetcode/728]
 title: Self Dividing Numbers
 created: '2019-09-22T11:08:15.796Z'
-modified: '2019-09-24T05:10:20.570Z'
+modified: '2019-10-06T09:51:10.534Z'
 ---
 
 # Self Dividing Numbers
@@ -53,4 +53,6 @@ def is_self(n):
 
 * [x] 0 2019/09/23
 * [x] 1 2019/09/24
-* [ ] 1 2019/09/27
+* [x] 1 2019/09/27
+* [x] 1 2019/10/04
+* [ ] 1 2019/10/19

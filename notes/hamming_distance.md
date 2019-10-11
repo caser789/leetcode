@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/461]
+tags: [2019/10/19, leetcode/461]
 title: Hamming Distance
 created: '2019-09-22T11:07:14.511Z'
-modified: '2019-09-24T05:04:59.720Z'
+modified: '2019-10-05T05:16:54.498Z'
 ---
 
 # Hamming Distance
@@ -74,8 +74,30 @@ class Solution(object):
         return res
 ```
 
+```python
+class Solution(object):
+    def hammingDistance(self, x, y):
+        """
+        :type x: int
+        :type y: int
+        :rtype: int
+        """
+        cnt = 0
+        for i in range(32):
+            a = (x >> i) & 1
+            b = (y >> i) & 1
+            
+            if a and b: continue
+            if not a and not b: continue
+            cnt += 1
+        return cnt
+            
+```
+
 ## schedule
 
 * [x] 0 2019/09/23
 * [x] 1 2019/09/24
-* [ ] 1 2019/09/27
+* [x] 1 2019/09/27
+* [x] 1 2019/10/04
+* [ ] 1 2019/10/19

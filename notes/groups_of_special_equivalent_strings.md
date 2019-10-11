@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/893, method/index]
+tags: [2019/10/28, leetcode/893, method/index]
 title: Groups of Special-Equivalent Strings
 created: '2019-08-31T08:48:31.799Z'
-modified: '2019-09-12T11:04:18.309Z'
+modified: '2019-09-28T04:38:14.407Z'
 ---
 
 # Groups of Special-Equivalent Strings
@@ -101,4 +101,5 @@ class Solution(object):
 * [x] 1 2019/09/02
 * [x] 3 2019/09/05
 * [x] 3 2019/09/12
-* [ ] 3 2019/09/27
+* [x] 3 2019/09/27
+* [ ] 3 2019/10/28

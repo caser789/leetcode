@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/07, leetcode/389, method/index]
+tags: [2019/11/07, leetcode/389, method/index]
 title: Find the Difference
 created: '2019-09-07T08:34:48.091Z'
-modified: '2019-09-22T11:00:44.798Z'
+modified: '2019-10-08T05:14:26.214Z'
 ---
 
 # Find the Difference
@@ -55,4 +55,5 @@ class Solution(object):
 * [x] 1 2019/09/12
 * [x] 1 2019/09/15
 * [x] 1 2019/09/22
-* [ ] 1 2019/10/07
+* [x] 1 2019/10/07
+* [ ] 1 2019/11/07

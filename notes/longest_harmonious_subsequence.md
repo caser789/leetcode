@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/08, leetcode/594]
+tags: [2019/11/08, leetcode/594]
 title: Longest Harmonious Subsequence
 created: '2019-09-07T08:52:42.907Z'
-modified: '2019-09-23T05:10:01.105Z'
+modified: '2019-10-08T11:35:50.952Z'
 ---
 
 # Longest Harmonious Subsequence
@@ -53,4 +53,5 @@ class Solution(object):
 * [x] 1 2019/09/13
 * [x] 1 2019/09/16
 * [x] 1 2019/09/23
-* [ ] 1 2019/10/08
+* [x] 1 2019/10/08
+* [ ] 1 2019/11/08

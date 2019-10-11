@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/03, data structure/queue, data structure/stack, data structure/tree, leetcode/559, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/11/03, data structure/queue, data structure/stack, data structure/tree, leetcode/559, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Maximum Depth of N-ary Tree
 created: '2019-08-06T14:46:41.707Z'
-modified: '2019-09-21T12:07:23.765Z'
+modified: '2019-10-04T05:04:32.451Z'
 ---
 
 # Maximum Depth of N-ary Tree
@@ -116,4 +116,5 @@ class Solution(object):
 * [x] 1 2019/09/08
 * [x] 1 2019/09/11
 * [x] 1 2019/09/18
-* [ ] 1 2019/10/03
+* [x] 1 2019/10/03
+* [ ] 1 2019/11/03

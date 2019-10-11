@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/01, leetcode/806]
+tags: [2019/10/09, leetcode/806]
 title: Number of Lines To Write String
 created: '2019-09-24T15:29:32.294Z'
-modified: '2019-09-24T15:29:57.729Z'
+modified: '2019-10-09T01:23:01.195Z'
 ---
 
 # Number of Lines To Write String

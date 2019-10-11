@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/30, leetcode/598]
+tags: [2019/10/11, leetcode/598]
 title: Range Addition II
 created: '2019-09-24T15:21:59.573Z'
-modified: '2019-09-24T15:22:25.484Z'
+modified: '2019-10-05T05:08:29.366Z'
 ---
 
 # Range Addition II
@@ -13,7 +13,8 @@ Operations are represented by a 2D array, and each operation is represented by a
 
 You need to count and return the number of maximum integers in the matrix after performing all the operations.
 
-Example 1:
+### Example 1:
+
 Input: 
 m = 3, n = 3
 operations = [[2,2],[3,3]]
@@ -35,14 +36,16 @@ After performing [3,3], M =
  [1, 1, 1]]
 
 So the maximum integer in M is 2, and there are four of it in M. So return 4.
-Note:
+
+## Note:
+
 The range of m and n is [1,40000].
 The range of a is [1,m], and the range of b is [1,n].
 The range of operations size won't exceed 10,000.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def maxCount(self, m, n, ops):
         """
@@ -51,5 +54,17 @@ class Solution(object):
         :type ops: List[List[int]]
         :rtype: int
         """
+        for x, y in ops:
+            m = min(m, x)
+            n = min(n, y)
+        
+        return m * n
         
 ```
+
+## schedule
+
+* [x] 0 2019/09/30
+* [x] 1 2019/10/01
+* [x] 1 2019/10/04
+* [ ] 1 2019/10/11

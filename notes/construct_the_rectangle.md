@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/29, leetcode/492]
+tags: [2019/10/25, leetcode/492]
 title: Construct the Rectangle
 created: '2019-09-24T15:14:40.046Z'
-modified: '2019-09-24T15:15:07.905Z'
+modified: '2019-10-10T12:05:18.096Z'
 ---
 
 # Construct the Rectangle
@@ -26,12 +26,26 @@ The web page's width and length you designed must be positive integers.
 
 ## Solution
 
-```
+```python
 class Solution(object):
-    def constructRectangle(self, area):
+    def constructRectangle(self, n):
         """
         :type area: int
         :rtype: List[int]
         """
+        import math
+        W = int(math.sqrt(n))
+        while n % W != 0:
+            W -= 1
         
+        return [n/W, W]
+
 ```
+
+## schedule
+
+* [x] 0 2019/09/29
+* [x] 1 2019/09/30
+* [x] 1 2019/10/03
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/25

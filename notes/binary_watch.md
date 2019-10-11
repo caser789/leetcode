@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/28, leetcode/401, TODO]
+tags: [2019/10/24, leetcode/401]
 title: Binary Watch
 created: '2019-08-12T13:33:55.567Z'
-modified: '2019-09-24T15:06:55.208Z'
+modified: '2019-10-08T14:33:29.228Z'
 ---
 
 # Binary Watch
@@ -38,4 +38,19 @@ class Solution(object):
         :type num: int
         :rtype: List[str]
         """
+        return [
+            '%d:%02d' % (h, m)
+            for h in range(12) 
+            for m in range(60)
+            if (bin(h) + bin(m)).count('1') == num
+        ]
 ```
+
+
+## schedule
+
+* [x] 0 2019/09/28
+* [x] 1 2019/09/29
+* [x] 1 2019/10/02
+* [x] 1 2019/10/09
+* [ ] 1 2019/10/24

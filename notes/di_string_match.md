@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/942]
+tags: [2019/10/19, leetcode/942]
 title: DI String Match
 created: '2019-09-22T11:04:37.555Z'
-modified: '2019-09-24T05:00:14.324Z'
+modified: '2019-10-05T05:07:27.631Z'
 ---
 
 # DI String Match
@@ -63,4 +63,6 @@ class Solution(object):
 
 * [x] 0 2019/09/23
 * [x] 1 2019/09/24
-* [ ] 1 2019/09/27
+* [x] 1 2019/09/27
+* [x] 1 2019/10/04
+* [ ] 1 2019/10/19

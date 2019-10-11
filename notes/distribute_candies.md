@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/07, leetcode/575]
+tags: [2019/10/11, leetcode/575]
 title: Distribute Candies
 created: '2019-09-07T08:25:29.027Z'
-modified: '2019-09-22T10:48:00.487Z'
+modified: '2019-10-09T14:10:47.064Z'
 ---
 
 # Distribute Candies
@@ -55,4 +55,6 @@ class Solution(object):
 * [x] 1 2019/09/12
 * [x] 1 2019/09/15
 * [x] 1 2019/09/22
-* [ ] 1 2019/10/07
+* [x] 1 2019/10/07
+* [x] 1 2019/10/08
+* [ ] 1 2019/10/11

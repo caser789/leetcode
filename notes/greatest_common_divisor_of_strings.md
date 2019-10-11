@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/28, application/gcd, leetcode/1071]
+tags: [2019/10/29, application/gcd, leetcode/1071]
 title: Greatest Common Divisor of Strings
 created: '2019-08-31T09:01:01.319Z'
-modified: '2019-09-14T04:35:52.375Z'
+modified: '2019-09-28T08:15:50.808Z'
 ---
 
 # Greatest Common Divisor of Strings
@@ -59,4 +59,5 @@ class Solution(object):
 * [x] 1 2019/09/03
 * [x] 1 2019/09/06
 * [x] 1 2019/09/13
-* [ ] 1 2019/09/28
+* [x] 1 2019/09/28
+* [ ] 1 2019/10/29

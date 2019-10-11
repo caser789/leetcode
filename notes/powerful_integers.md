@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/970]
+tags: [2019/10/11, leetcode/970]
 title: Powerful Integers
 created: '2019-09-07T08:56:50.445Z'
-modified: '2019-09-22T03:58:42.313Z'
+modified: '2019-10-10T16:58:10.719Z'
 ---
 
 # Powerful Integers
@@ -76,4 +76,6 @@ class Solution(object):
 * [x] 0 2019/09/14
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/11

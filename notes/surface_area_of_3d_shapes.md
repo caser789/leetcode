@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/892]
+tags: [2019/10/20, leetcode/892]
 title: Surface Area of 3D Shapes
 created: '2019-09-22T11:13:40.302Z'
-modified: '2019-09-24T13:55:09.915Z'
+modified: '2019-10-07T05:20:58.827Z'
 ---
 
 # Surface Area of 3D Shapes
@@ -79,4 +79,7 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/24
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [x] 1 2019/09/28
+* [x] 1 2019/10/05
+* [ ] 1 2019/10/20

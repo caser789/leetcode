@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/25, leetcode/83]
+tags: [2019/11/10, leetcode/83]
 title: Remove Duplicates from Sorted List
 created: '2019-09-07T09:11:50.715Z'
-modified: '2019-09-22T04:01:28.619Z'
+modified: '2019-10-10T14:28:46.365Z'
 ---
 
 # Remove Duplicates from Sorted List
@@ -58,4 +58,6 @@ class Solution(object):
 * [x] 0 2019/09/14
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
-* [ ] 1 2019/09/25
+* [x] 1 2019/09/25
+* [x] 1 2019/10/10
+* [ ] 1 2019/11/10

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/05, leetcode/235]
+tags: [2019/11/05, leetcode/235]
 title: Lowest Common Ancestor of a Binary Search Tree
 created: '2019-09-07T06:52:25.374Z'
-modified: '2019-09-22T08:06:45.672Z'
+modified: '2019-10-07T04:57:00.403Z'
 ---
 
 # Lowest Common Ancestor of a Binary Search Tree
@@ -102,4 +102,5 @@ class Solution(object):
 * [x] 1 2019/09/10
 * [x] 1 2019/09/13
 * [x] 1 2019/09/20
-* [ ] 1 2019/10/05
+* [x] 1 2019/10/05
+* [ ] 1 2019/11/05

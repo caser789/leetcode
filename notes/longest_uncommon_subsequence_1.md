@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, knack, leetcode/521]
+tags: [2019/10/28, knack, leetcode/521]
 title: Longest Uncommon Subsequence I
 created: '2019-08-31T08:52:26.313Z'
-modified: '2019-09-12T11:41:53.581Z'
+modified: '2019-09-28T04:39:57.362Z'
 ---
 
 # Longest Uncommon Subsequence I
@@ -79,4 +79,5 @@ class Solution(object):
 * [x] 1 2019/09/02
 * [x] 3 2019/09/05
 * [x] 3 2019/09/12
-* [ ] 3 2019/09/27
+* [x] 3 2019/09/27
+* [ ] 3 2019/10/28

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/03, data structure/tree, leetcode/965, method/recursion, method/traversal/dfs]
+tags: [2019/11/03, data structure/tree, leetcode/965, method/recursion, method/traversal/dfs]
 title: Univalued Binary Tree
 created: '2019-08-31T09:46:44.066Z'
-modified: '2019-09-22T04:09:42.132Z'
+modified: '2019-10-04T05:30:21.981Z'
 ---
 
 # Univalued Binary Tree
@@ -100,4 +100,5 @@ class Solution(object):
 * [x] 1 2019/09/08
 * [x] 1 2019/09/11
 * [x] 1 2019/09/18
-* [ ] 1 2019/10/03
+* [x] 1 2019/10/03
+* [ ] 1 2019/11/03

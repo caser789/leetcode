@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/28, leetcode/441]
+tags: [2019/10/24, leetcode/441]
 title: Arranging Coins
 created: '2019-09-24T15:08:24.658Z'
-modified: '2019-09-24T15:08:54.180Z'
+modified: '2019-10-08T14:28:15.184Z'
 ---
 
 # Arranging Coins
@@ -37,12 +37,28 @@ Because the 4th row is incomplete, we return 3.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def arrangeCoins(self, n):
         """
         :type n: int
         :rtype: int
         """
-        
+        if n == 0:
+            return 0
+        i = 1
+        while n >= i:
+            
+            n -= i
+            i += 1
+        return i-1
+               
 ```
+
+## schedule
+
+* [x] 0 2019/09/28
+* [x] 1 2019/09/29
+* [x] 1 2019/10/02
+* [x] 1 2019/10/09
+* [ ] 1 2019/10/24

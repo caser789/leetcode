@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/06, leetcode/500]
+tags: [2019/11/06, leetcode/500]
 title: Keyboard Row
 created: '2019-09-07T08:20:26.735Z'
-modified: '2019-09-22T09:48:51.009Z'
+modified: '2019-10-07T15:28:42.361Z'
 ---
 
 # Keyboard Row
@@ -62,4 +62,5 @@ class Solution(object):
 * [x] 1 2019/09/11
 * [x] 1 2019/09/14
 * [x] 1 2019/09/21
-* [ ] 1 2019/10/06
+* [x] 1 2019/10/06
+* [ ] 1 2019/11/06

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/01, leetcode/434]
+tags: [2019/11/01, leetcode/434]
 title: Number of Segments in a String
 created: '2019-08-31T09:26:58.869Z'
-modified: '2019-09-19T05:36:03.737Z'
+modified: '2019-10-03T05:14:47.772Z'
 ---
 
 # Number of Segments in a String
@@ -77,4 +77,5 @@ class Solution(object):
 * [x] 1 2019/09/06
 * [x] 1 2019/09/09
 * [x] 1 2019/09/16
-* [ ] 1 2019/10/01
+* [x] 1 2019/10/01
+* [ ] 1 2019/11/01

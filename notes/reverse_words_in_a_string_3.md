@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/557, method/2 pointers]
+tags: [2019/10/28, leetcode/557, method/2 pointers]
 title: Reverse Words in a String III
 created: '2019-08-31T08:44:22.506Z'
-modified: '2019-09-12T13:07:53.263Z'
+modified: '2019-09-28T04:48:02.689Z'
 ---
 
 # Reverse Words in a String III
@@ -55,4 +55,5 @@ class Solution(object):
 * [x] 1 2019/09/02
 * [x] 3 2019/09/05
 * [x] 3 2019/09/12
-* [ ] 3 2019/09/27
+* [x] 3 2019/09/27
+* [ ] 3 2019/10/28

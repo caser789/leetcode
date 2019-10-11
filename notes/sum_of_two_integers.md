@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/371]
+tags: [2019/10/12, leetcode/371]
 title: Sum of Two Integers
 created: '2019-09-24T15:04:50.751Z'
-modified: '2019-09-24T15:05:22.314Z'
+modified: '2019-10-07T05:16:01.090Z'
 ---
 
 # Sum of Two Integers
@@ -28,5 +28,23 @@ class Solution(object):
         :type b: int
         :rtype: int
         """
+        if a == 0: return b
+        if b == 0: return a
+        mask = 0xffffffff
+        while b != 0:
+            a, b = (a ^ b) & mask, ((a & b) << 1) & mask
+        
+        if (a >> 31) & 1:
+            return ~(a ^ mask)
+        return a
         
 ```
+
+## schedule
+
+* [x] 0 2019/09/27
+* [x] 1 2019/09/28
+* [x] 1 2019/10/01
+* [x] 1 2019/10/02
+* [x] 1 2019/10/05
+* [ ] 1 2019/10/12

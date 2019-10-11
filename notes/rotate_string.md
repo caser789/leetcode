@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/01, leetcode/796]
+tags: [2019/10/12, leetcode/796, method/kmp, method/rolling_hash]
 title: Rotate String
 created: '2019-09-24T15:28:26.261Z'
-modified: '2019-09-24T15:28:51.161Z'
+modified: '2019-10-07T05:13:52.324Z'
 ---
 
 # Rotate String
@@ -24,7 +24,7 @@ A and B will have length at most 100.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def rotateString(self, A, B):
         """
@@ -32,5 +32,13 @@ class Solution(object):
         :type B: str
         :rtype: bool
         """
+        return len(A) == len(B) and A in B+B
         
 ```
+
+## schedule
+
+* [x] 0 2019/10/01
+* [x] 1 2019/10/02
+* [x] 1 2019/10/05
+* [ ] 1 2019/10/12

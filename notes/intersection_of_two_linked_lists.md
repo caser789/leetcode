@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/10, leetcode/160]
+tags: [2019/11/10, leetcode/160]
 title: Intersection of Two Linked Lists
 created: '2019-09-07T09:18:10.076Z'
-modified: '2019-09-25T04:58:15.692Z'
+modified: '2019-10-10T12:50:08.547Z'
 ---
 
 # Intersection of Two Linked Lists
@@ -87,4 +87,5 @@ class Solution(object):
 * [x] 1 2019/09/15
 * [x] 1 2019/09/18
 * [x] 1 2019/09/25
-* [ ] 1 2019/10/10
+* [x] 1 2019/10/10
+* [ ] 1 2019/11/10

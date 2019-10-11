@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/01, leetcode/682]
+tags: [2019/10/13, leetcode/682]
 title: Baseball Game
 created: '2019-09-24T15:26:00.822Z'
-modified: '2019-09-24T15:26:27.223Z'
+modified: '2019-10-10T12:01:45.943Z'
 ---
 
 # Baseball Game
@@ -19,7 +19,7 @@ Each round's operation is permanent and could have an impact on the round before
 
 You need to return the sum of the points you could get in all the rounds.
 
-Example 1:
+### Example 1:
 Input: ["5","2","C","D","+"]
 Output: 30
 Explanation: 
@@ -28,7 +28,9 @@ Round 2: You could get 2 points. The sum is: 7.
 Operation 1: The round 2's data was invalid. The sum is: 5.  
 Round 3: You could get 10 points (the round 2's data has been removed). The sum is: 15.
 Round 4: You could get 5 + 10 = 15 points. The sum is: 30.
-Example 2:
+
+### Example 2:
+
 Input: ["5","-2","4","C","D","9","+","+"]
 Output: 27
 Explanation: 
@@ -40,18 +42,35 @@ Round 4: You could get -4 points (the round 3's data has been removed). The sum 
 Round 5: You could get 9 points. The sum is: 8.
 Round 6: You could get -4 + 9 = 5 points. The sum is 13.
 Round 7: You could get 9 + 5 = 14 points. The sum is 27.
-Note:
+
+## Note:
 The size of the input list will be between 1 and 1000.
 Every integer represented in the list will be between -30000 and 30000.
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def calPoints(self, ops):
         """
         :type ops: List[str]
         :rtype: int
         """
-        
+        stack = []
+        for op in ops:
+            if op == '+':
+                stack.append(stack[-1]+stack[-2])
+            elif op == 'C':
+                stack.pop()
+            elif op == 'D':
+                stack.append(2*stack[-1])
+            else:
+                stack.append(int(op))
+        return sum(stack)
 ```
+
+## schedule
+
+* [x] 1 2019/10/09
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/13

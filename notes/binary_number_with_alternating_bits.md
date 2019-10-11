@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/26, leetcode/693]
+tags: [2019/10/21, leetcode/693]
 title: Binary Number with Alternating Bits
 created: '2019-09-22T11:19:00.236Z'
-modified: '2019-09-24T01:24:07.685Z'
+modified: '2019-10-07T05:28:34.866Z'
 ---
 
 # Binary Number with Alternating Bits
@@ -39,12 +39,10 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
-        lst = []
         prev = None
         while n:
             n, c = divmod(n, 2)
-            lst.append(c)
-            if prev is not None and c == prev:
+            if prev is not None and prev == c:
                 return False
             prev = c
         return True
@@ -53,4 +51,7 @@ class Solution(object):
 ## schedule
 
 * [x] 0 2019/09/25
-* [ ] 1 2019/09/26
+* [x] 1 2019/09/26
+* [x] 1 2019/09/29
+* [x] 1 2019/10/06
+* [ ] 1 2019/10/21

@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/30, leetcode/507]
+tags: [2019/10/11, leetcode/507]
 title: Perfect Number
 created: '2019-09-24T15:18:54.896Z'
-modified: '2019-09-24T15:19:27.314Z'
+modified: '2019-10-05T05:14:53.655Z'
 ---
 
 # Perfect Number
@@ -19,12 +19,30 @@ Note: The input number n will not exceed 100,000,000. (1e8)
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def checkPerfectNumber(self, num):
         """
         :type num: int
         :rtype: bool
         """
+        if num <= 0: return False
+        
+        s = 0
+        i = 1
+        while i * i <= num:
+            if num % i == 0:
+                s += i
+                if i * i != num:
+                    s += num / i
+            i += 1
+        return s - num == num
         
 ```
+
+## schedule
+
+* [x] 0 2019/09/30
+* [x] 1 2019/10/01
+* [x] 1 2019/10/04
+* [ ] 1 2019/10/11

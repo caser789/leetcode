@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/30, application/array/status, leetcode/443]
+tags: [2019/10/31, application/array/status, leetcode/443]
 title: String Compression
 created: '2019-08-31T09:25:29.121Z'
-modified: '2019-09-18T11:48:46.380Z'
+modified: '2019-10-02T14:23:24.338Z'
 ---
 
 # String Compression
@@ -112,10 +112,61 @@ class Solution(object):
         return i
 ```
 
+### better
+
+```python
+class Solution(object):
+    def compress(self, chars):
+        """
+        :type chars: List[str]
+        :rtype: int
+        """
+        n = len(chars)
+        
+        if n < 2:
+            return n
+        
+        cnt = 1
+        j = 0
+        for i in range(1, n):
+            if chars[i] == chars[i-1]:
+                cnt += 1
+            else:
+                chars[j] = chars[i-1]
+                j += 1
+                
+                if 1 < cnt < 10:
+                    chars[j] = str(cnt)
+                    j += 1
+                elif cnt >= 10:
+                    for c in str(cnt):
+                        chars[j] = c
+                        j += 1
+                    
+                
+                cnt = 1
+        
+        
+        
+        chars[j] = chars[i]
+        j += 1
+                
+        if 1 < cnt < 10:
+            chars[j] = str(cnt)
+            j += 1
+        elif cnt >= 10:
+            for c in str(cnt):
+                chars[j] = c
+                j += 1
+        return j
+
+```
+
 ## schedule
 
 * [x] 0 2019/09/04
 * [x] 1 2019/09/05
 * [x] 1 2019/09/08
 * [x] 1 2019/09/15
-* [ ] 1 2019/09/30
+* [x] 1 2019/09/30
+* [ ] 1 2019/10/31

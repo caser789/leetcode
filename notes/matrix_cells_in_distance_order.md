@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/26, leetcode/1030]
+tags: [2019/10/11, leetcode/1030]
 title: Matrix Cells in Distance Order
 created: '2019-09-07T09:24:35.935Z'
-modified: '2019-09-22T06:38:45.230Z'
+modified: '2019-09-26T05:13:16.162Z'
 ---
 
 # Matrix Cells in Distance Order
@@ -86,4 +86,5 @@ class Solution(object):
 * [x] 0 2019/09/15
 * [x] 1 2019/09/16
 * [x] 1 2019/09/19
-* [ ] 1 2019/09/26
+* [x] 1 2019/09/26
+* [ ] 1 2019/10/11

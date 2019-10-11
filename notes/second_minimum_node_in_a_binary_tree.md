@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/06, leetcode/671]
+tags: [2019/10/17, leetcode/671]
 title: Second Minimum Node In a Binary Tree
 created: '2019-09-07T06:56:52.544Z'
-modified: '2019-09-22T09:55:31.171Z'
+modified: '2019-10-10T16:34:38.684Z'
 ---
 
 # Second Minimum Node In a Binary Tree
@@ -77,5 +77,8 @@ class Solution(object):
 * [x] 1 2019/09/11
 * [x] 1 2019/09/14
 * [x] 1 2019/09/21
-* [ ] 1 2019/10/06
+* [x] 1 2019/10/06
+* [x] 1 2019/10/07
+* [x] 1 2019/10/10
+* [ ] 1 2019/10/17
 

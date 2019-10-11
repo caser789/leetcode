@@ -1,8 +1,8 @@
 ---
-tags: [2019/09/27, leetcode/326]
+tags: [2019/10/23, bit, leetcode/326]
 title: Power of Three
 created: '2019-09-24T15:03:04.791Z'
-modified: '2019-09-24T15:03:35.754Z'
+modified: '2019-10-08T05:23:37.970Z'
 ---
 
 # Power of Three
@@ -37,5 +37,20 @@ class Solution(object):
         :type n: int
         :rtype: bool
         """
+        if n < 1: return False
+        
+        while n % 3 == 0:
+            n /= 3
+        
+        return n == 1
+        
         
 ```
+
+## schedule
+
+* [x] 0 2019/09/27
+* [x] 1 2019/09/28
+* [x] 1 2019/10/01
+* [x] 1 2019/10/08
+* [ ] 1 2019/10/23
