@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/12, leetcode/665]
+tags: [2019/11/27, leetcode/665]
 title: Non-decreasing Array
 created: '2019-08-31T08:37:45.110Z'
-modified: '2019-10-07T05:04:29.442Z'
+modified: '2019-10-27T05:00:40.918Z'
 ---
 
 # Non-decreasing Array
@@ -61,4 +61,6 @@ class Solution(object):
 * [x] 0 2019/10/01
 * [x] 1 2019/10/02
 * [x] 1 2019/10/05
-* [ ] 1 2019/10/12
+* [x] 1 2019/10/12
+* [x] 1 2019/10/27
+* [ ] 1 2019/11/27

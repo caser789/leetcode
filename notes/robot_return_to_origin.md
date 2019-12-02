@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/19, leetcode/657]
+tags: [2019/11/19, leetcode/657]
 title: Robot Return to Origin
 created: '2019-08-31T08:40:56.288Z'
-modified: '2019-10-05T05:09:44.148Z'
+modified: '2019-10-19T13:30:20.350Z'
 ---
 
 # Robot Return to Origin
@@ -51,5 +51,6 @@ class Solution(object):
 * [x] 1 2019/09/24
 * [x] 1 2019/09/27
 * [x] 1 2019/10/04
-* [ ] 1 2019/10/19
+* [x] 1 2019/10/19
+* [ ] 1 2019/11/19
 

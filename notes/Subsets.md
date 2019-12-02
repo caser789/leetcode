@@ -2,7 +2,7 @@
 tags: [2019/08/12, leetcode/78, method/backtracking]
 title: Subsets
 created: '2019-08-12T04:39:24.135Z'
-modified: '2019-08-12T04:39:58.691Z'
+modified: '2019-11-23T07:35:09.114Z'
 ---
 
 # Subsets
@@ -64,3 +64,27 @@ Output:
 ]
 """
 ```
+
+### O(n*n)
+
+```python
+class Solution(object):
+    def subsets(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        res = [[]]
+        for num in nums:
+            n = len(res)
+            for i in range(n):
+                tmp = res[i] + [num]
+                res.append(tmp)
+        return res
+
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/subsets/)
+

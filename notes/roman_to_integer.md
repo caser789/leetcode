@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/29, leetcode/13, method/direction]
+tags: [2019/12/31, leetcode/13, method/direction]
 title: Roman to Integer
 created: '2019-08-31T09:05:05.950Z'
-modified: '2019-09-28T08:04:14.230Z'
+modified: '2019-10-29T15:06:57.328Z'
 ---
 
 # Roman to Integer
@@ -99,4 +99,5 @@ class Solution(object):
 * [x] 1 2019/09/06
 * [x] 1 2019/09/13
 * [x] 1 2019/09/28
-* [ ] 1 2019/10/29
+* [x] 1 2019/10/29
+* [ ] 1 2019/12/31

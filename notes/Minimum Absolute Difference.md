@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/1200]
+tags: [2019/11/04, leetcode/1200]
 title: Minimum Absolute Difference
 created: '2019-10-08T15:05:50.289Z'
-modified: '2019-10-10T13:28:01.828Z'
+modified: '2019-10-23T12:03:17.579Z'
 ---
 
 # Minimum Absolute Difference
@@ -63,4 +63,6 @@ class Solution(object):
 
 * [x] 0 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/04

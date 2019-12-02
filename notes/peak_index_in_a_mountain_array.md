@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/11, leetcode/852]
+tags: [2019/11/06, leetcode/852]
 title: Peak Index in a Mountain Array
 created: '2019-09-07T09:34:26.873Z'
-modified: '2019-09-26T05:09:25.497Z'
+modified: '2019-10-22T05:30:21.145Z'
 ---
 
 # Peak Index in a Mountain Array
@@ -94,4 +94,8 @@ class Solution(object):
 * [x] 1 2019/09/16
 * [x] 1 2019/09/19
 * [x] 1 2019/09/26
-* [ ] 1 2019/10/11
+* [x] 1 2019/10/11
+* [x] 1 2019/10/12
+* [x] 1 2019/10/15
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/06

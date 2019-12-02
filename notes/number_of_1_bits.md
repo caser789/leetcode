@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/22, leetcode/191]
+tags: [2019/11/22, leetcode/191]
 title: Number of 1 Bits
 created: '2019-09-24T14:54:41.974Z'
-modified: '2019-10-08T05:15:26.541Z'
+modified: '2019-10-22T05:17:54.343Z'
 ---
 
 # Number of 1 Bits
@@ -60,4 +60,5 @@ class Solution(object):
 * [x] 1 2019/09/27
 * [x] 1 2019/09/30
 * [x] 1 2019/10/07
-* [ ] 1 2019/10/22
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/22

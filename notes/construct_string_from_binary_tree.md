@@ -1,8 +1,9 @@
 ---
-tags: [2019/08/17, data structure/tree, leetcode/606, method/traversal/preorder, TODO]
+favorited: true
+tags: [2019/08/17, application/tree/serialization, data structure/tree, leetcode/606, method/traversal/preorder, TODO]
 title: Construct String from Binary Tree
 created: '2019-08-17T04:40:02.815Z'
-modified: '2019-08-17T05:08:50.418Z'
+modified: '2019-12-01T11:04:35.625Z'
 ---
 
 # Construct String from Binary Tree
@@ -84,3 +85,54 @@ s = Solution().tree2str(_1)
 print(s)
 assert s == '1(2()(4))(3)'
 ```
+
+### iter
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def tree2str(self, t):
+        """
+        :type t: TreeNode
+        :rtype: str
+        """
+        if t is None:
+            return ''
+        
+        stack = [t]
+        visited = set()
+        s = []
+        while stack:
+            n = stack[-1]
+            if n in visited:
+                stack.pop()
+                s.append(')')
+            else:
+                visited.add(n)
+                s.append('(')
+                s.append(str(n.val))
+                if n.left is None and n.right is not None:
+                    s.append('()')
+                if n.right:
+                    stack.append(n.right)
+                if n.left:
+                    stack.append(n.left)
+        
+        return ''.join(s[1:-1])
+                
+```
+
+## TODO
+
+* iter
+
+## refs
+
+* [lc](https://leetcode.com/problems/construct-string-from-binary-tree/)
+* [ans](https://leetcode.com/problems/construct-string-from-binary-tree/solution/)

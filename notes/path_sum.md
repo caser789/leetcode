@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/queue, data structure/tree, leetcode/112, method/traversal/bfs]
+tags: [2019/08/09, data structure/queue, data structure/stack, data structure/tree, leetcode/112, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Path Sum
 created: '2019-08-09T02:19:18.029Z'
-modified: '2019-08-09T04:46:25.412Z'
+modified: '2019-11-28T06:06:41.081Z'
 ---
 
 # Path Sum
@@ -99,3 +99,78 @@ __4.right = _1
 
 
 ```
+
+### recursion
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def hasPathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: bool
+        """
+        
+        
+        def find(node, s):
+            if node is None:
+                return False
+            
+            if node.val == s and node.left is None and node.right is None:
+                return True
+            
+            x = find(node.left, s-node.val)
+            y = find(node.right, s-node.val)
+            return x or y
+            
+        
+        return find(root, sum)
+```
+
+### dfs
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def hasPathSum(self, root, sum):
+        """
+        :type root: TreeNode
+        :type sum: int
+        :rtype: bool
+        """
+        if root is None:
+            return False
+        
+        stack = [(root, sum)]
+        
+        while stack:
+            node, s = stack.pop()
+            
+            if node.val == s and node.left is None and node.right is None:
+                return True
+            
+            if node.left:
+                stack.append((node.left, s-node.val))
+            
+            if node.right:
+                stack.append((node.right, s-node.val))
+        
+        return False
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/path-sum/)

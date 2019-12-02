@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/19, leetcode/461]
+tags: [2019/11/19, leetcode/461]
 title: Hamming Distance
 created: '2019-09-22T11:07:14.511Z'
-modified: '2019-10-05T05:16:54.498Z'
+modified: '2019-10-19T13:28:48.449Z'
 ---
 
 # Hamming Distance
@@ -100,4 +100,5 @@ class Solution(object):
 * [x] 1 2019/09/24
 * [x] 1 2019/09/27
 * [x] 1 2019/10/04
-* [ ] 1 2019/10/19
+* [x] 1 2019/10/19
+* [ ] 1 2019/11/19

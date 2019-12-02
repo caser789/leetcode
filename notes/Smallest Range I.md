@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/908]
+tags: [2019/11/06, leetcode/908]
 title: Smallest Range I
 created: '2019-10-08T14:54:37.090Z'
-modified: '2019-10-08T14:55:11.112Z'
+modified: '2019-10-22T05:22:27.237Z'
 ---
 
 # Smallest Range I
@@ -48,5 +48,22 @@ class Solution(object):
         :type K: int
         :rtype: int
         """
+        x = max(A)
+        y = min(A)
+        
+        x = x - K
+        y = y + K
+        
+        return max(0, x-y)
         
 ```
+
+
+## schedule
+
+* [x] 0 2019/10/11
+* [x] 1 2019/10/12
+* [x] 1 2019/10/15
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/06
+

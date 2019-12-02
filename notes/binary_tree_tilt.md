@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/06, leetcode/563]
+tags: [2019/11/06, data structure/tree, leetcode/563, method/recursion, method/traversal/postorder]
 title: Binary Tree Tilt
 created: '2019-09-07T06:48:19.230Z'
-modified: '2019-10-07T05:31:35.692Z'
+modified: '2019-12-01T07:19:53.168Z'
 ---
 
 # Binary Tree Tilt

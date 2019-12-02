@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/03, data structure/tree, leetcode/429, method/backtracking, method/traversal/bfs]
+tags: [2019/11/03, data structure/tree/n-ary, leetcode/429, method/backtracking, method/recursion, method/traversal/bfs, method/traversal/level]
 title: N-ary Tree Level Order Traversal
 created: '2019-08-31T09:51:16.775Z'
-modified: '2019-10-04T05:13:55.829Z'
+modified: '2019-12-01T12:03:15.515Z'
 ---
 
 # N-ary Tree Level Order Traversal
@@ -98,6 +98,42 @@ class Solution(object):
         collect(root, 0, res, count)
         return res
 
+```
+
+### recur
+
+```python
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+"""
+class Solution(object):
+    def levelOrder(self, root):
+        """
+        :type root: Node
+        :rtype: List[List[int]]
+        """
+        res = []
+        
+        def collect(node, level):
+            if node is None:
+                return
+            
+            if level == len(res):
+                res.append([node.val])
+            else:
+                res[level].append(node.val)
+            
+            for c in node.children:
+                collect(c, level+1)
+                
+            
+        
+        collect(root, 0)
+        return res
 ```
 
 ## schedule

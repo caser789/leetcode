@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/22, leetcode/196, sql]
+tags: [2019/11/22, leetcode/196, sql]
 title: Delete Duplicate Emails
 created: '2019-09-24T14:57:44.304Z'
-modified: '2019-10-08T05:00:03.753Z'
+modified: '2019-10-22T05:15:22.702Z'
 ---
 
 # Delete Duplicate Emails
@@ -52,4 +52,5 @@ WHERE
 * [x] 1 2019/09/27
 * [x] 1 2019/09/30
 * [x] 1 2019/10/07
-* [ ] 1 2019/10/22
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/22

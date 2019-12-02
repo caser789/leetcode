@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/682]
+tags: [2019/11/04, leetcode/682]
 title: Baseball Game
 created: '2019-09-24T15:26:00.822Z'
-modified: '2019-10-10T12:01:45.943Z'
+modified: '2019-10-21T04:55:11.112Z'
 ---
 
 # Baseball Game
@@ -73,4 +73,6 @@ class Solution(object):
 
 * [x] 1 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/04

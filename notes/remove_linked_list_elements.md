@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/203, method/2 pointers/linked list]
+tags: [2019/11/10, application/dedup, data structure/linked-list, leetcode/203, method/2 pointers/linked list, method/2-pointers]
 title: Remove Linked List Elements
 created: '2019-09-07T09:16:39.161Z'
-modified: '2019-10-10T16:30:57.244Z'
+modified: '2019-11-26T14:38:02.300Z'
 ---
 
 # Remove Linked List Elements

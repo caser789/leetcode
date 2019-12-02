@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/237]
+tags: [2019/11/10, data structure/linked-list, leetcode/237]
 title: Delete Node in a Linked List
 created: '2019-09-07T09:08:54.179Z'
-modified: '2019-10-10T12:34:32.722Z'
+modified: '2019-11-26T14:40:25.330Z'
 ---
 
 # Delete Node in a Linked List

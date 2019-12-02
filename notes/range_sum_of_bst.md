@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/17, data structure/BST, leetcode/938, method/traversal/inorder]
+tags: [2019/08/17, data structure/bst, data structure/tree, leetcode/938, method/recursion, method/traversal/inorder]
 title: Range Sum of BST
 created: '2019-08-17T03:41:32.348Z'
-modified: '2019-08-17T03:48:56.175Z'
+modified: '2019-12-01T11:33:03.599Z'
 ---
 
 # Range Sum of BST
@@ -66,3 +66,40 @@ class Solution(object):
             curr = curr.right
         return res
 ```
+
+### recur
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def rangeSumBST(self, root, L, R):
+        """
+        :type root: TreeNode
+        :type L: int
+        :type R: int
+        :rtype: int
+        """
+        
+        if root is None:
+            return 0
+        
+        if root.val < L:
+            return self.rangeSumBST(root.right, L, R)
+        
+        if root.val > R:
+            return self.rangeSumBST(root.left, L, R)
+        
+        left = self.rangeSumBST(root.left, L, R)
+        right = self.rangeSumBST(root.right, L, R)
+        return left + right + root.val
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/range-sum-of-bst/)

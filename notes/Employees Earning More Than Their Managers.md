@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/22, leetcode/181]
+tags: [2019/11/22, leetcode/181]
 title: Employees Earning More Than Their Managers
 created: '2019-09-24T14:51:22.006Z'
-modified: '2019-10-08T05:07:15.026Z'
+modified: '2019-10-22T05:16:44.079Z'
 ---
 
 # Employees Earning More Than Their Managers
@@ -65,4 +65,5 @@ ON a.ManagerId = b.Id AND
 * [x] 1 2019/09/27
 * [x] 1 2019/09/30
 * [x] 1 2019/10/07
-* [ ] 1 2019/10/22
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/22

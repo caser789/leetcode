@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/453]
+tags: [2019/10/28, leetcode/453]
 title: Minimum Moves to Equal Array Elements
 created: '2019-09-24T15:09:26.210Z'
-modified: '2019-10-07T15:36:35.900Z'
+modified: '2019-10-13T05:49:34.773Z'
 ---
 
 # Minimum Moves to Equal Array Elements
@@ -44,4 +44,5 @@ class Solution(object):
 * [x] 1 2019/10/02
 * [x] 1 2019/10/03
 * [x] 1 2019/10/06
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [ ] 1 2019/10/28

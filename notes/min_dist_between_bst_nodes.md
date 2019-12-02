@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/11, data structure/tree, leetcode/783, method/traversal/inorder]
+tags: [2019/08/11, data structure/bst, data structure/tree, leetcode/783, method/traversal/inorder]
 title: Minimum Distance Between BST Nodes
 created: '2019-08-11T14:10:32.862Z'
-modified: '2019-08-18T14:32:31.012Z'
+modified: '2019-12-01T11:31:30.765Z'
 ---
 
 # Minimum Distance Between BST Nodes

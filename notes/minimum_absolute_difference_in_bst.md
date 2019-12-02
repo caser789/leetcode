@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/04, leetcode/530]
+tags: [2019/11/04, data structure/bst, data structure/tree, leetcode/530, method/recursion, method/traversal/inorder]
 title: Minimum Absolute Difference in BST
 created: '2019-09-07T06:41:02.230Z'
-modified: '2019-10-06T10:12:50.370Z'
+modified: '2019-12-01T11:30:29.138Z'
 ---
 
 # Minimum Absolute Difference in BST
@@ -66,6 +66,42 @@ class Solution(object):
         return val
 ```
 
+### recur
+
+```
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def getMinimumDifference(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root is None:
+            return 0
+        self.res = float('inf')
+        self.prev = None
+        
+        def helper(node):
+            if node is None:
+                return
+            
+            helper(node.left)
+            if self.prev is not None:
+                self.res = min(self.res, node.val - self.prev)
+            self.prev = node.val
+            
+            helper(node.right)
+        
+        helper(root)
+        return self.res
+```
+
 ## schedule
 
 * [x] 0 2019/09/08
@@ -74,3 +110,7 @@ class Solution(object):
 * [x] 1 2019/09/19
 * [x] 1 2019/10/04
 * [ ] 1 2019/11/04
+
+## refs
+
+* [lc](https://leetcode.com/problems/minimum-absolute-difference-in-bst/)

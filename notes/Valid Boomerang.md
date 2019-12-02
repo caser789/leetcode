@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/1037]
+tags: [2019/11/07, leetcode/1037]
 title: Valid Boomerang
 created: '2019-10-08T15:00:45.009Z'
-modified: '2019-10-08T15:01:19.246Z'
+modified: '2019-10-23T11:14:03.311Z'
 ---
 
 # Valid Boomerang
@@ -39,5 +39,17 @@ class Solution(object):
         :type points: List[List[int]]
         :rtype: bool
         """
+        a, b, c = points
         
+        return (c[0] - b[0])*(b[1] - a[1]) != (b[0] - a[0])*(c[1] - b[1])
+              
+
 ```
+
+## schedule
+
+* [x] 0 2019/10/12
+* [x] 1 2019/10/13
+* [x] 1 2019/10/16
+* [x] 1 2019/10/23
+* [ ] 1 2019/11/07

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, knack, leetcode/1217]
+tags: [2019/11/04, knack, leetcode/1217]
 title: Play with Chips
 created: '2019-10-08T15:07:03.737Z'
-modified: '2019-10-10T14:02:18.990Z'
+modified: '2019-10-21T05:07:57.404Z'
 ---
 
 # Play with Chips
@@ -61,4 +61,6 @@ class Solution(object):
 
 * [x] 0 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/04

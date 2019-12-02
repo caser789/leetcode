@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/24, leetcode/455]
+tags: [2019/11/24, leetcode/455]
 title: Assign Cookies
 created: '2019-09-24T15:10:22.083Z'
-modified: '2019-10-08T14:31:35.728Z'
+modified: '2019-10-24T04:54:33.457Z'
 ---
 
 # Assign Cookies
@@ -79,4 +79,5 @@ class Solution(object):
 * [x] 1 2019/09/29
 * [x] 1 2019/10/02
 * [x] 1 2019/10/09
-* [ ] 1 2019/10/24
+* [x] 1 2019/10/24
+* [ ] 1 2019/11/24

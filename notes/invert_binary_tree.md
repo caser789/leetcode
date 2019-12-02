@@ -2,7 +2,7 @@
 tags: [2019/11/03, data structure/tree, leetcode/226, method/traversal/bfs]
 title: Invert Binary Tree
 created: '2019-08-31T09:54:21.169Z'
-modified: '2019-10-04T04:50:12.207Z'
+modified: '2019-11-28T10:28:23.451Z'
 ---
 
 # Invert Binary Tree
@@ -96,3 +96,7 @@ class Solution(object):
 * [x] 1 2019/09/18
 * [x] 1 2019/10/03
 * [ ] 1 2019/11/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/invert-binary-tree/)

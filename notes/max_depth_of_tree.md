@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/03, data structure/queue, data structure/stack, data structure/tree, leetcode/559, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/11/03, application/tree/depth, data structure/queue, data structure/stack, data structure/tree/n-ary, leetcode/559, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Maximum Depth of N-ary Tree
 created: '2019-08-06T14:46:41.707Z'
-modified: '2019-10-04T05:04:32.451Z'
+modified: '2019-12-01T11:11:37.854Z'
 ---
 
 # Maximum Depth of N-ary Tree
@@ -110,6 +110,39 @@ class Solution(object):
         return max(self.maxDepth(c) for c in root.children) + 1
 ```
 
+### recur
+
+```
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+"""
+class Solution(object):
+    def maxDepth(self, root):
+        """
+        :type root: Node
+        :rtype: int
+        """
+        if root is None:
+            return 0
+        
+        self.res = 0
+        
+        def helper(node, level):
+            if node is None:
+                return
+            self.res = max(self.res, level)
+            for c in node.children:
+                helper(c, level+1)
+            
+        
+        helper(root, 1)
+        return self.res
+```
+
 ## schedule
 
 * [x] 0 2019/09/07
@@ -118,3 +151,7 @@ class Solution(object):
 * [x] 1 2019/09/18
 * [x] 1 2019/10/03
 * [ ] 1 2019/11/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/maximum-depth-of-n-ary-tree/)

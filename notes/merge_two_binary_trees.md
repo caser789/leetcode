@@ -1,8 +1,9 @@
 ---
+favorited: true
 tags: [2019/11/03, data structure/tree, leetcode/617]
 title: Merge Two Binary Trees
 created: '2019-08-31T09:39:47.220Z'
-modified: '2019-10-04T05:08:17.526Z'
+modified: '2019-11-29T06:28:36.289Z'
 ---
 
 # Merge Two Binary Trees
@@ -110,3 +111,7 @@ class Solution(object):
 * [x] 1 2019/09/18
 * [x] 1 2019/10/03
 * [ ] 1 2019/11/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/merge-two-binary-trees/)

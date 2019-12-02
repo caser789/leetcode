@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/23, leetcode/197, sql]
+tags: [2019/11/23, leetcode/197, sql]
 title: Rising Temperature
 created: '2019-09-24T14:59:13.339Z'
-modified: '2019-10-08T05:31:10.346Z'
+modified: '2019-10-23T04:40:15.605Z'
 ---
 
 # Rising Temperature
@@ -65,4 +65,5 @@ on
 * [x] 1 2019/09/28
 * [x] 1 2019/10/01
 * [x] 1 2019/10/08
-* [ ] 1 2019/10/23
+* [x] 1 2019/10/23
+* [ ] 1 2019/11/23

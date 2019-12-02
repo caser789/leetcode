@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/19, leetcode/378]
+tags: [2019/10/20, data structure/priority queue, leetcode/378]
 title: Kth Smallest Element in a Sorted Matrix
 created: '2019-08-19T13:40:29.695Z'
-modified: '2019-08-19T13:40:58.345Z'
+modified: '2019-10-25T01:04:46.121Z'
 ---
 
 # Kth Smallest Element in a Sorted Matrix
@@ -236,6 +236,87 @@ class Solution(object):
         return lo
 ```
 
+### sort
+
+```python
+class Solution(object):
+    def kthSmallest(self, matrix, k):
+        """
+        :type matrix: List[List[int]]
+        :type k: int
+        :rtype: int
+        """
+        values = []
+        n = 0
+        for row in matrix:
+            for val in row:
+                values.append(val)
+                n += 1
+
+
+        values.sort()
+        return values[k-1] 
+
+```
+
+### pq
+
+```
+import heapq
+
+class Solution(object):
+    def kthSmallest(self, matrix, k):
+        """
+        :type matrix: List[List[int]]
+        :type k: int
+        :rtype: int
+        """
+        pq = []
+        for row in matrix:
+            for val in row:
+                heapq.heappush(pq, -val)
+                if len(pq) > k:
+                    
+                
+                        heapq.heappop(pq)
+                        
+        return -pq[0]
+
+```
+
+### better pq
+
+```python
+import heapq
+
+class Solution(object):
+    def kthSmallest(self, matrix, k):
+        """
+        :type matrix: List[List[int]]
+        :type k: int
+        :rtype: int
+        """
+        n = len(matrix)
+        pq = []
+        for i in range(n):
+            heapq.heappush(pq, (matrix[i][0], i, 0))
+
+        for i in range(k-1):
+            v, x, y = heapq.heappop(pq)
+            if y + 1 < n:
+                heapq.heappush(pq, (matrix[x][y+1], x, y+1))
+        return pq[0][0]
+
+```
+
 ## refs
 
 * https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/discuss/85173/Share-my-thoughts-and-Clean-Java-Code
+
+* https://leetcode.com/problems/k-th-smallest-prime-fraction/discuss/115819/Summary-of-solutions-for-problems-%22reducible%22-to-LeetCode-378
+
+## schedule
+
+* [x] 2019/10/19
+* [x] 2019/10/20
+* [ ] 2019/10/25

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/23, bit, leetcode/326]
+tags: [2019/11/23, bit, leetcode/326]
 title: Power of Three
 created: '2019-09-24T15:03:04.791Z'
-modified: '2019-10-08T05:23:37.970Z'
+modified: '2019-10-23T05:03:40.705Z'
 ---
 
 # Power of Three
@@ -53,4 +53,5 @@ class Solution(object):
 * [x] 1 2019/09/28
 * [x] 1 2019/10/01
 * [x] 1 2019/10/08
-* [ ] 1 2019/10/23
+* [x] 1 2019/10/23
+* [ ] 1 2019/11/23

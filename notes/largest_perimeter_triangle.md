@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/11, leetcode/976]
+tags: [2019/11/11, leetcode/976]
 title: Largest Perimeter Triangle
 created: '2019-09-07T09:26:09.635Z'
-modified: '2019-09-26T05:07:52.954Z'
+modified: '2019-10-12T06:53:46.619Z'
 ---
 
 # Largest Perimeter Triangle
@@ -69,4 +69,5 @@ class Solution(object):
 * [x] 1 2019/09/16
 * [x] 1 2019/09/19
 * [x] 1 2019/09/26
-* [ ] 1 2019/10/11
+* [x] 1 2019/10/11
+* [ ] 1 2019/11/11

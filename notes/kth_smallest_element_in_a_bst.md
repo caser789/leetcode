@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/tree, leetcode/230, method/traversal/inorder]
+tags: [2019/08/09, data structure/bst, data structure/tree, leetcode/230, method/traversal/inorder]
 title: Kth Smallest Element in a BST
 created: '2019-08-09T09:41:18.677Z'
-modified: '2019-08-11T14:15:48.558Z'
+modified: '2019-12-01T08:31:36.785Z'
 ---
 
 # Kth Smallest Element in a BST
@@ -92,3 +92,7 @@ _2.left = _1
 
 Solution().kthSmallest(_5, 1)
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)

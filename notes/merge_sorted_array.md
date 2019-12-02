@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/30, leetcode/88, method/sort/merge]
+tags: [2019/11/05, leetcode/88, method/sort/merge]
 title: Merge Sorted Array
 created: '2019-08-30T14:48:44.129Z'
-modified: '2019-08-30T15:24:47.443Z'
+modified: '2019-11-05T01:28:48.978Z'
 ---
 
 # Merge Sorted Array
@@ -54,3 +54,15 @@ class Solution(object):
             j -= 1
             k -= 1
 ```
+
+## schedule
+
+* [x] 2019/11/05
+* [ ] 2019/11/06
+
+## refs
+
+* [lc](https://leetcode.com/problems/merge-sorted-array/)
+* [liwei](https://www.liwei.party/2018/10/16/leetcode-solution/array3/#toc-heading-3)
+
+

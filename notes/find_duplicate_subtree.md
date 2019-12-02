@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [application/tree/duplicate, data structure/map, data structure/tree]
 title: Find Duplicate Subtrees
 created: '2019-08-01T05:44:17.097Z'
-modified: '2019-08-09T04:40:02.542Z'
+modified: '2019-12-01T11:17:38.776Z'
 ---
 
 # Find Duplicate Subtrees

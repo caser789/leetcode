@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/160]
+tags: [2019/11/10, data structure/linked-list, leetcode/160, method/2-pointers]
 title: Intersection of Two Linked Lists
 created: '2019-09-07T09:18:10.076Z'
-modified: '2019-10-10T12:50:08.547Z'
+modified: '2019-11-26T14:34:06.213Z'
 ---
 
 # Intersection of Two Linked Lists

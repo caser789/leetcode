@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08, leetcode/872]
+tags: [2019/08/08, data structure/tree, leetcode/872, method/recursion, method/traversal/dfs]
 title: Leaf-Similar Trees
 created: '2019-08-08T15:09:36.423Z'
-modified: '2019-08-31T09:49:37.037Z'
+modified: '2019-11-30T05:03:52.504Z'
 ---
 
 # Leaf-Similar Trees
@@ -60,3 +60,40 @@ class Solution(object):
             curr = curr.right
         return res
 ```
+
+### recur
+
+```
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def leafSimilar(self, root1, root2):
+        """
+        :type root1: TreeNode
+        :type root2: TreeNode
+        :rtype: bool
+        """
+        
+        def dfs(node, lst):
+            if node is None:
+                return
+            if node.left is None and node.right is None:
+                lst.append(node.val)
+            dfs(node.left, lst)
+            dfs(node.right, lst)
+        
+        lst1 = []
+        dfs(root1, lst1)
+        lst2 = []
+        dfs(root2, lst2)
+        return lst1 == lst2
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/leaf-similar-trees/)

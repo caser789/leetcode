@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08, data structure/queue, data structure/tree, leetcode/100, method/traversal/bfs]
+tags: [2019/08/08, application/tree/compare, application/tree/serialization, data structure/queue, data structure/stack, data structure/tree, leetcode/100, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Same Tree
 created: '2019-08-08T16:10:30.452Z'
-modified: '2019-08-09T04:47:36.822Z'
+modified: '2019-12-01T12:00:42.399Z'
 ---
 
 # Same Tree
@@ -105,3 +105,92 @@ class Solution(object):
                     return False
         return True
 ```
+
+### stack
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isSameTree(self, p, q):
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
+        if p is None and q is None: return True
+        if p is None: return False
+        if q is None: return False
+        stack = [p, q]
+        while stack:
+            a = stack.pop()
+            if not stack:
+                return False
+            b = stack.pop()
+            
+            if a.val != b.val: return False
+            
+            if a.left:
+                if not b.left: return False
+                stack.append(a.left)
+                stack.append(b.left)
+            else:
+                if b.left: return False
+            
+            if a.right:
+                if not b.right: return False
+                stack.append(a.right)
+                stack.append(b.right)
+            else:
+                if b.right: return False
+        
+        return True
+            
+```
+
+### recur
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isSameTree(self, p, q):
+        """
+        :type p: TreeNode
+        :type q: TreeNode
+        :rtype: bool
+        """
+        if p is None and q is None:
+            return True
+        
+        if p is None:
+            return False
+        
+        if q is None:
+            return False
+        
+        if p.val != q.val:
+            return False
+        
+        if not self.isSameTree(p.left, q.left):
+            return False
+        
+        if not self.isSameTree(p.right, q.right):
+            return False
+        
+        return True
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/same-tree/)

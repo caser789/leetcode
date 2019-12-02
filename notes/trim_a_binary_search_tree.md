@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/06, data structure/tree, leetcode/669]
+tags: [2019/11/06, data structure/tree, leetcode/669, method/recursion]
 title: Trim a Binary Search Tree
 created: '2019-08-31T09:50:12.923Z'
-modified: '2019-10-07T15:53:12.815Z'
+modified: '2019-11-29T13:32:58.750Z'
 ---
 
 # Trim a Binary Search Tree
@@ -91,3 +91,7 @@ class Solution(object):
 * [x] 1 2019/09/21
 * [x] 1 2019/10/06
 * [ ] 1 2019/11/06
+
+## refs
+
+* [lc](https://leetcode.com/problems/trim-a-binary-search-tree/)

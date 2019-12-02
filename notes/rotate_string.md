@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/12, leetcode/796, method/kmp, method/rolling_hash]
+tags: [2019/11/07, leetcode/796, method/kmp, method/rolling_hash]
 title: Rotate String
 created: '2019-09-24T15:28:26.261Z'
-modified: '2019-10-07T05:13:52.324Z'
+modified: '2019-10-27T04:38:46.460Z'
 ---
 
 # Rotate String
@@ -41,4 +41,6 @@ class Solution(object):
 * [x] 0 2019/10/01
 * [x] 1 2019/10/02
 * [x] 1 2019/10/05
-* [ ] 1 2019/10/12
+* [x] 1 2019/10/12
+* [x] 1 2019/10/27
+* [ ] 1 2019/11/27

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/21, leetcode/693]
+tags: [2019/11/21, leetcode/693]
 title: Binary Number with Alternating Bits
 created: '2019-09-22T11:19:00.236Z'
-modified: '2019-10-07T05:28:34.866Z'
+modified: '2019-10-22T15:14:20.913Z'
 ---
 
 # Binary Number with Alternating Bits
@@ -54,4 +54,5 @@ class Solution(object):
 * [x] 1 2019/09/26
 * [x] 1 2019/09/29
 * [x] 1 2019/10/06
-* [ ] 1 2019/10/21
+* [x] 1 2019/10/21
+* [ ] 1 2019/11/21

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/12, leetcode/784]
+tags: [2019/08/12, application/permutation, leetcode/784, method/backtrack]
 title: Letter Case Permutation
 created: '2019-08-12T03:54:45.147Z'
-modified: '2019-08-12T03:55:25.579Z'
+modified: '2019-11-24T11:04:33.204Z'
 ---
 
 # Letter Case Permutation
@@ -99,6 +99,35 @@ class Solution(object):
         upper = lst[:]
         upper[index] = upper[index].upper()
         self._letterCasePermutation(res, upper, index+1, length)
+```
+### backtrack
+
+```python
+class Solution(object):
+    def letterCasePermutation(self, S):
+        """
+        :type S: str
+        :rtype: List[str]
+        """
+        n = len(S)
+        tmp = []
+        res = []
+        
+        def search(i):
+            if i == n:
+                res.append(''.join(tmp))
+                return
+            
+            tmp.append(S[i].upper())
+            search(i+1)
+            tmp.pop()
+            if not S[i].isdigit():
+                tmp.append(S[i].lower())
+                search(i+1)
+                tmp.pop()
+        
+        search(0)
+        return res
 ```
 
 ### bfs

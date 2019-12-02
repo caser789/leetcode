@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/BST, leetcode/98, method/traversal/inorder]
+tags: [2019/08/09, data structure/bst, data structure/tree, leetcode/98, method/traversal/inorder]
 title: Validate Binary Search Tree
 created: '2019-08-09T09:39:15.214Z'
-modified: '2019-08-11T13:41:54.205Z'
+modified: '2019-12-01T11:28:20.138Z'
 ---
 
 # Validate Binary Search Tree
@@ -74,3 +74,45 @@ class Solution(object):
             node = node.right
         return True
 ```
+
+### recur
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isValidBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        
+        def helper(node, lower=float('-inf'), upper=float('inf')):
+            if not node:
+                return True
+            
+            val = node.val
+            if val <= lower or val >= upper:
+                return False
+            
+            if not helper(node.right, val, upper):
+                return False
+            
+            if not helper(node.left, lower, val):
+                return False
+            
+            return True
+        
+        return helper(root)
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/validate-binary-search-tree/)
+
+

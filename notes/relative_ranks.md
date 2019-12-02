@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/25, leetcode/506]
+tags: [2019/11/25, leetcode/506]
 title: Relative Ranks
 created: '2019-09-24T15:17:24.600Z'
-modified: '2019-10-10T16:26:35.507Z'
+modified: '2019-10-25T04:53:23.963Z'
 ---
 
 # Relative Ranks
@@ -49,4 +49,5 @@ class Solution(object):
 * [x] 1 2019/09/30
 * [x] 1 2019/10/03
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/25
+* [x] 1 2019/10/25
+* [ ] 1 2019/11/25

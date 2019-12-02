@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/234]
+tags: [2019/11/10, data structure/linked-list, leetcode/234, method/2-pointers, method/reverse]
 title: Palindrome Linked List
 created: '2019-09-07T09:15:18.422Z'
-modified: '2019-10-10T14:00:48.646Z'
+modified: '2019-11-26T09:47:30.599Z'
 ---
 
 # Palindrome Linked List

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/405]
+tags: [2019/11/04, leetcode/405]
 title: Convert a Number to Hexadecimal
 created: '2019-09-24T15:07:17.730Z'
-modified: '2019-10-10T12:08:25.563Z'
+modified: '2019-10-21T05:00:01.885Z'
 ---
 
 # Convert a Number to Hexadecimal
@@ -58,4 +58,6 @@ class Solution(object):
 * [x] 1 2019/10/02
 * [x] 1 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/04

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/03, leetcode/637, method/backtracking, method/traversal/bfs]
+tags: [2019/11/03, data structure/queue, data structure/tree, leetcode/637, method/backtracking, method/recursion, method/traversal/bfs, method/traversal/dfs, method/traversal/level]
 title: Average of Levels in Binary Tree
 created: '2019-08-31T09:53:06.738Z'
-modified: '2019-10-04T01:19:14.906Z'
+modified: '2019-12-01T12:07:14.485Z'
 ---
 
 # Average of Levels in Binary Tree
@@ -69,6 +69,45 @@ def average(node, level, res, count):
     average(node.right, level+1, res, count)
 ```
 
+### queue + bfs
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def averageOfLevels(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[float]
+        """
+        if root is None:
+            return []
+        
+        q = [root]
+        res = []
+        while q:
+            nxt = []
+            s = 0
+            n = len(q)
+            for e in q:
+                s += e.val
+                if e.left:
+                    nxt.append(e.left)
+                if e.right:
+                    nxt.append(e.right)
+            
+            res.append(1.0*s/n)
+            q = nxt
+        return res
+            
+                    
+```
+
 ## schedule
 
 * [x] 0 2019/09/07
@@ -77,3 +116,7 @@ def average(node, level, res, count):
 * [x] 1 2019/09/18
 * [x] 1 2019/10/03
 * [ ] 1 2019/11/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/average-of-levels-in-binary-tree/)

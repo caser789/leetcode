@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/tree, leetcode/145, method/traversal/postorder]
+tags: [2019/08/09, data structure/tree, leetcode/145, method/recursion, method/traversal/postorder, TODO]
 title: Binary Tree Postorder Traversal
 created: '2019-08-09T08:53:54.674Z'
-modified: '2019-08-09T08:59:21.014Z'
+modified: '2019-11-28T08:35:51.751Z'
 ---
 
 # Binary Tree Postorder Traversal
@@ -109,3 +109,73 @@ _4.right = _7
 
 print Solution().postorderTraversal(_1)
 ```
+
+### recursion
+
+```
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if root is None:
+            return []
+        
+        res = []
+        
+        def helper(node):
+            if node is None:
+                return
+            
+            helper(node.left)
+            helper(node.right)
+            res.append(node.val)
+        helper(root)
+        return res
+```
+
+### stack
+
+```
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+from collections import deque
+class Solution(object):
+    def postorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if root is None:
+            return
+        
+        stack = []
+        res = deque()
+        
+        while stack or root:
+            while root:
+                stack.append(root)
+                res.appendleft(root.val)
+                root = root.right
+            root = stack.pop()
+            root = root.left
+        
+        return list(res)
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/binary-tree-postorder-traversal/)

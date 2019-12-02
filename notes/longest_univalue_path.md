@@ -1,8 +1,9 @@
 ---
+favorited: true
 tags: [2019/08/18, leetcode/687, method/recursion]
 title: Longest Univalue Path
 created: '2019-08-18T14:56:27.353Z'
-modified: '2019-08-18T14:57:11.351Z'
+modified: '2019-11-29T15:17:37.062Z'
 ---
 
 # Longest Univalue Path
@@ -72,3 +73,7 @@ class Solution(object):
         arrow_length(root)
         return self.res
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/longest-univalue-path/)

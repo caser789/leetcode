@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/12]
+tags: [2019/08/12, application/permutation, leetcode/22, method/backtrack]
 title: Generate Parentheses
 created: '2019-08-12T12:07:55.931Z'
-modified: '2019-08-12T12:08:10.831Z'
+modified: '2019-11-24T11:29:02.109Z'
 ---
 
 # Generate Parentheses
@@ -43,3 +43,38 @@ class Solution(object):
         if right > 0 and right > left:
             self.backtrack(res, tmp+')', left, right-1)
 ```
+
+### backtrack
+
+```python
+class Solution(object):
+    def generateParenthesis(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        tmp = []
+        res = []
+        def search(i, j):
+            if i == 0 and j == 0:
+                res.append(''.join(tmp))
+                return
+            
+            if i > 0:
+                tmp.append('(')
+                search(i-1, j)
+                tmp.pop()
+                
+            if j > i:
+                tmp.append(')')
+                search(i, j-1)
+                tmp.pop()
+
+        
+        search(n, n)
+        return res
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/generate-parentheses/submissions/)

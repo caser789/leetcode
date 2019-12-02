@@ -2,7 +2,7 @@
 tags: [2019/11/03, data structure/tree, leetcode/965, method/recursion, method/traversal/dfs]
 title: Univalued Binary Tree
 created: '2019-08-31T09:46:44.066Z'
-modified: '2019-10-04T05:30:21.981Z'
+modified: '2019-11-30T07:16:40.366Z'
 ---
 
 # Univalued Binary Tree
@@ -102,3 +102,7 @@ class Solution(object):
 * [x] 1 2019/09/18
 * [x] 1 2019/10/03
 * [ ] 1 2019/11/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/univalued-binary-tree/)

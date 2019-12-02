@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/22, bash, leetcode/193]
+tags: [2019/11/22, bash, leetcode/193]
 title: Valid Phone Numbers
 created: '2019-09-24T14:55:22.719Z'
-modified: '2019-10-08T05:21:07.407Z'
+modified: '2019-10-22T05:20:28.977Z'
 ---
 
 # Valid Phone Numbers
@@ -43,4 +43,5 @@ grep -P '\(\d{3}\) \d{3}-\d{4}$' file.txt
 * [x] 1 2019/09/27
 * [x] 1 2019/09/30
 * [x] 1 2019/10/07
-* [ ] 1 2019/10/22
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/22

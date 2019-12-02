@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/141]
+tags: [2019/11/10, application/circle-detect, data structure/linked-list, leetcode/141, method/2-pointers]
 title: Linked List Cycle
 created: '2019-09-07T09:13:18.859Z'
-modified: '2019-10-10T12:57:59.469Z'
+modified: '2019-11-26T13:58:38.019Z'
 ---
 
 # Linked List Cycle

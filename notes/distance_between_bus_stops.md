@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/20, leetcode/1184]
+tags: [2019/11/20, leetcode/1184]
 title: Distance Between Bus Stops
 created: '2019-09-22T11:16:09.014Z'
-modified: '2019-10-06T10:47:11.045Z'
+modified: '2019-10-21T05:01:56.889Z'
 ---
 
 # Distance Between Bus Stops
@@ -81,4 +81,5 @@ class Solution(object):
 * [x] 1 2019/09/25
 * [x] 1 2019/09/28
 * [x] 1 2019/10/05
-* [ ] 1 2019/10/20
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/20

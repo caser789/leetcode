@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/1207]
+tags: [2019/11/04, leetcode/1207]
 title: Unique Number of Occurrences
 created: '2019-10-08T15:06:34.293Z'
-modified: '2019-10-10T16:44:59.809Z'
+modified: '2019-10-23T11:57:49.840Z'
 ---
 
 # Unique Number of Occurrences
@@ -49,10 +49,35 @@ class Solution(object):
         m = len(set(counter.values()))
         return n == m
 ```
+### index
+
+```python
+class Solution(object):
+    def uniqueOccurrences(self, arr):
+        """
+        :type arr: List[int]
+        :rtype: bool
+        """
+        counter = {}
+        n = 0
+        for num in arr:
+            counter.setdefault(num, 0)
+            counter[num] += 1
+            n += 1
+        
+        lst = [1] * (n+1)
+        for k, v in counter.items():
+            if lst[v] < 0:
+                return False
+            lst[v] = -1
+        return True
+```
 
 
 ## schedule
 
 * [x] 0 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/04

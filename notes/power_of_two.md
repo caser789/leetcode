@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/23, bit, leetcode/231]
+tags: [2019/11/23, bit, leetcode/231]
 title: Power of Two
 created: '2019-09-24T15:00:13.612Z'
-modified: '2019-10-08T05:22:24.200Z'
+modified: '2019-10-23T05:02:29.241Z'
 ---
 
 # Power of Two
@@ -47,4 +47,5 @@ class Solution(object):
 * [x] 1 2019/09/28
 * [x] 1 2019/10/01
 * [x] 1 2019/10/08
-* [ ] 1 2019/10/23
+* [x] 1 2019/10/23
+* [ ] 1 2019/11/23

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, leetcode/110]
+tags: [2019/08/09, application/tree/depth, data structure/tree, leetcode/110, method/recursion]
 title: Balanced Binary Tree
 created: '2019-08-09T03:30:53.379Z'
-modified: '2019-08-09T03:31:35.739Z'
+modified: '2019-12-01T12:11:37.936Z'
 ---
 
 # Balanced Binary Tree
@@ -99,3 +99,53 @@ _4.right = _7
 
 Solution().isBalanced(_1)
 ```
+
+### recursion
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isBalanced(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        if root is None:
+            return True
+        
+        node_to_height = {None: 0}
+        
+        def height(node):
+            if node is None:
+                return 0
+            if node in node_to_height:
+                return node_to_height[node]
+            x = height(node.left)
+            y = height(node.right)
+            node_to_height[node] = max(x, y) + 1
+            return node_to_height[node]
+        
+        def is_balance(node):
+            if node is None:
+                return True
+            if not is_balance(node.left):
+                return False
+            if not is_balance(node.right):
+                return False
+            x = height(node.left)
+            y = height(node.right)
+            return abs(x-y) < 2
+            
+        
+        return is_balance(root)
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/balanced-binary-tree/)

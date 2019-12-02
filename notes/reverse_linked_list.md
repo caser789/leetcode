@@ -2,7 +2,7 @@
 tags: [2019/08/13, leetcode/206, method/recursion]
 title: Reverse Linked List
 created: '2019-08-13T15:23:57.726Z'
-modified: '2019-08-13T15:24:52.265Z'
+modified: '2019-11-26T06:10:09.613Z'
 ---
 
 # Reverse Linked List
@@ -44,3 +44,32 @@ class Solution(object):
         head.next = None
         return p
 ```
+
+### iter
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        dummy = ListNode(0)
+        while head:
+            nxt = head.next
+            head.next = dummy.next
+            dummy.next = head
+            head = nxt
+        return dummy.next
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/reverse-linked-list/submissions/)
+

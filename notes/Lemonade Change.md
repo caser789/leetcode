@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/860]
+tags: [2019/11/07, leetcode/860]
 title: Lemonade Change
 created: '2019-10-08T14:51:33.154Z'
-modified: '2019-10-08T14:52:06.387Z'
+modified: '2019-10-23T04:54:44.226Z'
 ---
 
 # Lemonade Change
@@ -61,5 +61,29 @@ class Solution(object):
         :type bills: List[int]
         :rtype: bool
         """
-        
+        five = ten = 0
+        for bill in bills:
+            if bill == 5:
+                five += 1
+            elif bill == 10:
+                five -= 1
+                ten += 1
+            elif ten > 0:
+                five -= 1
+                ten -= 1
+            else:
+                five -= 3
+            if five < 0:
+                return False
+        return True
+
+
 ```
+
+## schedule
+
+* [x] 0 2019/10/12
+* [x] 1 2019/10/13
+* [x] 1 2019/10/16
+* [x] 1 2019/10/23
+* [ ] 1 2019/11/07

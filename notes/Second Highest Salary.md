@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/23, leetcode/176]
+tags: [2019/11/03, leetcode/176]
 title: Second Highest Salary
 created: '2019-09-24T14:50:29.836Z'
-modified: '2019-10-08T05:29:28.802Z'
+modified: '2019-10-27T04:23:00.238Z'
 ---
 
 # Second Highest Salary
@@ -68,4 +68,7 @@ AS SecondHighestSalary;
 * [x] 1 2019/09/28
 * [x] 1 2019/10/01
 * [x] 1 2019/10/08
-* [ ] 1 2019/10/23
+* [x] 1 2019/10/23
+* [x] 1 2019/10/24
+* [x] 1 2019/10/27
+* [ ] 1 2019/11/03

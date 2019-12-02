@@ -2,7 +2,7 @@
 tags: [2019/08/12, leetcode/90, method/backtracking]
 title: Subsets II
 created: '2019-08-12T05:05:31.290Z'
-modified: '2019-08-12T05:06:06.419Z'
+modified: '2019-11-23T07:59:14.758Z'
 ---
 
 #  Subsets II
@@ -27,6 +27,8 @@ Output:
 ```
 
 ## Solution
+
+### backtrack
 
 ```python
 class Solution(object):
@@ -65,3 +67,33 @@ Output:
 ]
 """
 ```
+
+### iter
+
+```python
+class Solution(object):
+    def subsetsWithDup(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        nums.sort()
+        res = [[]]
+        seen = set()
+        
+        for num in nums:
+            n = len(res)
+            for i in range(n):
+                tmp = res[i] + [num]
+                key = tuple(tmp)
+                if key not in seen:
+                    seen.add(key)
+                    res.append(tmp)
+        return res
+                    
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/subsets-ii/)
+

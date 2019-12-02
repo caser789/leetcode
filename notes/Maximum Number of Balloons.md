@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/1189, method/index]
+tags: [2019/11/04, leetcode/1189, method/index]
 title: Maximum Number of Balloons
 created: '2019-10-08T15:05:17.974Z'
-modified: '2019-10-10T13:16:34.440Z'
+modified: '2019-10-23T11:38:41.349Z'
 ---
 
 # Maximum Number of Balloons
@@ -70,4 +70,6 @@ class Solution(object):
 
 * [x] 1 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [ ] 1 2019/11/04

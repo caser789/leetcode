@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/06, leetcode/572]
+tags: [2019/11/06, application/tree/serialization, application/tree/subtree, data structure/tree, leetcode/572, method/traversal/preorder]
 title: Subtree of Another Tree
 created: '2019-09-07T06:58:16.003Z'
-modified: '2019-10-07T15:58:25.608Z'
+modified: '2019-12-01T11:15:56.723Z'
 ---
 
 # Subtree of Another Tree
@@ -84,6 +84,90 @@ class Solution(object):
         return s in kv.values()
 ```
 
+### preorder serialization
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isSubtree(self, s, t):
+        """
+        :type s: TreeNode
+        :type t: TreeNode
+        :rtype: bool
+        """
+        node_set = set()
+        
+        def preorder(node, left=True):
+            if node is None:
+                if left:
+                    return 'lNone'
+                return 'rNone'
+            
+            x = preorder(node.left)
+            y = preorder(node.right, False)
+            
+            return '# {} {} {}'.format(node.val, x, y)
+        
+        x = preorder(s)
+        y = preorder(t)
+        return x.find(y) != -1
+```
+
+### recur
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isSubtree(self, s, t):
+        """
+        :type s: TreeNode
+        :type t: TreeNode
+        :rtype: bool
+        """
+        def equal(x, y):
+            if x is None and y is None:
+                return True
+            if x is None or y is None:
+                return False
+            if x.val != y.val:
+                return False
+            if not equal(x.left, y.left):
+                return False
+            if not equal(x.right, y.right):
+                return False
+            return True
+        
+        def traverse(x, y):
+            if x is None:
+                return False
+            
+            if equal(x, y):
+                return True
+            
+            if traverse(x.left, y):
+                return True
+            
+            if traverse(x.right, y):
+                return True
+            
+            return False
+        
+        return traverse(s, t)
+        
+```
+
 ## schedule
 
 * [x] 0 2019/09/10
@@ -92,3 +176,7 @@ class Solution(object):
 * [x] 1 2019/09/21
 * [x] 1 2019/10/06
 * [ ] 1 2019/11/06
+
+## refs
+
+* [lc](https://leetcode.com/problems/subtree-of-another-tree/)

@@ -1,8 +1,9 @@
 ---
+favorited: true
 tags: [2019/11/04, leetcode/653]
 title: Two Sum IV - Input is a BST
 created: '2019-09-07T06:31:25.541Z'
-modified: '2019-10-06T10:17:52.269Z'
+modified: '2019-11-29T09:15:03.524Z'
 ---
 
 # Two Sum IV - Input is a BST

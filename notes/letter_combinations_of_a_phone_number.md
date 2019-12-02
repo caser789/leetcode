@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/12, leetcode/17, method/backtracking]
+tags: [2019/08/12, application/combination, leetcode/17, method/backtracking, method/traversal/bfs]
 title: Letter Combinations of a Phone Number
 created: '2019-08-12T12:17:28.035Z'
-modified: '2019-08-12T12:21:00.440Z'
+modified: '2019-11-23T13:54:30.510Z'
 ---
 
 # Letter Combinations of a Phone Number
@@ -56,3 +56,43 @@ class Solution(object):
         for c in num_to_chars[digits[index]]:
             self.backtrack(res, digits, s+c, index+1, num_to_chars)
 ```
+
+### bfs
+
+```python
+class Solution(object):
+    def letterCombinations(self, digits):
+        """
+        :type digits: str
+        :rtype: List[str]
+        """
+        if not digits:
+            return []
+        
+        kv = {
+            '2': 'abc',
+            '3': 'def',
+            '4': 'ghi',
+            '5': 'jkl',
+            '6': 'mno',
+            '7': 'pqrs',
+            '8': 'tuv',
+            '9': 'wxyz',
+        }
+        
+        q = ['']
+        for digit in digits:
+            chars = kv[digit]
+            nxt = []
+            for s in q:
+                for c in chars:
+                    nxt.append(s+c)
+            q = nxt
+        return q
+            
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
+

@@ -1,8 +1,9 @@
 ---
-tags: [2019/08/11, leetcode/684, method/union find]
+favorited: true
+tags: [2019/08/11, data structure/graph, data structure/tree, leetcode/684, method/traversal/dfs, method/union find]
 title: Redundant Connection
 created: '2019-08-11T05:25:05.084Z'
-modified: '2019-08-11T05:25:50.389Z'
+modified: '2019-11-29T13:57:50.679Z'
 ---
 
 # Redundant Connection
@@ -91,3 +92,37 @@ class UF(object):
     def is_connected(self, p, q):
         return self.find(p) == self.find(q)
 ```
+
+### dfs
+
+```
+import collections
+
+class Solution(object):
+    def findRedundantConnection(self, edges):
+        """
+        :type edges: List[List[int]]
+        :rtype: List[int]
+        """
+        graph = collections.defaultdict(set)
+        
+        def dfs(source, target):
+            if source in seen: return
+            
+            seen.add(source)
+            if source == target: return True
+            return any(dfs(nei, target) for nei in graph[source])
+        
+        for u, v in edges:
+            seen = set()
+            
+            if u in graph and v in graph and dfs(u, v):
+                return u, v
+            
+            graph[u].add(v)
+            graph[v].add(u)
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/redundant-connection/)

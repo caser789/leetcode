@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/BST, data structure/tree, leetcode/108]
+tags: [2019/08/09, data structure/BST, data structure/tree, leetcode/108, method/recursion]
 title: Convert Sorted Array to Binary Search Tree
 created: '2019-08-09T10:23:42.544Z'
-modified: '2019-08-09T10:24:28.595Z'
+modified: '2019-11-28T04:05:49.981Z'
 ---
 
 # Convert Sorted Array to Binary Search Tree
@@ -55,3 +55,7 @@ class Solution(object):
         n.right = self.get(nums, mi+1, hi)
         return n
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/)

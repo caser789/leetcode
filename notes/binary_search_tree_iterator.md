@@ -1,8 +1,9 @@
 ---
-tags: [2019/08/11, data structure/tree, method/traversal/inorder]
+deleted: true
+tags: [2019/08/11, data structure/tree, leetcode/173, method/traversal/inorder]
 title: Binary Search Tree Iterator
 created: '2019-08-11T13:42:32.243Z'
-modified: '2019-08-11T13:43:29.780Z'
+modified: '2019-12-01T11:29:31.910Z'
 ---
 
 # Binary Search Tree Iterator

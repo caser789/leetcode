@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/806]
+tags: [2019/11/06, leetcode/806]
 title: Number of Lines To Write String
 created: '2019-09-24T15:29:32.294Z'
-modified: '2019-10-09T01:23:01.195Z'
+modified: '2019-10-22T05:28:04.534Z'
 ---
 
 # Number of Lines To Write String
@@ -43,7 +43,7 @@ widths[i] will be in the range of [2, 10].
 
 ## Solution
 
-```
+```python
 class Solution(object):
     def numberOfLines(self, widths, S):
         """
@@ -51,5 +51,22 @@ class Solution(object):
         :type S: str
         :rtype: List[int]
         """
+        lines, width = 1, 0
+        for c in S:
+            w = widths[ord(c) - ord('a')]
+            width += w
+            if width > 100:
+                lines += 1
+                width = w
+        return lines, width
         
 ```
+
+
+## schedule
+
+* [x] 0 2019/10/11
+* [x] 1 2019/10/12
+* [x] 1 2019/10/15
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/06

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/04, leetcode/1022]
+tags: [2019/11/04, data structure/tree, leetcode/1022, method/recursion, method/traversal/dfs]
 title: Sum of Root To Leaf Binary Numbers
 created: '2019-09-07T06:29:00.205Z'
-modified: '2019-10-06T10:35:14.112Z'
+modified: '2019-11-30T14:51:35.454Z'
 ---
 
 # Sum of Root To Leaf Binary Numbers
@@ -106,3 +106,7 @@ class Solution(object):
 * [x] 1 2019/09/19
 * [x] 1 2019/10/04
 * [ ] 1 2019/11/04
+
+## refs
+
+* [lc](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/)

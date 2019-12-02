@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/12, leetcode/77, method/backtracking]
+tags: [2019/08/12, application/combination, leetcode/77, method/backtracking]
 title: Combinations
 created: '2019-08-12T14:24:39.992Z'
-modified: '2019-08-12T14:25:15.826Z'
+modified: '2019-11-23T09:20:14.864Z'
 ---
 
 # Combinations
@@ -25,6 +25,8 @@ Output:
 ```
 
 ## Solution
+
+### backtrack
 
 ```python
 class Solution(object):
@@ -50,3 +52,8 @@ class Solution(object):
             tmp.pop()
 
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/combinations/)
+

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/21, application/divmod, leetcode/1009]
+tags: [2019/11/21, application/divmod, leetcode/1009]
 title: Complement of Base 10 Integer
 created: '2019-09-22T11:22:09.307Z'
-modified: '2019-10-07T05:34:18.054Z'
+modified: '2019-10-22T15:17:35.677Z'
 ---
 
 # Complement of Base 10 Integer
@@ -66,4 +66,5 @@ class Solution(object):
 * [x] 1 2019/09/26
 * [x] 1 2019/09/29
 * [x] 1 2019/10/06
-* [ ] 1 2019/10/21
+* [x] 1 2019/10/21
+* [ ] 1 2019/11/21

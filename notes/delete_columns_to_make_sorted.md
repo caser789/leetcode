@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/14, leetcode/944]
+tags: [2019/11/29, leetcode/944]
 title: Delete Columns to Make Sorted
 created: '2019-09-22T11:03:00.125Z'
-modified: '2019-10-08T04:57:59.410Z'
+modified: '2019-10-29T05:03:45.592Z'
 ---
 
 # Delete Columns to Make Sorted
@@ -74,4 +74,6 @@ class Solution(object):
 * [x] 0 2019/09/27
 * [x] 0 2019/10/04
 * [x] 0 2019/10/07
-* [ ] 0 2019/10/14
+* [x] 0 2019/10/14
+* [x] 0 2019/10/29
+* [ ] 0 2019/11/29

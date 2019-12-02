@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/tree, leetcode/94]
+tags: [2019/08/09, data structure/tree, leetcode/94, method/traversal/inorder]
 title: Binary Tree Inorder Traversal
 created: '2019-08-09T09:30:54.852Z'
-modified: '2019-08-09T15:05:40.292Z'
+modified: '2019-11-27T08:32:46.864Z'
 ---
 
 #  Binary Tree Inorder Traversal
@@ -54,3 +54,37 @@ class Solution(object):
             res.append(node.val)
             node = node.right
 ```
+
+### recur
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def inorderTraversal(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        res = []
+        
+        def traverse(node):
+            if node is None:
+                return
+            traverse(node.left)
+            res.append(node.val)
+            traverse(node.right)
+        
+        traverse(root)
+        return res
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+

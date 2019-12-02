@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/29, leetcode/520]
+tags: [2019/12/31, leetcode/520]
 title: Detect Capital
 created: '2019-08-31T09:06:38.843Z'
-modified: '2019-09-28T09:11:15.485Z'
+modified: '2019-10-29T05:07:29.751Z'
 ---
 
 # Detect Capital
@@ -69,4 +69,5 @@ class Solution(object):
 * [x] 1 2019/09/06
 * [x] 1 2019/09/13
 * [x] 1 2019/09/28
-* [ ] 1 2019/10/29
+* [x] 1 2019/10/29
+* [ ] 1 2019/12/31

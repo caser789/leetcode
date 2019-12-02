@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/22, leetcode/168]
+tags: [2019/11/22, leetcode/168]
 title: Excel Sheet Column Title
 created: '2019-09-24T14:47:21.931Z'
-modified: '2019-10-08T05:12:05.897Z'
+modified: '2019-10-31T14:29:16.067Z'
 ---
 
 # Excel Sheet Column Title
@@ -58,6 +58,21 @@ class Solution(object):
         
         return ''.join(num_to_char(i) for i in res[::-1])
 ```
+```python
+class Solution(object):
+    def convertToTitle(self, n):
+        """
+        :type n: int
+        :rtype: str
+        """
+        res = []
+        while n:
+            
+            n, c = divmod(n-1, 26)
+            res.append(chr(ord('A') + c))
+        
+        return ''.join(res[::-1])
+```
 
 ## schedule
 
@@ -65,4 +80,5 @@ class Solution(object):
 * [x] 1 2019/09/27
 * [x] 1 2019/09/30
 * [x] 1 2019/10/07
-* [ ] 1 2019/10/22
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/22

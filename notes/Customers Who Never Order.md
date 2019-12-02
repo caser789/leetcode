@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/22, leetcode/183, sql]
+tags: [2019/11/22, leetcode/183, sql]
 title: Customers Who Never Order
 created: '2019-09-24T14:52:09.644Z'
-modified: '2019-10-08T04:55:06.256Z'
+modified: '2019-10-22T05:13:48.967Z'
 ---
 
 # Customers Who Never Order
@@ -64,4 +64,5 @@ where
 * [x] 1 2019/09/27
 * [x] 1 2019/09/30
 * [x] 1 2019/10/07
-* [ ] 1 2019/10/22
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/22

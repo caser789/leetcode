@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/stack, data structure/tree, leetcode/257, method/traversal/dfs]
+tags: [2019/08/09, data structure/stack, data structure/tree, leetcode/257, method/recursion, method/traversal/dfs]
 title: Binary Tree Paths
 created: '2019-08-09T04:06:28.553Z'
-modified: '2019-09-07T06:51:37.404Z'
+modified: '2019-11-28T12:00:59.803Z'
 ---
 
 # Binary Tree Paths
@@ -78,3 +78,50 @@ _2.right = _5
 
 print Solution().binaryTreePaths(_1)
 ```
+
+### recur
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def binaryTreePaths(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[str]
+        """
+        if root is None:
+            return []
+        
+        res = []
+        
+        tmp = [root.val]
+        
+        def helper(node):
+            if node.left is None and node.right is None:
+                res.append('->'.join(str(e) for e in tmp))
+                return
+            
+            if node.left:
+                tmp.append(node.left.val)
+                helper(node.left)
+                tmp.pop()
+            
+            if node.right:
+                tmp.append(node.right.val)
+                helper(node.right)
+                tmp.pop()
+        
+        helper(root)
+        return res
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/binary-tree-paths/)
+

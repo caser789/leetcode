@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, data structure/queue, data structure/tree, leetcode/993, method/traversal/bfs]
+tags: [2019/08/07, data structure/queue, data structure/tree, leetcode/993, method/recursion, method/traversal/bfs, method/traversal/dfs/parent]
 title: Cousins in Binary Tree
 created: '2019-08-07T05:44:58.885Z'
-modified: '2019-08-09T04:44:31.458Z'
+modified: '2019-12-01T12:05:47.901Z'
 ---
 
 # Cousins in Binary Tree
@@ -87,3 +87,47 @@ class Solution(object):
             return False
         return n_to_height[x] == n_to_height[y] and n_to_parents[x] != n_to_parents[y]
 ```
+
+### dfs
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def isCousins(self, root, x, y):
+        """
+        :type root: TreeNode
+        :type x: int
+        :type y: int
+        :rtype: bool
+        """
+        
+        x_parent_level = []
+        y_parent_level = []
+        
+        def find(node, parent=None, level=0):
+            if node is None:
+                return
+            
+            if node.val == x:
+                x_parent_level.extend([parent, level])
+            if node.val == y:
+                y_parent_level.extend([parent, level])
+            
+            find(node.left, node, level+1)
+            find(node.right, node, level+1)
+        
+        
+        find(root)
+        
+        return x_parent_level and y_parent_level and x_parent_level[1] == y_parent_level[1] and x_parent_level[0] is not y_parent_level[0]
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/cousins-in-binary-tree/)

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/24, leetcode/441]
+tags: [2019/10/28, leetcode/441]
 title: Arranging Coins
 created: '2019-09-24T15:08:24.658Z'
-modified: '2019-10-08T14:28:15.184Z'
+modified: '2019-10-25T04:42:52.888Z'
 ---
 
 # Arranging Coins
@@ -61,4 +61,6 @@ class Solution(object):
 * [x] 1 2019/09/29
 * [x] 1 2019/10/02
 * [x] 1 2019/10/09
-* [ ] 1 2019/10/24
+* [x] 1 2019/10/24
+* [x] 1 2019/10/25
+* [ ] 1 2019/10/28

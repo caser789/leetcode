@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/11, leetcode/844, method/2 pointers]
+tags: [2019/11/11, leetcode/844, method/2 pointers]
 title: Backspace String Compare
 created: '2019-09-07T09:29:22.746Z'
-modified: '2019-09-26T01:19:27.459Z'
+modified: '2019-10-12T06:38:20.099Z'
 ---
 
 # Backspace String Compare
@@ -91,4 +91,5 @@ class Solution(object):
 * [x] 1 2019/09/16
 * [x] 1 2019/09/19
 * [x] 1 2019/09/26
-* [ ] 1 2019/10/11
+* [x] 1 2019/10/11
+* [ ] 1 2019/11/11

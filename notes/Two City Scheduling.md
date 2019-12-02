@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/1029]
+tags: [2019/11/07, leetcode/1029]
 title: Two City Scheduling
 created: '2019-10-08T14:59:25.210Z'
-modified: '2019-10-08T15:00:00.401Z'
+modified: '2019-10-23T11:16:49.751Z'
 ---
 
 # Two City Scheduling
@@ -43,5 +43,21 @@ class Solution(object):
         :type costs: List[List[int]]
         :rtype: int
         """
+        costs.sort(key=lambda x: x[0] - x[1])
+        n = len(costs)
+        res = 0
+        for i in range(n/2):
+            res += costs[i][0]
+            res += costs[i+n/2][1]
+        return res
         
 ```
+
+
+## schedule
+
+* [x] 0 2019/10/12
+* [x] 1 2019/10/13
+* [x] 1 2019/10/16
+* [x] 1 2019/10/23
+* [ ] 1 2019/11/07

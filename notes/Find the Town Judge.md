@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/997]
+tags: [2019/11/03, leetcode/997]
 title: Find the Town Judge
 created: '2019-10-08T14:56:44.746Z'
-modified: '2019-10-10T12:47:35.844Z'
+modified: '2019-10-27T04:48:26.360Z'
 ---
 
 # Find the Town Judge
@@ -88,9 +88,31 @@ class Solution(object):
         
 ```
 
+```python
+class Solution(object):
+    def findJudge(self, N, trust):
+        """
+        :type N: int
+        :type trust: List[List[int]]
+        :rtype: int
+        """
+        counter = [0] * (N+1)
+        for i, j in trust:
+            counter[i] -= 1
+            counter[j] += 1
+        
+        for i in range(1, N+1):
+            if counter[i] == N-1:
+                return i
+        return -1
+```
 
 ## schedule
 
 * [x] 1 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [x] 1 2019/10/24
+* [x] 1 2019/10/27
+* [ ] 1 2019/11/03

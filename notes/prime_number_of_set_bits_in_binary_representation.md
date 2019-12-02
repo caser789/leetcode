@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/21, leetcode/762]
+tags: [2019/11/21, leetcode/762]
 title: Prime Number of Set Bits in Binary Representation
 created: '2019-09-22T11:25:12.804Z'
-modified: '2019-10-08T04:48:41.143Z'
+modified: '2019-10-23T11:35:35.826Z'
 ---
 
 # Prime Number of Set Bits in Binary Representation
@@ -80,4 +80,5 @@ class Solution(object):
 * [x] 1 2019/09/26
 * [x] 1 2019/09/29
 * [x] 1 2019/10/06
-* [ ] 1 2019/10/21
+* [x] 1 2019/10/21
+* [ ] 1 2019/11/21

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/874]
+tags: [2019/11/03, leetcode/874]
 title: Walking Robot Simulation
 created: '2019-10-08T14:52:35.897Z'
-modified: '2019-10-08T14:53:12.832Z'
+modified: '2019-10-27T04:30:17.702Z'
 ---
 
 # Walking Robot Simulation
@@ -52,5 +52,34 @@ class Solution(object):
         :type obstacles: List[List[int]]
         :rtype: int
         """
+        dx = [0, 1, 0, -1]
+        dy = [1, 0, -1, 0]
+        x = y = di = 0
+        s = set(map(tuple, obstacles))
+        res = 0
+        
+        for cmd in commands:
+            if cmd == -2:  # left
+                di = (di-1) % 4
+            elif cmd == -1:  # right
+                di = (di + 1) % 4
+            else:
+                for k in range(cmd):
+                    if (x+dx[di], y+dy[di]) not in s:
+                        x += dx[di]
+                        y += dy[di]
+                        res = max(res, x*x+y*y)
+        return res
+                    
         
 ```
+
+## schedule
+
+* [x] 0 2019/10/12
+* [x] 1 2019/10/13
+* [x] 1 2019/10/16
+* [x] 1 2019/10/23
+* [x] 1 2019/10/24
+* [x] 1 2019/10/27
+* [ ] 1 2019/11/03

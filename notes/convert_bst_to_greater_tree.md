@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/04, leetcode/538]
+tags: [2019/11/04, leetcode/538, method/traversal/inorder]
 title: Convert BST to Greater Tree
 created: '2019-09-07T06:33:36.093Z'
-modified: '2019-10-05T05:23:25.307Z'
+modified: '2019-12-01T08:52:31.294Z'
 ---
 
 # Convert BST to Greater Tree

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/25, application/divmod, leetcode/504]
+tags: [2019/11/25, application/divmod, leetcode/504]
 title: Base 7
 created: '2019-09-24T15:16:26.061Z'
-modified: '2019-10-10T11:58:44.902Z'
+modified: '2019-10-25T04:45:03.018Z'
 ---
 
 # Base 7
@@ -52,4 +52,5 @@ class Solution(object):
 * [x] 1 2019/09/30
 * [x] 1 2019/10/03
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/25
+* [x] 1 2019/10/25
+* [ ] 1 2019/11/25

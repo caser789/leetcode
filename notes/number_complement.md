@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/25, application/divmod, leetcode/476]
+tags: [2019/11/25, application/divmod, leetcode/476]
 title: Number Complement
 created: '2019-09-24T15:12:42.332Z'
-modified: '2019-10-10T13:46:13.846Z'
+modified: '2019-10-25T04:55:35.042Z'
 ---
 
 # Number Complement
@@ -50,4 +50,5 @@ class Solution(object):
 * [x] 1 2019/09/30
 * [x] 1 2019/10/03
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/25
+* [x] 1 2019/10/25
+* [ ] 1 2019/11/25

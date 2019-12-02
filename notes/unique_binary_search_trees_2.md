@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/13, leetcode/95, method/recursion, TODO]
+tags: [2019/08/13, application/combination, data structure/bst, data structure/tree, leetcode/95, method/recursion]
 title: Unique Binary Search Trees II
 created: '2019-08-13T15:38:16.731Z'
-modified: '2019-08-13T15:38:47.636Z'
+modified: '2019-12-01T11:57:03.139Z'
 ---
 
 # Unique Binary Search Trees II
@@ -47,4 +47,42 @@ class Solution(object):
         :type n: int
         :rtype: List[TreeNode]
         """
+        if n == 0:
+            return []
+        return generate(range(1, n+1))
+              
+
+def generate(nums):
+    n = len(nums)
+    if not n:
+        return [None]
+    if n == 1:
+        return [TreeNode(nums[0])]
+    if n == 2:
+        a = TreeNode(nums[0])
+        a.right = TreeNode(nums[1])
+        
+        b = TreeNode(nums[1])
+        b.left = TreeNode(nums[0])
+        return [a, b]
+    
+    res = []
+    for i in range(n):
+        v = nums[i]
+        left = nums[:i]
+        right = nums[i+1:]
+        left_nodes = generate(left)
+        right_nodes = generate(right)
+        for a in left_nodes:
+            for b in right_nodes:
+                n = TreeNode(v)
+                n.left = a
+                n.right = b
+                res.append(n)
+    return res
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/unique-binary-search-trees-ii/)
+

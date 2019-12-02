@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/836]
+tags: [2019/10/12, leetcode/836]
 title: Rectangle Overlap
 created: '2019-10-08T14:50:48.855Z'
-modified: '2019-10-08T14:51:19.536Z'
+modified: '2019-10-11T05:29:51.078Z'
 ---
 
 # Rectangle Overlap
@@ -36,5 +36,17 @@ class Solution(object):
         :type rec2: List[int]
         :rtype: bool
         """
-        
+        return not(
+            rec1[2] <= rec2[0] or 
+            rec1[3] <= rec2[1] or
+            rec1[0] >= rec2[2] or
+            rec1[1] >= rec2[3]
+        )
+              
 ```
+
+
+## schedule
+
+* [x] 0 2019/10/11
+* [ ] 1 2019/10/12

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/16, leetcode/812]
+tags: [2019/10/31, leetcode/812]
 title: Largest Triangle Area
 created: '2019-09-22T11:14:58.323Z'
-modified: '2019-10-09T14:45:15.482Z'
+modified: '2019-10-17T05:21:55.743Z'
 ---
 
 # Largest Triangle Area
@@ -55,4 +55,5 @@ class Solution(object):
 * [x] 1 2019/10/05
 * [x] 1 2019/10/06
 * [x] 1 2019/10/09
-* [ ] 1 2019/10/16
+* [x] 1 2019/10/16
+* [ ] 1 2019/10/31

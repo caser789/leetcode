@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/24, leetcode/401]
+tags: [2019/11/24, application/combination, leetcode/401, method/backtrack]
 title: Binary Watch
 created: '2019-08-12T13:33:55.567Z'
-modified: '2019-10-08T14:33:29.228Z'
+modified: '2019-11-24T06:14:03.226Z'
 ---
 
 # Binary Watch
@@ -46,6 +46,44 @@ class Solution(object):
         ]
 ```
 
+### backtrack
+
+```python
+class Solution(object):
+    def readBinaryWatch(self, num):
+        """
+        :type num: int
+        :rtype: List[str]
+        """
+        if num == 0:
+            return ['0:00']
+
+        candidates = [100, 200, 400, 800, 1, 2, 4, 8, 16, 32]
+        n = len(candidates)
+
+        res = []
+
+        def search(i, cnt, s):
+            if cnt == 0:
+                h, m = divmod(s, 100)
+                res.append('{}:{:02d}'.format(h, m))
+                return
+
+            for j in range(i, n):
+                v = s + candidates[j]
+                if v / 100 >= 12: continue
+                if v % 100 >= 60: continue
+                s = v
+                search(j+1, cnt-1, s)
+                s -= candidates[j]
+
+        search(0, num, 0)
+
+        return res
+
+
+```
+
 
 ## schedule
 
@@ -53,4 +91,5 @@ class Solution(object):
 * [x] 1 2019/09/29
 * [x] 1 2019/10/02
 * [x] 1 2019/10/09
-* [ ] 1 2019/10/24
+* [x] 1 2019/10/24
+* [ ] 1 2019/11/24

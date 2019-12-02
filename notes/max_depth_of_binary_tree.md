@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/13, leetcode/104, method/recursion]
+tags: [2019/08/13, application/tree/depth, data structure/queue, data structure/tree, leetcode/104, method/recursion, method/traversal/bfs, method/traversal/level]
 title: Maximum Depth of Binary Tree
 created: '2019-08-13T15:30:54.876Z'
-modified: '2019-08-13T15:31:18.246Z'
+modified: '2019-12-01T12:10:25.474Z'
 ---
 
 # Maximum Depth of Binary Tree
@@ -47,3 +47,41 @@ class Solution(object):
 
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
 ```
+
+### bfs
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def maxDepth(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if root is None:
+            return 0
+        
+        q = [root]
+        cnt = 0
+        while q:
+            cnt += 1
+            nxt = []
+            for e in q:
+                if e.left:
+                    nxt.append(e.left)
+                if e.right:
+                    nxt.append(e.right)
+            q = nxt
+        
+        return cnt
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/maximum-depth-of-binary-tree/)

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/02, data structure/tree, leetcode/700]
+tags: [2019/11/02, data structure/tree, leetcode/700, method/recursion]
 title: Search in a Binary Search Tree
 created: '2019-08-31T09:41:05.330Z'
-modified: '2019-10-03T14:25:58.503Z'
+modified: '2019-11-29T15:20:11.895Z'
 ---
 
 # Search in a Binary Search Tree
@@ -93,3 +93,7 @@ class Solution(object):
 * [x] 1 2019/09/17
 * [x] 1 2019/10/02
 * [ ] 1 2019/11/02
+
+## refs
+
+* [lc](https://leetcode.com/problems/search-in-a-binary-search-tree/)

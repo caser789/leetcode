@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/17, leetcode/671]
+tags: [2019/12/02, data structure/tree, leetcode/671, method/recursion]
 title: Second Minimum Node In a Binary Tree
 created: '2019-09-07T06:56:52.544Z'
-modified: '2019-10-10T16:34:38.684Z'
+modified: '2019-11-29T13:38:31.791Z'
 ---
 
 # Second Minimum Node In a Binary Tree
@@ -80,5 +80,11 @@ class Solution(object):
 * [x] 1 2019/10/06
 * [x] 1 2019/10/07
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/17
+* [x] 1 2019/10/17
+* [x] 1 2019/11/01
+* [ ] 1 2019/12/02
 
+
+## refs
+
+* [lc](https://leetcode.com/problems/second-minimum-node-in-a-binary-tree/)

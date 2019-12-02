@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/13, leetcode/1179, sql]
+tags: [2019/10/31, leetcode/1179, sql]
 title: Reformat Department Table
 created: '2019-10-08T15:04:07.377Z'
-modified: '2019-10-10T14:33:56.203Z'
+modified: '2019-10-24T04:47:06.828Z'
 ---
 
 # Reformat Department Table
@@ -84,4 +84,8 @@ GROUP BY id
 
 * [x] 0 2019/10/09
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [x] 1 2019/10/20
+* [x] 1 2019/10/21
+* [x] 1 2019/10/24
+* [ ] 1 2019/10/31

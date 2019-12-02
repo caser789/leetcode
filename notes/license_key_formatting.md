@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/25, leetcode/482, method/parse]
+tags: [2019/11/25, leetcode/482, method/parse]
 title: License Key Formatting
 created: '2019-09-24T15:13:39.964Z'
-modified: '2019-10-10T12:56:22.841Z'
+modified: '2019-10-25T04:59:58.603Z'
 ---
 
 # License Key Formatting
@@ -66,4 +66,5 @@ class Solution(object):
 * [x] 1 2019/09/30
 * [x] 1 2019/10/03
 * [x] 1 2019/10/10
-* [ ] 1 2019/10/25
+* [x] 1 2019/10/25
+* [ ] 1 2019/11/25

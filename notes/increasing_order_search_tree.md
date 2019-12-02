@@ -1,8 +1,9 @@
 ---
-tags: [2019/08/07, data structure/tree, leetcode/897, method/traversal/inorder]
+favorited: true
+tags: [2019/08/07, data structure/bst, data structure/tree, leetcode/897, method/traversal/inorder]
 title: Increasing Order Search Tree
 created: '2019-08-07T15:39:08.211Z'
-modified: '2019-08-31T09:49:09.112Z'
+modified: '2019-12-01T11:34:48.328Z'
 ---
 
 # Increasing Order Search Tree
@@ -75,3 +76,42 @@ class Solution(object):
             new.left = None
         return head.right
 ```
+
+### recur
+
+```
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def increasingBST(self, root):
+        """
+        :type root: TreeNode
+        :rtype: TreeNode
+        """
+        
+        self.d = dummy = TreeNode(None)
+        
+        def helper(node):
+            if node is None:
+                return
+            
+            helper(node.left)
+            node.left = None
+            
+            self.d.right = node
+            self.d = node
+            
+            helper(node.right)
+        
+        helper(root)
+        return dummy.right
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/increasing-order-search-tree/)

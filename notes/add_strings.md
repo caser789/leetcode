@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/30, application/add, leetcode/415]
+tags: [2020/01/01, application/add, leetcode/415]
 title: Add Strings
 created: '2019-08-31T09:16:40.741Z'
-modified: '2019-09-30T04:47:03.968Z'
+modified: '2019-10-30T01:44:30.436Z'
 ---
 
 # Add Strings
@@ -76,4 +76,5 @@ class Solution(object):
 * [x] 1 2019/09/07
 * [x] 1 2019/09/14
 * [x] 1 2019/09/29
-* [ ] 1 2019/10/30
+* [x] 1 2019/10/30
+* [ ] 1 2020/01/01

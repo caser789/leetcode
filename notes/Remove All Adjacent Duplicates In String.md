@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/1047]
+tags: [2019/11/06, data structure/stack, leetcode/1047]
 title: Remove All Adjacent Duplicates In String
 created: '2019-10-08T15:02:11.953Z'
-modified: '2019-10-08T15:02:38.442Z'
+modified: '2019-10-22T05:25:49.266Z'
 ---
 
 # Remove All Adjacent Duplicates In String
@@ -37,5 +37,21 @@ class Solution(object):
         :type S: str
         :rtype: str
         """
-        
+        stack = []
+        for c in S:
+            flag = True
+            while stack and c == stack[-1]:
+                stack.pop()
+                flag = False
+            if flag:
+                stack.append(c)
+        return ''.join(stack)      
 ```
+
+## schedule
+
+* [x] 0 2019/10/11
+* [x] 1 2019/10/12
+* [x] 1 2019/10/15
+* [x] 1 2019/10/22
+* [ ] 1 2019/11/06

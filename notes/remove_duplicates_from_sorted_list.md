@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/83]
+tags: [2019/11/10, application/dedup, data structure/linked-list, leetcode/83, method/prev]
 title: Remove Duplicates from Sorted List
 created: '2019-09-07T09:11:50.715Z'
-modified: '2019-10-10T14:28:46.365Z'
+modified: '2019-11-26T12:29:55.907Z'
 ---
 
 # Remove Duplicates from Sorted List
@@ -49,6 +49,34 @@ class Solution(object):
             else:
                 prev = h
                 h = h.next
+        return head
+```
+
+### without dummy
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.next = None
+
+class Solution(object):
+    def deleteDuplicates(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if head is None:
+            return
+        if head.next is None:
+            return head
+        
+        h = head
+        while h:
+            while h.next and h.next.val == h.val:
+                h.next = h.next.next
+            h = h.next
         return head
 ```
 

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/10, leetcode/876, method/2 pointers/fast and slow]
+tags: [2019/11/10, data structure/linked-list, leetcode/876, method/2 pointers/fast and slow, method/2-pointers]
 title: Middle of the Linked List
 created: '2019-09-07T09:07:24.677Z'
-modified: '2019-10-10T13:19:40.940Z'
+modified: '2019-11-26T14:44:39.951Z'
 ---
 
 # Middle of the Linked List
@@ -67,3 +67,8 @@ class Solution(object):
 * [x] 1 2019/09/25
 * [x] 1 2019/10/10
 * [ ] 1 2019/11/10
+
+## refs
+
+* [lc](https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/)
+

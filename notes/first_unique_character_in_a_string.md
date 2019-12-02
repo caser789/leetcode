@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/30, data structure/map, leetcode/387, method/index, method/search/hash]
+tags: [2020/01/01, data structure/map, leetcode/387, method/index, method/search/hash]
 title: First Unique Character in a String
 created: '2019-07-30T15:47:11.693Z'
-modified: '2019-09-30T05:20:26.518Z'
+modified: '2019-10-30T04:56:32.867Z'
 ---
 
 # First Unique Character in a String
@@ -78,4 +78,5 @@ class Solution(object):
 * [x] 1 2019/09/07
 * [x] 1 2019/09/14
 * [x] 1 2019/09/29
-* [ ] 1 2019/10/30
+* [x] 1 2019/10/30
+* [ ] 1 2020/01/01

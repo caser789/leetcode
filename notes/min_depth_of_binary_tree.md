@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/06, data structure/queue, data structure/stack, data structure/tree, leetcode/111, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/08/06, application/tree/depth, data structure/queue, data structure/stack, data structure/tree, leetcode/111, method/recursion, method/traversal/bfs, method/traversal/dfs, method/traversal/level]
 title: Minimum Depth of Binary Tree
 created: '2019-08-06T15:37:26.470Z'
-modified: '2019-08-09T04:29:49.424Z'
+modified: '2019-12-01T12:10:38.672Z'
 ---
 
 # Minimum Depth of Binary Tree
@@ -124,3 +124,8 @@ class Solution(object):
                     q.append(n.right)
         return depth
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+

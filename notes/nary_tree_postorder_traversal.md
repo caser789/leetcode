@@ -1,8 +1,9 @@
 ---
-tags: [2019/10/13, leetcode/590]
+favorited: true
+tags: [2019/10/28, data structure/stack, data structure/tree/n-ary, leetcode/590, method/recursion, method/traversal/postorder]
 title: N-ary Tree Postorder Traversal
 created: '2019-08-31T09:45:05.727Z'
-modified: '2019-10-07T15:44:39.732Z'
+modified: '2019-12-01T11:10:10.390Z'
 ---
 
 # N-ary Tree Postorder Traversal
@@ -73,6 +74,37 @@ class Solution(object):
         return res
 ```
 
+### stack + iter
+
+```python
+"""
+# Definition for a Node.
+class Node(object):
+    def __init__(self, val=None, children=None):
+        self.val = val
+        self.children = children
+"""
+from collections import deque
+class Solution(object):
+    def postorder(self, root):
+        """
+        :type root: Node
+        :rtype: List[int]
+        """
+        if root is None:
+            return []
+        res = deque()
+        stack = [root]
+        while stack:
+            n = stack.pop()
+            res.append(n.val)
+            for c in n.children:
+                stack.append(c)
+        
+        return reversed(list(res))
+        
+```
+
 ## schedule
 
 * [x] 0 2019/09/06
@@ -82,4 +114,9 @@ class Solution(object):
 * [x] 1 2019/10/02
 * [x] 1 2019/10/03
 * [x] 1 2019/10/06
-* [ ] 1 2019/10/13
+* [x] 1 2019/10/13
+* [ ] 1 2019/10/28
+
+## refs
+
+* [lc](https://leetcode.com/problems/n-ary-tree-postorder-traversal/)

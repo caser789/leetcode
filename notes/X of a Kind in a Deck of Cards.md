@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/09, leetcode/914]
+tags: [2019/11/11, leetcode/914]
 title: X of a Kind in a Deck of Cards
 created: '2019-10-08T14:55:21.976Z'
-modified: '2019-10-08T14:55:57.368Z'
+modified: '2019-10-27T04:26:27.357Z'
 ---
 
 # X of a Kind in a Deck of Cards
@@ -56,5 +56,26 @@ class Solution(object):
         :type deck: List[int]
         :rtype: bool
         """
+        counter = {}
+        for num in deck:
+            counter.setdefault(num, 0)
+            counter[num] += 1
+        
+        n = len(deck)
+        for i in range(2, n+1):
+            if n % i == 0:
+                if all(v % i == 0 for v in counter.values()):
+                    return True
+        return False
         
 ```
+
+## schedule
+
+* [x] 0 2019/10/12
+* [x] 1 2019/10/13
+* [x] 1 2019/10/16
+* [x] 1 2019/10/17
+* [x] 1 2019/10/20
+* [x] 1 2019/10/27
+* [ ] 1 2019/11/11
