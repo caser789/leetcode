@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/02, leetcode/1202, method/union find]
+tags: [2020/01/06, leetcode/1202, method/union find]
 title: Smallest String With Swaps
 created: '2019-10-29T00:57:10.418Z'
-modified: '2019-10-30T05:01:28.912Z'
+modified: '2020-01-05T11:38:48.996Z'
 ---
 
 # Smallest String With Swaps
@@ -102,8 +102,72 @@ class Solution(object):
         
 ```
 
+### uf
+
+```python
+class Solution(object):
+    def smallestStringWithSwaps(self, s, pairs):
+        """
+        :type s: str
+        :type pairs: List[List[int]]
+        :rtype: str
+        """
+        n = len(s)
+        uf = UF(n)
+        for i, j in pairs:
+            uf.union(i, j)
+
+        root_to_component = {}
+        for i in range(n):
+            r = uf.find(i)
+            root_to_component.setdefault(r, [])
+            root_to_component[r].append(i)
+        
+        res = list(s)
+        for r, component in root_to_component.items():
+            chars = [s[i] for i in component]
+            chars.sort()
+            for j, c in zip(component, chars):
+                res[j] = c
+        
+        return ''.join(res)
+    
+class UF(object):
+    
+    def __init__(self, n):
+        self.n = n
+        self.parents = range(n)
+        self.ranks = [0] * n
+    
+    def find(self, p):
+        while p != self.parents[p]:
+            self.parents[p] = self.parents[self.parents[p]]
+            p = self.parents[p]
+        return p
+    
+    def union(self, p, q):
+        u = self.find(p)
+        v = self.find(q)
+        if u == v:
+            return
+        
+        if self.ranks[u] < self.ranks[v]:
+            self.parents[u] = v
+        elif self.ranks[v] < self.ranks[u]:
+            self.parents[v] = u
+        else:
+            self.parents[u] = v
+            self.ranks[v] += 1
+        self.n -= 1
+```
+
 ## schedule
 
 * [x] 2019/10/29
 * [x] 2019/10/30
-* [ ] 2019/11/02
+* [x] 2020/01/05
+* [ ] 2020/01/06
+
+## refs
+
+* [lc](https://leetcode.com/problems/smallest-string-with-swaps/)

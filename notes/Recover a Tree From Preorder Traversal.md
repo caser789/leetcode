@@ -1,8 +1,8 @@
 ---
-tags: [2019/12/01, data structure/tree, leetcode/1028, method/tree-from-stack]
+tags: [2019/12/01, application/parse, application/tree/build, data structure/tree, leetcode/1028, method/tree-from-stack]
 title: Recover a Tree From Preorder Traversal
 created: '2019-12-01T02:50:21.321Z'
-modified: '2019-12-01T02:51:59.569Z'
+modified: '2019-12-03T14:17:13.100Z'
 ---
 
 # Recover a Tree From Preorder Traversal

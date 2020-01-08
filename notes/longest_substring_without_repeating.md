@@ -1,8 +1,8 @@
 ---
-tags: [hash, string]
+tags: [2020/01/07, leetcode/3, method/sliding-window]
 title: Longest Substring Without Repeating Characters
 created: '2019-08-01T05:45:43.471Z'
-modified: '2019-08-02T05:34:55.908Z'
+modified: '2020-01-06T13:49:18.074Z'
 ---
 
 #  Longest Substring Without Repeating Characters
@@ -60,3 +60,39 @@ class Solution(object):
             c_to_index[c] = i
         return m
 ```
+
+### sliding window
+
+```python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        n = len(s)
+        i = 0
+        j = 0
+        st = set()
+        res = 0
+        
+        while i < n and j < n:
+            if s[j] not in st:
+                st.add(s[j])
+                j += 1
+                res = max(res, j-i)
+            else:
+                st.remove(s[i])
+                i += 1
+        return res
+                
+```
+
+## schedule
+
+* [x] 2020/01/06
+* [ ] 2020/01/07
+
+## refs
+
+* [lc](https://leetcode.com/problems/longest-substring-without-repeating-characters/)

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/11, data structure/priority queue, leetcode/659]
+tags: [2019/12/24, data structure/priority queue, leetcode/659, method/greedy]
 title: Split Array into Consecutive Subsequences
 created: '2019-10-13T09:43:21.903Z'
-modified: '2019-10-27T06:13:31.849Z'
+modified: '2019-12-21T08:18:56.532Z'
 ---
 
 # Split Array into Consecutive Subsequences
@@ -278,4 +278,10 @@ class Solution(object):
 * [x] 1 2019/10/17
 * [x] 1 2019/10/20
 * [x] 1 2019/10/27
-* [ ] 1 2019/11/11
+* [x] 1 2019/12/21
+* [ ] 2 2019/12/24
+
+## refs
+
+* [lc](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)
+

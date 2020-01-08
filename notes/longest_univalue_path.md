@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/08/18, leetcode/687, method/recursion]
+tags: [2019/08/18, application/tree/bubble, leetcode/687, method/recursion]
 title: Longest Univalue Path
 created: '2019-08-18T14:56:27.353Z'
-modified: '2019-11-29T15:17:37.062Z'
+modified: '2019-12-02T15:01:10.933Z'
 ---
 
 # Longest Univalue Path

@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/03, data structure/priority queue, leetcode/295]
+tags: [2019/12/22, data structure/priority queue, leetcode/295, TODO]
 title: Find Median from Data StreamFind Median from Data Stream
 created: '2019-10-19T03:28:32.706Z'
-modified: '2019-10-27T06:08:42.897Z'
+modified: '2019-12-21T14:48:09.738Z'
 ---
 
 # Find Median from Data StreamFind Median from Data Stream
@@ -188,5 +188,6 @@ class MedianFinder(object):
 * [x] 1 2019/10/20
 * [x] 1 2019/10/24
 * [x] 1 2019/10/27
-* [ ] 1 2019/11/03
+* [x] 1 2019/12/21
+* [ ] 1 2019/12/22
 

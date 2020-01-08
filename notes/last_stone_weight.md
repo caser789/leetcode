@@ -2,7 +2,7 @@
 tags: [2019/08/15, data structure/priority queue, leetcode/1046]
 title: Last Stone Weight
 created: '2019-08-15T15:13:52.849Z'
-modified: '2019-08-15T15:14:50.991Z'
+modified: '2019-12-14T06:14:51.870Z'
 ---
 
 # Last Stone Weight
@@ -220,3 +220,33 @@ class MaxPriorityQueue(object):
             tmp[i] = self.keys[i]
         self.keys = tmp
 ```
+
+### heapq
+
+```python
+import heapq
+
+class Solution(object):
+    def lastStoneWeight(self, stones):
+        """
+        :type stones: List[int]
+        :rtype: int
+        """
+        pq = []
+        for s in stones:
+            heapq.heappush(pq, -s)
+        
+        while len(pq) > 1:
+            y = -heapq.heappop(pq)
+            x = -heapq.heappop(pq)
+            if x != y:
+                heapq.heappush(pq, x-y)
+        
+        if pq:
+            return -pq[0]
+        return 0
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/last-stone-weight/)

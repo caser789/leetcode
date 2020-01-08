@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/01, data structure/priority queue, leetcode/373]
+tags: [2019/12/23, application/matrix/kth, data structure/priority queue, leetcode/373]
 title: Find K Pairs with Smallest Sums
 created: '2019-10-19T07:05:21.857Z'
-modified: '2019-10-25T15:09:28.026Z'
+modified: '2019-12-22T11:34:43.897Z'
 ---
 
 # Find K Pairs with Smallest Sums
@@ -129,11 +129,13 @@ class Solution(object):
 
 ## refs
 
-* https://leetcode.com/problems/k-th-smallest-prime-fraction/discuss/115819/Summary-of-solutions-for-problems-%22reducible%22-to-LeetCode-378
+* [378](https://leetcode.com/problems/k-th-smallest-prime-fraction/discuss/115819/Summary-of-solutions-for-problems-%22reducible%22-to-LeetCode-378)
+* [lc](https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/)
 
 ## schedule
 
 * [x] 2019/10/19
 * [x] 2019/10/20
 * [x] 2019/10/25
-* [ ] 2019/11/01
+* [x] 2019/12/22
+* [ ] 2019/12/23

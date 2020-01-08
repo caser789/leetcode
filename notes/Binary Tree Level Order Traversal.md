@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/27, data structure/queue, data structure/tree, leetcode/102, method/traversal/bfs, method/traversal/level]
+tags: [2019/11/27, data structure/queue, data structure/tree, leetcode/102, method/traversal/level]
 title: Binary Tree Level Order Traversal
 created: '2019-11-27T13:49:44.470Z'
-modified: '2019-12-01T12:02:22.542Z'
+modified: '2019-12-02T15:09:21.808Z'
 ---
 
 # Binary Tree Level Order Traversal

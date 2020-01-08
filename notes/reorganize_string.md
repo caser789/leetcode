@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/21, leetcode/767]
+tags: [2019/08/21, data structure/priority queue, leetcode/767]
 title: Reorganize String
 created: '2019-08-21T14:21:49.569Z'
-modified: '2019-08-21T14:22:14.672Z'
+modified: '2019-12-14T10:45:17.035Z'
 ---
 
 # Reorganize String
@@ -266,4 +266,54 @@ class MaxPriorityQueue(object):
         self.keys = tmp
 ```
 
+### heapq
+
+```python
+import heapq
+
+
+class Solution(object):
+    def reorganizeString(self, S):
+        """
+        :type S: str
+        :rtype: str
+        """
+        counter = {}
+        m = 0
+        n = 0
+        for c in S:
+            counter.setdefault(c, 0)
+            counter[c] += 1
+            m = max(m, counter[c])
+            n += 1
+        
+        if m > n-m+1: return ""
+        
+        pq = []
+        for c, cnt in counter.items():
+            heapq.heappush(pq, (-cnt, c))
+        
+        res = []
+        while len(pq) > 1:
+            cnt1, c1 = heapq.heappop(pq)
+            cnt2, c2 = heapq.heappop(pq)
+            res.append(c1)
+            res.append(c2)
+            if cnt1 + 1:
+                heapq.heappush(pq, (cnt1+1, c1))
+            if cnt2 + 1:
+                heapq.heappush(pq, (cnt2+1, c2))
+        if pq:
+            res.append(pq[0][1])
+        
+        return ''.join(res)
+        
+        
+        
+        
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/reorganize-string/)
 

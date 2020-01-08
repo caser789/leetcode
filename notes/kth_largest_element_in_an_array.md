@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/15, data structure/priority queue, leetcode/215]
+tags: [2019/08/15, application/array/kth, data structure/priority queue, leetcode/215, method/sort/quick]
 title: Kth Largest Element in an Array
 created: '2019-08-15T15:35:48.783Z'
-modified: '2019-08-15T15:40:14.884Z'
+modified: '2019-12-14T09:22:36.541Z'
 ---
 
 # Kth Largest Element in an Array
@@ -202,3 +202,33 @@ class MinPriorityQueue(object):
             tmp[i] = self.keys[i]
         self.keys = tmp
 ```
+
+### heapq
+
+```
+import heapq
+
+
+class Solution(object):
+    def findKthLargest(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: int
+        """
+        pq = []
+        for num in nums:
+            if len(pq) < k:
+                heapq.heappush(pq, num)
+            else:
+                if num > pq[0]:
+                    heapq.heappop(pq)
+                    heapq.heappush(pq, num)
+        return pq[0]
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/kth-largest-element-in-an-array/)
+* [ ] quick select
+* [ ] binary search

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, application/restore-tree, data structure/tree, leetcode/889, method/recursion]
+tags: [2019/11/30, application/tree/build, data structure/tree, leetcode/889, method/recursion]
 title: Construct Binary Tree from Preorder and Postorder Traversal
 created: '2019-11-30T05:14:26.700Z'
-modified: '2019-11-30T05:15:45.873Z'
+modified: '2019-12-03T01:35:38.794Z'
 ---
 
 # Construct Binary Tree from Preorder and Postorder Traversal

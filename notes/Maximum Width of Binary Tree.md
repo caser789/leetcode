@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/29, data structure/tree, leetcode/662, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/11/29, application/tree/vertical, data structure/tree, leetcode/662, method/recursion, method/traversal/bfs, method/traversal/dfs]
 title: Maximum Width of Binary Tree
 created: '2019-11-29T13:18:45.808Z'
-modified: '2019-11-29T13:29:31.027Z'
+modified: '2019-12-02T14:59:18.549Z'
 ---
 
 # Maximum Width of Binary Tree

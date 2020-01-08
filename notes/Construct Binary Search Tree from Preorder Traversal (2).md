@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/bst, data structure/monoqueue, data structure/tree, leetcode/1008, method/recursion, method/traversal/preorder]
+tags: [2019/11/30, application/tree/build, data structure/bst, data structure/monoqueue, data structure/tree, leetcode/1008, method/recursion, method/traversal/preorder]
 title: Construct Binary Search Tree from Preorder Traversal
 created: '2019-11-30T14:42:02.984Z'
-modified: '2019-11-30T14:43:21.573Z'
+modified: '2019-12-03T01:35:55.249Z'
 ---
 
 # Construct Binary Search Tree from Preorder Traversal

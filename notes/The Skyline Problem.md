@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/16, data structure/priority queue, leetcode/218]
+tags: [2019/10/16, data structure/binary-indexed-tree, data structure/priority queue, leetcode/218]
 title: The Skyline Problem
 created: '2019-10-16T00:52:49.459Z'
-modified: '2019-10-16T00:53:58.362Z'
+modified: '2019-12-02T05:06:04.569Z'
 ---
 
 # The Skyline Problem

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/20, data structure/priority queue, leetcode/378]
+tags: [2019/10/20, application/matrix/kth, data structure/priority queue, leetcode/378, method/search/binary]
 title: Kth Smallest Element in a Sorted Matrix
 created: '2019-08-19T13:40:29.695Z'
-modified: '2019-10-25T01:04:46.121Z'
+modified: '2019-12-14T09:19:07.749Z'
 ---
 
 # Kth Smallest Element in a Sorted Matrix

@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/stack, data structure/tree, leetcode/257, method/recursion, method/traversal/dfs]
+tags: [2019/08/09, application/tree/path, data structure/stack, data structure/tree, leetcode/257, method/recursion, method/traversal/dfs]
 title: Binary Tree Paths
 created: '2019-08-09T04:06:28.553Z'
-modified: '2019-11-28T12:00:59.803Z'
+modified: '2019-12-02T14:40:03.171Z'
 ---
 
 # Binary Tree Paths

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/20, data structure/priority queue, leetcode/668]
+tags: [2019/10/20, application/matrix/kth, data structure/priority queue, leetcode/668]
 title: Kth Smallest Number in Multiplication Table
 created: '2019-10-19T07:30:38.200Z'
-modified: '2019-10-19T08:26:12.040Z'
+modified: '2019-12-14T08:57:29.767Z'
 ---
 
 # Kth Smallest Number in Multiplication Table

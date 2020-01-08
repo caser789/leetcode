@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/29, data structure/monoqueue, data structure/tree, leetcode/654, method/recursion]
+tags: [2019/11/29, application/tree/maximum, data structure/monoqueue, data structure/tree, leetcode/654, method/recursion]
 title: Maximum Binary Tree
 created: '2019-11-29T09:24:47.035Z'
-modified: '2019-11-29T09:36:18.089Z'
+modified: '2019-12-08T10:55:52.370Z'
 ---
 
 # Maximum Binary Tree

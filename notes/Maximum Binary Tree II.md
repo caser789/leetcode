@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, leetcode/998, method/recursion]
+tags: [2019/11/30, application/tree/maximum, data structure/tree, leetcode/998, method/recursion]
 title: Maximum Binary Tree II
 created: '2019-11-30T14:29:10.958Z'
-modified: '2019-11-30T14:31:46.909Z'
+modified: '2019-12-08T10:55:21.362Z'
 ---
 
 # Maximum Binary Tree II

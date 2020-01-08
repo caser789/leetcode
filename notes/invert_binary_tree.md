@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/03, data structure/tree, leetcode/226, method/traversal/bfs]
+tags: [2019/11/03, data structure/tree, leetcode/226, method/recursion, method/traversal/bfs]
 title: Invert Binary Tree
 created: '2019-08-31T09:54:21.169Z'
-modified: '2019-11-28T10:28:23.451Z'
+modified: '2019-12-02T14:37:57.432Z'
 ---
 
 # Invert Binary Tree

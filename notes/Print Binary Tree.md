@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/29, data structure/tree, leetcode/655, method/recursion]
+tags: [2019/11/29, application/tree/vertical, data structure/tree, leetcode/655, method/recursion]
 title: Print Binary Tree
 created: '2019-11-29T13:03:02.827Z'
-modified: '2019-11-29T13:04:38.738Z'
+modified: '2019-12-02T14:58:14.122Z'
 ---
 
 # Print Binary Tree

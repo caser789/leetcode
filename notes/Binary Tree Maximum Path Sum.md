@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, application/path-sum, data structure/tree, leetcode/124, method/recursion, TODO]
+tags: [2019/11/28, application/tree/bubble, data structure/tree, leetcode/124, method/recursion, TODO]
 title: Binary Tree Maximum Path Sum
 created: '2019-11-28T08:18:51.154Z'
-modified: '2019-11-28T08:20:14.015Z'
+modified: '2019-12-02T14:26:38.934Z'
 ---
 
 # Binary Tree Maximum Path Sum

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/16, data structure/queue, data structure/tree, leetcode/513, method/traversal/bfs]
+tags: [2019/11/16, data structure/queue, data structure/tree, leetcode/513, method/traversal/level]
 title: Find Bottom Left Tree Value
 created: '2019-11-16T14:26:31.450Z'
-modified: '2019-11-29T03:22:30.214Z'
+modified: '2019-12-03T13:22:57.985Z'
 ---
 
 # Find Bottom Left Tree Value
@@ -65,6 +65,47 @@ class Solution(object):
         
         return v
                 
+```
+
+### dfs
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def findBottomLeftValue(self, root):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        
+        if root is None:
+            return
+        
+        max_depth =  0
+        res = root.val
+        
+        stack = [(root, 0)]
+        
+        while stack:
+            n, level = stack.pop()
+            
+            if level > max_depth:
+                max_depth = level
+                res = n.val
+            
+            if n.right:
+                stack.append((n.right, level+1))
+            
+            if n.left:
+                stack.append((n.left, level+1))
+        
+        return res
 ```
 
 ## refs

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, data structure/tree-in-array, leetcode/958]
+tags: [2019/11/30, data structure/heap, data structure/tree-in-array, data structure/tree/complete, leetcode/958]
 title: Check Completeness of a Binary Tree
 created: '2019-11-30T09:19:39.919Z'
-modified: '2019-11-30T09:21:28.773Z'
+modified: '2019-12-07T09:03:31.171Z'
 ---
 
 # Check Completeness of a Binary Tree

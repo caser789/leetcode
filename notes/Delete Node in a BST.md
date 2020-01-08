@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/28, data structure/tree, leetcode/450, method/recursion, TODO]
+tags: [2019/11/28, data structure/bst, data structure/tree, leetcode/450, method/recursion, TODO]
 title: Delete Node in a BST
 created: '2019-11-28T15:50:56.025Z'
-modified: '2019-11-28T15:51:55.759Z'
+modified: '2019-12-08T06:07:37.923Z'
 ---
 
 # Delete Node in a BST
@@ -21,29 +21,35 @@ Example:
 root = [5,3,6,2,4,null,7]
 key = 3
 
+```
     5
    / \
   3   6
  / \   \
 2   4   7
+```
 
 Given key to delete is 3. So we find the node with value 3 and delete it.
 
 One valid answer is [5,4,6,2,null,null,7], shown in the following BST.
 
+```
     5
    / \
   4   6
  /     \
 2       7
+```
 
 Another valid answer is [5,2,6,null,4,null,7].
 
+```
     5
    / \
   2   6
    \   \
     4   7
+```
 
 ## Solution
 
@@ -84,6 +90,51 @@ class Solution(object):
             root.right = self.deleteNode(root.right, n.val)
             
         return root
+```
+
+### 2
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def deleteNode(self, root, key):
+        """
+        :type root: TreeNode
+        :type key: int
+        :rtype: TreeNode
+        """
+        if root is None:
+            return root
+        
+        if key < root.val:
+            root.left = self.deleteNode(root.left, key)
+            return root
+        
+        if key > root.val:
+            root.right = self.deleteNode(root.right, key)
+            return root
+
+        if root.left is None:
+            return root.right
+        
+        if root.right is None:
+            return root.left
+        
+        min_node = get_min_node(root.right)
+        root.val = min_node.val
+        root.right = self.deleteNode(root.right, min_node.val)
+        return root
+            
+def get_min_node(node):
+    while node.left:
+        node = node.left
+    return node
 ```
 
 ## refs

@@ -1,9 +1,8 @@
 ---
-favorited: true
-tags: [2019/08/11, data structure/graph, data structure/tree, leetcode/684, method/traversal/dfs, method/union find]
+tags: [2020/01/03, data structure/graph, data structure/tree, leetcode/684, method/traversal/dfs, method/union find]
 title: Redundant Connection
 created: '2019-08-11T05:25:05.084Z'
-modified: '2019-11-29T13:57:50.679Z'
+modified: '2020-01-02T14:09:14.550Z'
 ---
 
 # Redundant Connection
@@ -126,3 +125,8 @@ class Solution(object):
 ## refs
 
 * [lc](https://leetcode.com/problems/redundant-connection/)
+
+## schedule
+
+* [x] 2020/01/02
+* [ ] 2020/01/03

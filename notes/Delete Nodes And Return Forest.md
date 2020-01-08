@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, leetcode/1110, method/recursion]
+tags: [2019/11/30, data structure/tree, leetcode/1110, method/recursion, method/traversal/dfs]
 title: Delete Nodes And Return Forest
 created: '2019-11-30T15:44:42.437Z'
-modified: '2019-11-30T15:45:38.102Z'
+modified: '2019-12-08T10:58:25.545Z'
 ---
 
 # Delete Nodes And Return Forest

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/14]
+tags: [2019/11/14, data structure/tree, leetcode/814, method/recursion]
 title: Binary Tree Pruning
 created: '2019-11-14T01:39:59.729Z'
-modified: '2019-11-14T01:41:26.268Z'
+modified: '2019-12-03T01:31:25.309Z'
 ---
 
 # Binary Tree Pruning

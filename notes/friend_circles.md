@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/10, leetcode/547, method/union find]
+tags: [2020/01/03, leetcode/547, method/union find]
 title: Friend Circles
 created: '2019-08-10T13:58:01.047Z'
-modified: '2019-08-10T13:58:55.955Z'
+modified: '2020-01-02T13:58:09.877Z'
 ---
 
 # Friend Circles
@@ -91,3 +91,13 @@ class UF(object):
     def is_connected(self, p, q):
         return self.find(p) == self.find(q)
 ```
+
+## schedule
+
+* [x] 2020/01/02
+* [ ] 2020/01/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/friend-circles/)
+

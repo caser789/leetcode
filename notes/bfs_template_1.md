@@ -1,8 +1,8 @@
 ---
-tags: [data structure/queue, data structure/tree, method/traversal/bfs, template]
+tags: [data structure/queue, data structure/tree, method/traversal/level, template]
 title: BFS Template One
 created: '2019-08-05T05:47:52.602Z'
-modified: '2019-08-09T04:31:00.513Z'
+modified: '2019-12-02T15:08:27.934Z'
 ---
 
 # BFS Template One

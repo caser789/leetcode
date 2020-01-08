@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/19, leetcode/451]
+tags: [2019/08/19, leetcode/451, method/sort/bucket]
 title: Sort Characters By Frequency
 created: '2019-08-19T13:07:23.672Z'
-modified: '2019-08-19T13:08:04.377Z'
+modified: '2019-12-14T06:48:38.254Z'
 ---
 
 # Sort Characters By Frequency
@@ -263,3 +263,8 @@ class Solution(object):
             res.append(c * cnt)
         return ''.join(res)
 ```
+
+## refs
+
+* [lc](https://leetcode.com/problems/sort-characters-by-frequency/)
+* [o n](https://leetcode.com/problems/sort-characters-by-frequency/discuss/93445/O(n)-Easy-to-understand-Java-Solution)

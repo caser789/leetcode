@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, data structure/queue, data structure/tree, leetcode/116, method/traversal/bfs/pointer]
+tags: [2019/11/28, data structure/queue, data structure/tree, leetcode/116, method/traversal/level/pointer]
 title: Populating Next Right Pointers in Each Node
 created: '2019-11-28T06:40:49.345Z'
-modified: '2019-11-28T08:12:27.272Z'
+modified: '2019-12-02T15:07:10.433Z'
 ---
 
 # Populating Next Right Pointers in Each Node

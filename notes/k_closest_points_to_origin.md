@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/19, data structure/priority queue, leetcode/973, method/union find]
+tags: [2019/08/19, application/array/kth, data structure/priority queue, leetcode/973, method/divide-and-conquer, method/sort/quick, TODO]
 title: K Closest Points to Origin
 created: '2019-08-19T12:46:57.686Z'
-modified: '2019-08-19T13:07:16.491Z'
+modified: '2019-12-16T15:28:08.257Z'
 ---
 
 # K Closest Points to Origin
@@ -227,3 +227,42 @@ class MaxPriorityQueue(object):
             tmp[i] = self.keys[i]
         self.keys = tmp
 ```
+
+### heaqp
+
+```python
+import heapq
+
+
+class Solution(object):
+    def kClosest(self, points, K):
+        """
+        :type points: List[List[int]]
+        :type K: int
+        :rtype: List[List[int]]
+        """
+        pq = []
+        for x, y in points:
+            d = dist(x, y)
+            
+            if len(pq) < K:
+                heapq.heappush(pq, (-d, x, y))
+            else:
+                if d < -pq[0][0]:
+                    heapq.heappop(pq)
+                    heapq.heappush(pq, (-d, x, y))
+        return [[x, y] for d, x, y in pq]
+
+                
+        
+        
+        
+def dist(x, y):
+    return x*x + y*y
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/k-closest-points-to-origin/)
+* [sulution](https://leetcode.com/problems/k-closest-points-to-origin/solution/)
+* [quick sort](https://leetcode.com/problems/k-closest-points-to-origin/discuss/220235/Java-Three-solutions-to-this-classical-K-th-problem.)

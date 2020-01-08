@@ -1,8 +1,8 @@
 ---
-tags: [leetcode/200, method/traversal/dfs]
+tags: [2020/01/02, leetcode/200, method/traversal/dfs, method/union find]
 title: Number of Islands
 created: '2019-08-05T05:51:48.433Z'
-modified: '2019-08-11T05:40:20.670Z'
+modified: '2020-01-01T14:17:41.424Z'
 ---
 
 # Number of Islands
@@ -139,3 +139,12 @@ class UF(object):
 lst = [["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]
 print Solution().numIslands(lst)
 ```
+
+## schedule 
+
+* [x] 2020/01/01
+* [ ] 2020/01/02
+
+## refs
+
+* [lc](https://leetcode.com/problems/number-of-islands/)

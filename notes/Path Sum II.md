@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, application/path-sum, data structure/stack, data structure/tree, leetcode/113, method/backtrack, method/traversal/dfs]
+tags: [2019/11/28, application/tree/path, data structure/stack, data structure/tree, leetcode/113, method/backtrack, method/traversal/dfs]
 title: Path Sum II
 created: '2019-11-28T06:18:40.438Z'
-modified: '2019-11-28T06:25:13.128Z'
+modified: '2019-12-02T14:16:40.024Z'
 ---
 
 # Path Sum II

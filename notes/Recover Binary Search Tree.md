@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/27, data structure/BST, data structure/tree, leetcode/99, method/traversal/inorder]
+tags: [2019/11/27, data structure/bst, data structure/tree, leetcode/99, method/traversal/inorder]
 title: Recover Binary Search Tree
 created: '2019-11-27T10:52:27.974Z'
-modified: '2019-12-01T08:00:09.159Z'
+modified: '2019-12-08T03:40:51.322Z'
 ---
 
 # Recover Binary Search Tree

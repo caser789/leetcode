@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/30]
+tags: [2019/11/30, application/tree/lca, data structure/tree, leetcode/865]
 title: Smallest Subtree with all the Deepest Nodes
 created: '2019-11-30T05:34:06.332Z'
-modified: '2019-11-30T05:39:37.750Z'
+modified: '2019-12-03T01:34:06.672Z'
 ---
 
 # Smallest Subtree with all the Deepest Nodes

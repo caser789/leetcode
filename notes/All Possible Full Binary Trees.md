@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/14, data structure/tree, leetcode/894, method/dp]
+tags: [2019/11/14, application/combination, data structure/tree, leetcode/894, method/dp]
 title: All Possible Full Binary Trees
 created: '2019-11-14T05:03:43.203Z'
-modified: '2019-11-30T06:10:46.543Z'
+modified: '2019-12-03T01:37:01.721Z'
 ---
 
 # All Possible Full Binary Trees

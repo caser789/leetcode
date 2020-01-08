@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/12, data structure/fenwick tree, leetcode/307]
+tags: [2019/12/04, data structure/binary-indexed-tree, leetcode/307]
 title: Range Sum Query - Mutable
 created: '2019-11-12T14:30:09.710Z'
-modified: '2019-11-12T14:31:23.254Z'
+modified: '2019-12-03T05:46:56.726Z'
 ---
 
 # Range Sum Query - Mutable
@@ -77,3 +77,66 @@ class FenwickTree(object):
 # obj.update(i,val)
 # param_2 = obj.sumRange(i,j)
 ```
+
+### better
+
+```python
+class NumArray(object):
+
+    def __init__(self, nums):
+        """
+        :type nums: List[int]
+        """
+        n = len(nums)
+        
+        self.nums = [0] * n
+        self.sums = [0] * (n+1)
+        
+        for i in range(n):
+            self.update(i, nums[i])
+
+    def update(self, i, val):
+        """
+        :type i: int
+        :type val: int
+        :rtype: None
+        """
+        j = i + 1
+        upd = val - self.nums[i]
+        
+        while j < len(self.sums):
+            self.sums[j] += upd
+            j += j & (-j)
+        
+        self.nums[i] = val
+
+    def sumRange(self, i, j):
+        """
+        :type i: int
+        :type j: int
+        :rtype: int
+        """
+        return self.query(j+1) - self.query(i)
+    
+    def query(self, i):
+        s = 0
+        while i > 0:
+            s += self.sums[i]
+            i -= i & (-i)
+        return s
+
+
+# Your NumArray object will be instantiated and called as such:
+# obj = NumArray(nums)
+# obj.update(i,val)
+# param_2 = obj.sumRange(i,j)
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/range-sum-query-mutable/)
+
+## schedule
+
+* [x] 2019/12/03
+* [ ] 2019/12/04

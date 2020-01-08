@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/04, leetcode/653]
+tags: [2019/11/04, leetcode/653, method/traversal/inorder]
 title: Two Sum IV - Input is a BST
 created: '2019-09-07T06:31:25.541Z'
-modified: '2019-11-29T09:15:03.524Z'
+modified: '2019-12-02T14:52:21.341Z'
 ---
 
 # Two Sum IV - Input is a BST

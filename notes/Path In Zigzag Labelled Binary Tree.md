@@ -2,7 +2,7 @@
 tags: [2020/01/01, application/tree/zigzag, data structure/tree, leetcode/1104]
 title: Path In Zigzag Labelled Binary Tree
 created: '2019-12-01T08:15:55.971Z'
-modified: '2019-12-01T12:03:42.590Z'
+modified: '2019-12-02T14:27:37.937Z'
 ---
 
 # Path In Zigzag Labelled Binary Tree

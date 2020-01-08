@@ -1,8 +1,8 @@
 ---
-tags: [2019/12/01, application/common-ancestor, application/height, data structure/tree, leetcode/1123]
+tags: [2019/12/01, application/height, application/tree/lca, data structure/tree, leetcode/1123]
 title: Lowest Common Ancestor of Deepest Leaves
 created: '2019-12-01T06:12:39.267Z'
-modified: '2019-12-01T06:13:43.714Z'
+modified: '2019-12-03T14:20:09.208Z'
 ---
 
 # Lowest Common Ancestor of Deepest Leaves

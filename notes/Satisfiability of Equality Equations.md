@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/30, leetcode/990]
+tags: [2020/01/06, leetcode/990, method/union find]
 title: Satisfiability of Equality Equations
 created: '2019-10-30T15:20:23.436Z'
-modified: '2019-10-30T15:22:15.030Z'
+modified: '2020-01-05T11:52:57.180Z'
 ---
 
 # Satisfiability of Equality Equations
@@ -113,4 +113,10 @@ class Solution(object):
 ## schedule
 
 * [x] 2019/10/29
-* [ ] 2019/10/30
+* [x] 2020/01/05
+* [ ] 2020/01/06
+
+## refs
+
+* [lc](https://leetcode.com/problems/satisfiability-of-equality-equations/)
+

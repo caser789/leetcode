@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/08, data structure/tree, leetcode/872, method/recursion, method/traversal/dfs]
+tags: [2019/08/08, application/tree/compare, data structure/tree, leetcode/872, method/recursion, method/traversal/dfs]
 title: Leaf-Similar Trees
 created: '2019-08-08T15:09:36.423Z'
-modified: '2019-11-30T05:03:52.504Z'
+modified: '2019-12-03T01:35:09.243Z'
 ---
 
 # Leaf-Similar Trees

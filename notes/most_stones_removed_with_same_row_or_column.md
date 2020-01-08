@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/11, leetcode/947, method/union find]
+tags: [2020/01/06, leetcode/947, method/union find]
 title: Most Stones Removed with Same Row or Column
 created: '2019-08-11T02:23:00.531Z'
-modified: '2019-08-11T05:24:59.533Z'
+modified: '2020-01-05T04:25:15.805Z'
 ---
 
 # Most Stones Removed with Same Row or Column
@@ -166,3 +166,12 @@ class UF(object):
 stones = [[0, 0], [0, 1], [1, 0], [1, 2], [2, 1], [2, 2]]
 print Solution().removeStones(stones)
 ```
+
+## schedule
+
+* [x] 2020/01/05
+* [ ] 2020/01/06
+
+## refs
+
+* [lc](https://leetcode.com/problems/most-stones-removed-with-same-row-or-column/)

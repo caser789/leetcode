@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/30, application/flip-tree, data structure/tree, leetcode/971, method/traversal/dfs]
+tags: [2019/11/30, application/tree/flip, data structure/tree, leetcode/971, method/traversal/dfs]
 title: Flip Binary Tree To Match Preorder Traversal
 created: '2019-11-30T10:00:53.894Z'
-modified: '2019-11-30T10:06:40.124Z'
+modified: '2019-12-03T01:44:14.026Z'
 ---
 
 # Flip Binary Tree To Match Preorder Traversal

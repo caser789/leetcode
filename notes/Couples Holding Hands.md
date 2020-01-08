@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/04, leetcode/765, method/union find]
+tags: [2020/01/05, data structure/graph, leetcode/765, method/union find]
 title: Couples Holding Hands
 created: '2019-10-31T14:21:49.202Z'
-modified: '2019-11-01T05:23:56.356Z'
+modified: '2020-01-04T05:16:46.347Z'
 ---
 
 # Couples Holding Hands
@@ -75,4 +75,10 @@ class Solution(object):
 
 * [x] 2019/10/31
 * [x] 2019/11/01
-* [ ] 2019/11/04
+* [x] 2020/01/04
+* [ ] 2020/01/05
+
+## refs
+
+* [dis](https://leetcode.com/problems/couples-holding-hands/discuss/117520/Java-union-find-easy-to-understand-5-ms)
+* 

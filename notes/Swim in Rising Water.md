@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/11, leetcode/778]
+tags: [2020/01/05, data structure/priority queue, leetcode/778, method/dijkastra, method/search/binary, method/union find]
 title: Swim in Rising Water
 created: '2019-10-13T11:08:26.230Z'
-modified: '2019-10-27T04:55:03.334Z'
+modified: '2020-01-04T05:52:11.012Z'
 ---
 
 # Swim in Rising Water
@@ -252,6 +252,67 @@ class Solution(object):
                 return res        
 ```
 
+### UF TLE
+
+```
+class Solution(object):
+    def swimInWater(self, grid):
+        """
+        :type grid: List[List[int]]
+        :rtype: int
+        """
+        n = len(grid)
+        uf = UF(n*n)
+        t = 0
+        
+        while not uf.connected(0, n*n-1):
+            for i in range(n):
+                for j in range(n):
+                    if grid[i][j] > t: continue
+                    if i+1 < n and grid[i+1][j] <= t:
+                        uf.union(i*n+j, (i+1)*n+j)
+                    if j+1 < n and grid[i][j+1] <= t:
+                        uf.union(i*n+j, i*n+j+1)
+            t += 1
+        
+        return t-1  
+        
+
+        
+class UF(object):
+    def __init__(self, n):
+        self.n = n
+        self.parents = range(n)
+        self.ranks = [0] * n
+    
+    def __len__(self):
+        return self.n
+    
+    def find(self, p):
+        while p != self.parents[p]:
+            self.parents[p] = self.parents[self.parents[p]]
+            p = self.parents[p]
+        return p
+    
+    def union(self, p, q):
+        u = self.find(p)
+        v = self.find(q)
+        if u == v:
+            return
+        
+        if self.ranks[u] < self.ranks[v]:
+            self.parents[u] = v
+        elif self.ranks[u] > self.ranks[v]:
+            self.parents[v] = u
+        else:
+            self.parents[u] = v
+            self.ranks[v] += 1
+        self.n -= 1
+    
+    def connected(self, p, q):
+        return self.find(p) == self.find(q)
+```
+
 ## schedule
 
 * [x] 0 2019/10/13
@@ -259,4 +320,11 @@ class Solution(object):
 * [x] 1 2019/10/17
 * [x] 1 2019/10/20
 * [x] 1 2019/10/27
-* [ ] 1 2019/11/11
+* [x] 1 2020/01/04
+* [ ] 2 2020/01/05
+
+## refs
+
+* [binary search](https://leetcode.com/problems/swim-in-rising-water/discuss/113765/PythonC%2B%2B-Binary-Search)
+* [lc](https://leetcode.com/problems/swim-in-rising-water/)
+

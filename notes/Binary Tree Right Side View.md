@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, data structure/queue, data structure/tree, leetcode/199, method/traversal/bfs]
+tags: [2019/11/28, data structure/queue, data structure/tree, leetcode/199, method/traversal/level]
 title: Binary Tree Right Side View
 created: '2019-11-28T10:05:55.439Z'
-modified: '2019-11-28T10:06:59.074Z'
+modified: '2019-12-02T15:09:40.921Z'
 ---
 
 # Binary Tree Right Side View

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/03, data structure/queue, data structure/tree, leetcode/637, method/backtracking, method/recursion, method/traversal/bfs, method/traversal/dfs, method/traversal/level]
+tags: [2019/11/03, data structure/queue, data structure/tree, leetcode/637, method/backtracking, method/recursion, method/traversal/dfs, method/traversal/level]
 title: Average of Levels in Binary Tree
 created: '2019-08-31T09:53:06.738Z'
-modified: '2019-12-01T12:07:14.485Z'
+modified: '2019-12-02T15:08:06.751Z'
 ---
 
 # Average of Levels in Binary Tree

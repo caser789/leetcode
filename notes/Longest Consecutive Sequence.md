@@ -1,8 +1,9 @@
 ---
-tags: [2019/11/01, leetcode/128, method/parse, method/union find]
+favorited: true
+tags: [2019/12/31, data structure/set, leetcode/128, method/union find]
 title: Longest Consecutive Sequence
 created: '2019-10-31T14:43:39.242Z'
-modified: '2019-10-31T15:05:04.555Z'
+modified: '2019-12-30T14:21:03.824Z'
 ---
 
 # Longest Consecutive Sequence
@@ -50,20 +51,22 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        if not nums:
-            return 0
+        n = len(nums)
+        if n < 2:
+            return n
         
         nums.sort()
-        longest_streak = 1
-        current_streak = 1
-        for i in range(1, len(nums)):
-            if nums[i] != nums[i-1]:
-                if nums[i] == nums[i-1] + 1:
-                    current_streak += 1
-                else:
-                    longest_streak = max(longest_streak, current_streak)
-                    current_streak = 1
-        return max(longest_streak, current_streak)              
+        longest = 1
+        cur = 1
+        
+        for i in range(1, n):
+            if nums[i] == nums[i-1] + 1:
+                cur += 1
+            elif nums[i] != nums[i-1]:
+                longest = max(longest, cur)
+                cur = 1
+        
+        return max(longest, cur)             
 ```
 
 ### set
@@ -91,7 +94,78 @@ class Solution(object):
         return longest_streak
 ```
 
+### UF
+
+```python
+class Solution(object):
+    def longestConsecutive(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        n = len(nums)
+        if n < 2:
+            return n
+        
+        uf = UF(n)
+        kv = {}
+        for i, num in enumerate(nums):
+            if num in kv: continue
+            kv[num] = i
+            
+            if num - 1 in kv:
+                uf.union(i, kv[num-1])
+            
+            if num + 1 in kv:
+                uf.union(i, kv[num+1])
+        
+        return uf.max()
+        
+        
+        
+class UF(object):
+    
+    def __init__(self, n):
+        self.n = n
+        self.parents = range(n)
+        self.size = [0] * n
+    
+    def union(self, p, q):
+        rootp = self.find(p)
+        rootq = self.find(q)
+        if rootp == rootq:
+            return
+        
+        if self.size[rootp] < self.size[rootq]:
+            self.parents[rootp] = rootq
+        elif self.size[rootp] > self.size[rootq]:
+            self.parents[rootq] = rootp
+        else:
+            self.size[rootq] += 1
+            self.parents[rootp] = rootq
+        
+    def find(self, p):
+        while p != self.parents[p]:
+            self.parents[p] = self.parents[self.parents[p]]
+            p = self.parents[p]
+        return p
+    
+    def max(self):
+        lst = [0] * self.n
+        for i in range(self.n):
+            root = self.find(i)
+            lst[root] += 1
+        return max(lst)
+
+```
+
 ## schedule
 
 * [x] 2019/10/31
-* [ ] 2019/11/01
+* [x] 2019/12/30
+* [ ] 2019/12/31
+
+## refs
+
+* [lc](https://leetcode.com/problems/longest-consecutive-sequence/)
+

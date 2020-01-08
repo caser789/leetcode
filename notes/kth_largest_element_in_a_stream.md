@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/15, data structure/priority queue, leetcode/703]
+tags: [2019/08/15, application/array/kth, data structure/priority queue, leetcode/703]
 title: Kth Largest Element in a Stream
 created: '2019-08-15T15:20:48.387Z'
-modified: '2019-08-15T15:21:43.142Z'
+modified: '2019-12-14T06:26:44.423Z'
 ---
 
 # Kth Largest Element in a Stream
@@ -215,3 +215,50 @@ class MinPriorityQueue(object):
             tmp[i] = self.keys[i]
         self.keys = tmp
 ```
+
+### heapq
+
+```python
+import heapq
+
+
+class KthLargest(object):
+
+    def __init__(self, k, nums):
+        """
+        :type k: int
+        :type nums: List[int]
+        """
+        self.pq = []
+        self.k = k
+        
+        for num in nums:
+            self.add(num)
+            
+            
+    def add(self, val):
+        """
+        :type val: int
+        :rtype: int
+        """
+        if len(self.pq) < self.k:
+            heapq.heappush(self.pq, val)
+        else:
+            if val > self.pq[0]:
+                heapq.heappop(self.pq)
+                heapq.heappush(self.pq, val)
+        if self.pq:
+            return self.pq[0]
+        
+
+
+# Your KthLargest object will be instantiated and called as such:
+# obj = KthLargest(k, nums)
+# param_1 = obj.add(val)
+```
+
+## refs
+
+
+* [lc](https://leetcode.com/problems/kth-largest-element-in-a-stream/)
+

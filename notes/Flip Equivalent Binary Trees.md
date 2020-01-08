@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, leetcode/951, method/recursion]
+tags: [2019/11/30, application/tree/compare, application/tree/flip, application/tree/serialization, data structure/tree, leetcode/951, method/recursion]
 title: Flip Equivalent Binary Trees
 created: '2019-11-30T07:07:40.135Z'
-modified: '2019-11-30T07:13:23.510Z'
+modified: '2019-12-04T14:21:35.020Z'
 ---
 
 # Flip Equivalent Binary Trees

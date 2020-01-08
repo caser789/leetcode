@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/11, leetcode/721]
+tags: [2020/01/03, leetcode/721, method/union find]
 title: Accounts Merge
 created: '2019-08-11T11:17:53.969Z'
-modified: '2019-08-11T11:18:24.447Z'
+modified: '2020-01-02T15:08:29.459Z'
 ---
 
 # Accounts Merge
@@ -38,5 +38,85 @@ class Solution(object):
         """
         :type accounts: List[List[str]]
         :rtype: List[List[str]]
+        
+        [
+            ["John", "johnsmith@mail.com", "john00@mail.com"], 
+            ["John", "johnnybravo@mail.com"], 
+            ["John", "johnsmith@mail.com", "john_newyork@mail.com"], 
+            ["Mary", "mary@mail.com"],
+        ]
         """
+        index = 0
+        email_to_index = {}
+        email_to_name = {}
+        
+        uf = UF(10001)
+        
+        for lst in accounts:
+            name = lst[0]
+            for i in range(1, len(lst)):
+                email = lst[i]
+                email_to_name[email] = name
+                if email not in email_to_index:
+                    email_to_index[email] = index
+                    index += 1
+                    
+                
+                uf.union(email_to_index[lst[1]], email_to_index[lst[i]])
+                    
+        root_to_emails = {}
+        for email in email_to_name:
+            i = email_to_index[email]
+            root = uf.find(i)
+            root_to_emails.setdefault(root, [])
+            root_to_emails[root].append(email)
+        
+        res = []
+        for _, emails in root_to_emails.items():
+            name = email_to_name[emails[0]]
+            res.append([name] + sorted(emails))
+        
+        return res
+        
+        
+        
+class UF(object):
+    def __init__(self, n):
+        self.n = n
+        self.parents = range(n)
+        self.ranks = [0] * n
+    
+    def __len__(self):
+        return self.n
+    
+    def find(self, p):
+        while p != self.parents[p]:
+            self.parents[p] = self.parents[self.parents[p]]
+            p = self.parents[p]
+        return p
+    
+    def union(self, p, q):
+        u = self.find(p)
+        v = self.find(q)
+        if u == v:
+            return
+        
+        if self.ranks[u] < self.ranks[v]:
+            self.parents[u] = v
+        elif self.ranks[u] > self.ranks[v]:
+            self.parents[v] = u
+        else:
+            self.parents[u] = v
+            self.ranks[v] += 1
+        self.n -= 1
+        
 ```
+
+## schedule
+
+* [x] 2020/01/02
+* [ ] 2020/01/03
+
+## refs
+
+* [lc](https://leetcode.com/problems/accounts-merge/)

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, leetcode/988, method/recursion, method/traversal/dfs]
+tags: [2019/11/30, application/tree/path, data structure/tree, leetcode/988, method/recursion, method/traversal/dfs]
 title: Smallest String Starting From Leaf
 created: '2019-11-30T11:55:10.645Z'
-modified: '2019-11-30T11:56:38.831Z'
+modified: '2019-12-03T14:47:37.289Z'
 ---
 
 # Smallest String Starting From Leaf
@@ -87,6 +87,47 @@ class Solution(object):
             
         
         find(root)
+        return self.res
+```
+
+### short
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def smallestFromLeaf(self, root):
+        """
+        :type root: TreeNode
+        :rtype: str
+        """
+        if root is None:
+            return ''
+        
+        tmp = []
+        self.res = None
+        
+        def helper(node):          
+            tmp.append(chr(ord('a')+node.val))
+            if node.left is None and node.right is None:
+                s = ''.join(tmp[::-1])
+                if self.res is None or s < self.res:
+                    self.res = s
+            
+            if node.left:
+                helper(node.left)
+            if node.right:
+                helper(node.right)
+            
+            tmp.pop()                
+ 
+        helper(root)
+        
         return self.res
 ```
 

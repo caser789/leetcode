@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/27, application/tree/zigzag, data structure/queue, data structure/tree, leetcode/103, method/traversal/bfs, method/traversal/level]
+tags: [2019/11/27, application/tree/zigzag, data structure/queue, data structure/tree, leetcode/103, method/traversal/level]
 title: Binary Tree Zigzag Level Order Traversal
 created: '2019-11-27T14:00:25.832Z'
-modified: '2019-12-01T12:03:52.214Z'
+modified: '2019-12-02T15:10:11.141Z'
 ---
 
 # Binary Tree Zigzag Level Order Traversal

@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/18, data structure/priority queue, leetcode/871, method/dp]
+tags: [2019/12/23, data structure/priority queue, leetcode/871, method/dp]
 title: Minimum Number of Refueling Stops
 created: '2019-10-15T23:53:30.547Z'
-modified: '2019-10-17T14:59:06.531Z'
+modified: '2019-12-22T05:41:01.649Z'
 ---
 
 # Minimum Number of Refueling Stops
@@ -112,4 +112,6 @@ class Solution(object):
 
 * [x] 0 2019/10/16
 * [x] 1 2019/10/17
-* [ ] 1 2019/10/18
+* [x] 1 2019/12/17
+* [x] 3 2019/12/22
+* [ ] 3 2019/12/23

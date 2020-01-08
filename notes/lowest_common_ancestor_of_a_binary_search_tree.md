@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/05, data structure/tree, leetcode/235, method/recursion]
+tags: [2019/11/05, application/tree/lca, data structure/bst, data structure/tree, leetcode/235, method/recursion]
 title: Lowest Common Ancestor of a Binary Search Tree
 created: '2019-09-07T06:52:25.374Z'
-modified: '2019-11-28T11:31:41.166Z'
+modified: '2019-12-04T12:35:05.494Z'
 ---
 
 # Lowest Common Ancestor of a Binary Search Tree

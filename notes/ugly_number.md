@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/23, leetcode/263]
+tags: [2019/11/23, application/ugly-number, leetcode/263]
 title: Ugly Number
 created: '2019-09-24T15:01:13.034Z'
-modified: '2019-10-23T11:18:51.066Z'
+modified: '2019-12-21T05:37:03.410Z'
 ---
 
 # Ugly Number

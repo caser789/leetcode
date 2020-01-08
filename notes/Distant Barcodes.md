@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/08, leetcode/1054]
+tags: [2019/11/08, application/array/pq2, data structure/priority queue, leetcode/1054]
 title: Distant Barcodes
 created: '2019-10-13T10:47:50.932Z'
-modified: '2019-10-24T05:01:25.879Z'
+modified: '2019-12-14T15:16:25.294Z'
 ---
 
 # Distant Barcodes
@@ -273,3 +273,7 @@ class Solution(object):
 * [x] 1 2019/10/24
 * [ ] 1 2019/11/08
 
+
+## refs
+
+* [lc](https://leetcode.com/problems/distant-barcodes/)

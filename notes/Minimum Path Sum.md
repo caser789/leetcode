@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/09]
+tags: [2019/11/09, leetcode/64]
 title: Minimum Path Sum
 created: '2019-11-09T08:00:45.523Z'
-modified: '2019-11-09T08:14:25.872Z'
+modified: '2019-12-02T14:21:03.293Z'
 ---
 
 # Minimum Path Sum

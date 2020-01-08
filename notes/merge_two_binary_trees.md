@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/03, data structure/tree, leetcode/617]
+tags: [2019/11/03, application/tree/compare, data structure/tree, leetcode/617]
 title: Merge Two Binary Trees
 created: '2019-08-31T09:39:47.220Z'
-modified: '2019-11-29T06:28:36.289Z'
+modified: '2019-12-02T14:51:11.260Z'
 ---
 
 # Merge Two Binary Trees

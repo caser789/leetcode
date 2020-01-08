@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, data structure/stack, data structure/tree, leetcode/129, method/traversal/dfs]
+tags: [2019/11/28, application/tree/path, data structure/stack, data structure/tree, leetcode/129, method/traversal/dfs]
 title: Sum Root to Leaf Numbers
 created: '2019-11-28T08:23:43.116Z'
-modified: '2019-11-28T08:24:52.758Z'
+modified: '2019-12-02T14:26:00.567Z'
 ---
 
 # Sum Root to Leaf Numbers

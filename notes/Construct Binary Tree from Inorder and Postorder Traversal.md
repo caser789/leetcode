@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, leetcode/106, method/recursion, method/traversal/inorder]
+tags: [2019/11/28, application/tree/build, leetcode/106, method/recursion, method/traversal/inorder]
 title: Construct Binary Tree from Inorder and Postorder Traversal
 created: '2019-11-28T03:50:23.001Z'
-modified: '2019-12-01T08:48:10.272Z'
+modified: '2019-12-03T01:36:05.042Z'
 ---
 
 # Construct Binary Tree from Inorder and Postorder Traversal

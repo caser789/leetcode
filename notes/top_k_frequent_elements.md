@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/19, data structure/map, data structure/priority queue, leetcode/347, method/search/hash, method/sort]
+tags: [2019/08/19, application/array/kth, data structure/map, data structure/priority queue, leetcode/347, method/search/hash, method/sort, method/sort/bucket, method/sort/quick]
 title: Top K Frequent Elements
 created: '2019-08-01T05:46:51.151Z'
-modified: '2019-08-28T13:57:33.981Z'
+modified: '2019-12-14T06:56:07.174Z'
 ---
 
 # Top K Frequent Elements
@@ -30,6 +30,8 @@ Output: [1]
 
 ## Solution
 
+### sort
+
 ```python
 class Solution(object):
     def topKFrequent(self, nums, k):
@@ -52,3 +54,39 @@ class Solution(object):
         items.sort(key=lambda x: -x[1])
         return [items[i][0] for i in range(k)]
 ```
+
+### heapq
+
+```python
+import heapq
+
+
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        counter = {}
+        for num in nums:
+            counter.setdefault(num, 0)
+            counter[num] += 1
+        
+        pq = []
+        for num, cnt in counter.items():
+            if len(pq) < k:
+                heapq.heappush(pq, (cnt, num))
+            else:
+                if cnt > pq[0][0]:
+                    heapq.heappop(pq)
+                    heapq.heappush(pq, (cnt, num))
+        
+        return [num for cnt, num in pq]
+```
+
+## refs
+
+* [lc](https://leetcode.com/problems/top-k-frequent-elements/)
+* [quick selection](https://leetcode.com/problems/top-k-frequent-elements/discuss/81631/3-ways-to-solve-this-problem)
+* [bucket sort]()

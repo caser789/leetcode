@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/20, data structure/priority queue, leetcode/786]
+tags: [2019/10/20, application/matrix/kth, data structure/priority queue, leetcode/786, method/search/binary]
 title: K-th Smallest Prime Fraction
 created: '2019-10-19T09:15:08.831Z'
-modified: '2019-10-19T09:58:18.896Z'
+modified: '2019-12-15T09:46:44.016Z'
 ---
 
 # K-th Smallest Prime Fraction
@@ -102,3 +102,7 @@ class Solution(object):
 
 * [x] 2019/10/19
 * [ ] 2019/10/20
+
+## refs
+
+* [lc](https://leetcode.com/problems/k-th-smallest-prime-fraction/)

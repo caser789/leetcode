@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/18, data structure/priority queue, leetcode/857]
+tags: [2019/12/22, application/2-heap, data structure/priority queue, leetcode/857]
 title: Minimum Cost to Hire K Workers
 created: '2019-10-13T13:19:41.738Z'
-modified: '2019-10-16T14:40:05.220Z'
+modified: '2019-12-22T05:03:54.358Z'
 ---
 
 # Minimum Cost to Hire K Workers
@@ -50,6 +50,8 @@ class Solution(object):
         :type wage: List[int]
         :type K: int
         :rtype: float
+
+        min_ratio * min_quality
         """
         workers = sorted([float(w)/q, q] for w, q in zip(wage, quality))
         res = float('inf')
@@ -72,4 +74,11 @@ class Solution(object):
 * [x] 0 2019/10/13
 * [x] 1 2019/10/14
 * [x] 1 2019/10/15
-* [ ] 1 2019/10/18
+* [x] 1 2019/10/18
+* [x] 1 2019/12/21
+* [ ] 2 2019/12/22
+
+## refs
+
+* [lc](https://leetcode.com/problems/minimum-cost-to-hire-k-workers/)
+

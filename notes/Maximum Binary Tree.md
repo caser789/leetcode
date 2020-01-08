@@ -1,8 +1,9 @@
 ---
+deleted: true
 tags: [2019/11/14]
 title: Maximum Binary Tree
 created: '2019-11-14T01:15:08.018Z'
-modified: '2019-11-14T01:23:25.680Z'
+modified: '2019-12-08T10:55:37.816Z'
 ---
 
 # Maximum Binary Tree

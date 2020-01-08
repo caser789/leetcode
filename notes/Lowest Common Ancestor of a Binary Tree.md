@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/28, data structure/tree, leetcode/236, method/recursion, method/traversal/dfs]
+tags: [2019/11/28, application/tree/lca, application/tree/parent, data structure/tree, leetcode/236, method/recursion, method/traversal/dfs, method/traversal/dfs/parent]
 title: Lowest Common Ancestor of a Binary Tree
 created: '2019-11-28T11:41:09.469Z'
-modified: '2019-11-28T11:52:31.706Z'
+modified: '2019-12-04T13:03:23.108Z'
 ---
 
 # Lowest Common Ancestor of a Binary Tree

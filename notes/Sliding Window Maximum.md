@@ -1,8 +1,8 @@
 ---
-tags: [2019/10/26, data structure/monoqueue, leetcode/239]
+tags: [2019/12/22, data structure/monoqueue, leetcode/239]
 title: Sliding Window Maximum
 created: '2019-10-22T04:47:02.715Z'
-modified: '2019-10-23T13:46:27.360Z'
+modified: '2020-01-07T13:44:21.392Z'
 ---
 
 # Sliding Window Maximum
@@ -83,6 +83,50 @@ class Solution(object):
 
 
 ```
+
+### deque
+
+```python
+from collections import deque
+
+class Solution(object):
+    def maxSlidingWindow(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: List[int]
+        """
+        if not nums:
+            return []
+        
+        stack = deque()
+        
+        for i in range(k-1):
+            num = nums[i]
+            count = 1
+            while stack and stack[-1][1] < num:
+                cnt, _ = stack.pop()
+                count += cnt
+            stack.append([count, num])
+        
+        res = []
+        for i in range(k-1, len(nums)):
+            num = nums[i]
+            count = 1
+            while stack and stack[-1][1] < num:
+                cnt, _ = stack.pop()
+                count += cnt
+            stack.append([count, num])
+            
+            res.append(stack[0][1])
+            stack[0][0] -= 1
+            if stack[0][0] == 0:
+                stack.popleft()
+        
+        return res                
+```
+
+
 ## refs
 
 * [leetcode](https://leetcode.com/problems/sliding-window-maximum/discuss/65885/This-is-a-typical-monotonic-queue-problem)
@@ -92,4 +136,6 @@ class Solution(object):
 
 * [x] 2019/10/22
 * [x] 2019/10/23
-* [ ] 2019/10/26
+* [x] 2019/12/21
+* [x] 2020/01/07
+* [ ] 2020/01/08

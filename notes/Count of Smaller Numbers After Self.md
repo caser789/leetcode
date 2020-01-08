@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/13]
+tags: [2019/12/04, data structure/binary-indexed-tree, leetcode/315]
 title: Count of Smaller Numbers After Self
 created: '2019-11-13T02:11:01.534Z'
-modified: '2019-11-13T04:45:56.136Z'
+modified: '2019-12-03T05:46:04.063Z'
 ---
 
 # Count of Smaller Numbers After Self
@@ -66,4 +66,7 @@ class Fenwick(object):
 
 * [lc](https://leetcode.com/problems/count-of-smaller-numbers-after-self/)
 
+## schedule
 
+* [x] 2019/12/03
+* [ ] 2019/12/04

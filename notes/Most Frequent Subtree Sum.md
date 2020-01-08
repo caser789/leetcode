@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/29, application/tree/subtree, data structure/tree, leetcode/508]
+tags: [2019/11/29, application/tree/subtree, data structure/tree, leetcode/508, method/recursion]
 title: Most Frequent Subtree Sum
 created: '2019-11-29T03:17:28.651Z'
-modified: '2019-12-01T11:16:35.838Z'
+modified: '2019-12-09T13:45:50.520Z'
 ---
 
 # Most Frequent Subtree Sum
@@ -69,6 +69,50 @@ class Solution(object):
                 mfc = counter[v]
         
         return [k for k, v in counter.items() if v == mfc]         
+```
+
+### be
+
+* 一个 树 的和是 左子树的和 加 右子树的和 加 node 的 值
+* 遍历每个子树，得到每个子树的和
+* 统计每个和的个数
+
+
+```
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution(object):
+    def findFrequentTreeSum(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        if root is None:
+            return []
+        
+        counter = {}
+        self.max_cnt = 0
+        
+        def get_sum(node):
+            if node is None:
+                return 0
+            
+            left = get_sum(node.left)
+            right = get_sum(node.right)
+            s = left + right + node.val
+            counter.setdefault(s, 0)
+            counter[s] += 1
+            self.max_cnt = max(self.max_cnt, counter[s])
+            
+            return s
+        
+        get_sum(root)
+        return [k for k, v in counter.items() if v == self.max_cnt]
 ```
 
 ## refs

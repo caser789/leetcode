@@ -1,8 +1,8 @@
 ---
-tags: [2019/12/01, data structure/tree, leetcode/1261]
+tags: [2019/12/01, application/tree/vertical, data structure/tree, leetcode/1261]
 title: Find Elements in a Contaminated Binary Tree
 created: '2019-12-01T03:03:34.925Z'
-modified: '2019-12-01T03:15:54.871Z'
+modified: '2019-12-03T14:22:14.852Z'
 ---
 
 # Find Elements in a Contaminated Binary Tree

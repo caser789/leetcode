@@ -1,9 +1,9 @@
 ---
 favorited: true
-tags: [2019/11/30, data structure/graph, leetcode/834, TODO]
+tags: [2019/11/30, data structure/graph, leetcode/834, method/traversal/dfs/parent, TODO]
 title: Sum of Distances in Tree
 created: '2019-11-30T04:36:26.878Z'
-modified: '2019-11-30T04:44:14.886Z'
+modified: '2019-12-03T01:32:27.016Z'
 ---
 
 # Sum of Distances in Tree

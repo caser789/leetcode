@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/02, leetcode/696, method/sliding window, method/variable]
+tags: [2019/11/02, leetcode/696, method/sliding-window, method/variable]
 title: Count Binary Substrings
 created: '2019-08-31T09:03:02.312Z'
-modified: '2019-10-30T04:45:13.832Z'
+modified: '2019-12-07T06:33:09.440Z'
 ---
 
 # Count Binary Substrings

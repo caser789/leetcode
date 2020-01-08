@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, data structure/tree-in-array, design, leetcode/919, TODO]
+tags: [2019/11/30, data structure/heap, data structure/tree-in-array, data structure/tree/complete, design, leetcode/919]
 title: Complete Binary Tree Inserter
 created: '2019-11-30T06:29:18.714Z'
-modified: '2019-11-30T06:56:20.803Z'
+modified: '2019-12-07T08:12:08.992Z'
 ---
 
 # Complete Binary Tree Inserter
@@ -144,6 +144,65 @@ class CBTInserter(object):
 # param_1 = obj.insert(v)
 # param_2 = obj.get_root()
 
+```
+
+### heap 
+
+```python
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class CBTInserter(object):
+
+    def __init__(self, root):
+        """
+        :type root: TreeNode
+        """
+        self.nodes = [None]
+        self.nodes.append(root)
+
+        for node in self.nodes:
+            if node is None: continue
+            if node.left:
+                self.nodes.append(node.left)
+
+            if node.right:
+                self.nodes.append(node.right)  
+        
+    def insert(self, v):
+        """
+        :type v: int
+        :rtype: int
+        """
+        node = TreeNode(v)
+        self.nodes.append(node)
+        n = len(self.nodes)
+        index = n - 1
+        p = index / 2
+        if index % 2 == 0:
+            self.nodes[p].left = node
+        else:
+            self.nodes[p].right = node
+        
+        return self.nodes[p].val
+        
+    def get_root(self):
+        """
+        :rtype: TreeNode
+        """
+        if len(self.nodes) > 1:
+            return self.nodes[1]
+        
+
+
+# Your CBTInserter object will be instantiated and called as such:
+# obj = CBTInserter(root)
+# param_1 = obj.insert(v)
+# param_2 = obj.get_root()
 ```
 
 ## refs

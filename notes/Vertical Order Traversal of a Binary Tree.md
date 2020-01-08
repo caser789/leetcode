@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/30, data structure/tree, leetcode/987, method/recursion, method/traversal/dfs, method/traversal/vertical]
+tags: [2019/11/30, application/tree/vertical, data structure/tree, leetcode/987, method/recursion, method/traversal/dfs]
 title: Vertical Order Traversal of a Binary Tree
 created: '2019-11-30T11:44:03.316Z'
-modified: '2019-11-30T11:45:39.541Z'
+modified: '2019-12-03T13:42:31.668Z'
 ---
 
 # Vertical Order Traversal of a Binary Tree

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/03, data structure/tree, leetcode/965, method/recursion, method/traversal/dfs]
+tags: [2019/11/03, application/tree/path, data structure/tree, leetcode/965, method/recursion, method/traversal/dfs]
 title: Univalued Binary Tree
 created: '2019-08-31T09:46:44.066Z'
-modified: '2019-11-30T07:16:40.366Z'
+modified: '2019-12-04T01:29:09.846Z'
 ---
 
 # Univalued Binary Tree

@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/02, data structure/priority queue, leetcode/502]
+tags: [2019/12/23, application/2-heap, data structure/priority queue, leetcode/502]
 title: IPO
 created: '2019-10-21T15:27:11.492Z'
-modified: '2019-10-27T10:20:09.849Z'
+modified: '2019-12-22T05:10:46.334Z'
 ---
 
 # IPO
@@ -62,4 +62,5 @@ class Solution(object):
 * [x] 2019/10/22
 * [x] 2019/10/23
 * [x] 2019/10/26
-* [ ] 2019/11/02
+* [x] 2019/12/22
+* [ ] 2019/12/23

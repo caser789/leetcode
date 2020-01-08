@@ -1,8 +1,8 @@
 ---
-tags: [2019/11/29, data structure/queue, data structure/stack, data structure/tree, leetcode/623, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/11/29, data structure/queue, data structure/stack, data structure/tree, leetcode/623, method/recursion, method/traversal/dfs, method/traversal/level]
 title: Add One Row to Tree
 created: '2019-11-29T08:13:38.503Z'
-modified: '2019-11-29T08:36:05.886Z'
+modified: '2019-12-03T13:38:34.155Z'
 ---
 
 # Add One Row to Tree
@@ -14,39 +14,50 @@ The adding rule is: given a positive integer depth d, for each NOT null tree nod
 Example 1:
 Input: 
 A binary tree as following:
+
+```
        4
      /   \
     2     6
    / \   / 
   3   1 5   
+```
 
 v = 1
 
 d = 2
 
-Output: 
+Output:
+
+```
        4
       / \
      1   1
     /     \
    2       6
   / \     / 
- 3   1   5   
+ 3   1   5  
+```
 
 Example 2:
 Input: 
 A binary tree as following:
+
+```
       4
      /   
     2    
    / \   
-  3   1    
+  3   1 
+```
 
 v = 1
 
 d = 3
 
 Output: 
+
+```
       4
      /   
     2
@@ -54,7 +65,10 @@ Output:
   1   1
  /     \  
 3       1
-Note:
+```
+
+### Note:
+
 The given d is in range [1, maximum depth of the given tree + 1].
 The given binary tree has at least one tree node.
 

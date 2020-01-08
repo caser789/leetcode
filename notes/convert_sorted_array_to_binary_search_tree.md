@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/09, data structure/BST, data structure/tree, leetcode/108, method/recursion]
+tags: [2019/08/09, data structure/bst, data structure/tree, leetcode/108, method/recursion]
 title: Convert Sorted Array to Binary Search Tree
 created: '2019-08-09T10:23:42.544Z'
-modified: '2019-11-28T04:05:49.981Z'
+modified: '2019-12-08T03:41:05.007Z'
 ---
 
 # Convert Sorted Array to Binary Search Tree

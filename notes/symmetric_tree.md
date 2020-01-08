@@ -1,8 +1,8 @@
 ---
-tags: [2019/08/07, application/tree/compare, data structure/queue, data structure/stack, data structure/tree, leetcode/101, method/recursion, method/traversal/bfs, method/traversal/dfs]
+tags: [2019/08/07, application/tree/compare, data structure/queue, data structure/stack, data structure/tree, leetcode/101, method/recursion, method/recursion/double, method/traversal/bfs, method/traversal/dfs]
 title: Symmetric Tree
 created: '2019-08-07T14:22:53.723Z'
-modified: '2019-12-01T12:01:00.539Z'
+modified: '2019-12-07T10:17:19.623Z'
 ---
 
 # Symmetric Tree
